@@ -50,6 +50,9 @@ api:
 linux:
   getting_started:
     overview: index.html
+  docker:
+    install_docker: /linux/docker/install_docker.html
+    install_zipkin: /linux/docker/zipkin.html
 
 mysql:
   getting_started:
@@ -88,6 +91,8 @@ mse:
     array: /mse/c++/array.html
     pointer_peference: /mse/c++/pointer_peference.html
     dynamic_memory: /mse/c++/dynamic_memory.html
+    cplus_project: /mse/c++/cplus_project.html
+    function: /mse/c++/function.html
   algorithm:
     overview: /mse/algorithm/index.html
   software:
