@@ -4,6 +4,17 @@ title: Docker部署zipkin
 
 # Zipkin简介
 
+|项目|	说明|
+|:--|:--|
+|官方网站|	https://zipkin.io/|
+|开源/闭源|	开源|
+|License类别|	Apache License 2.0|
+|代码管理地址|	https://github.com/openzipkin/zipkin/|
+|开发语言|	Java，Javascript|
+|支持平台|	可运行于Linux/Windows/MacOS等多种操作系统，并提供docker标准镜像|
+|当前版本|	2.9.1 （2018/06/11）|
+|更新频度|	平均每月数次|
+
 ## Zipkin是什么
 
  Zipkin的官方介绍：https://zipkin.io/
@@ -329,15 +340,310 @@ zipkin    | 2020-07-13 09:44:27.029  INFO 1 --- [           main] z.s.ZipkinServ
 
 
 
-# python
+# zipkin跟踪Python项目
 
-https://blog.csdn.net/liumiaocn/article/details/80657943
+参考：https://blog.csdn.net/liumiaocn/article/details/80657943
 
-Python项目依赖
+## Python项目依赖
+
+> python 2.7
+
 为了在Python项目中使用zipkin，需要py_zipkin/pyramid/pyramid_zipkin 。在CentOS系Linux发行版上命令如下：
 
 
 ```
-yum install python-devel
-pip install –trusted-host pypi.org –trusted-host files.pythonhosted.org py_zipkin pyramid pyramid_zipkin
+yum install python-virtualenv python-devel
+mkdir python_project_zipkin
+cd python_project_zipkin
+virtualenv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org py_zipkin pyramid pyramid_zipkin requests
 ```
+
+操作记录:
+
+```bash
+[root@foundation0 docker_booboo]# mkdir python_project_zipkin;cd python_project_zipkin
+[root@foundation0 docker_booboo]# /usr/bin/virtualenv venv
+New python executable in /alidata/docker_booboo/python_project_zipkin/venv/bin/python
+Installing setuptools, pip, wheel...done.
+[root@foundation0 docker_booboo]# ll
+总用量 4
+-rw-r--r--. 1 root root 1161 7月  13 17:58 docker-compose.yml
+drwxr-xr-x. 5 root root   52 7月  14 17:02 python_project_zipkin
+[root@foundation0 docker_booboo]# cd python_project_zipkin/venv
+[root@foundation0 venv]# ll
+总用量 4
+drwxr-xr-x. 2 root root 4096 7月  14 17:02 bin
+drwxr-xr-x. 2 root root   22 7月  14 17:02 include
+drwxr-xr-x. 3 root root   22 7月  14 17:02 lib
+lrwxrwxrwx. 1 root root    3 7月  14 17:02 lib64 -> lib
+[root@foundation0 venv]# source bin/
+activate          activate.fish     easy_install      pip               pip2.7            python2           python-config
+activate.csh      activate_this.py  easy_install-2.7  pip2              python            python2.7         wheel
+[root@foundation0 python_project_zipkin]# source bin/activate
+(venv) [root@foundation0 python_project_zipkin]# which pip
+/alidata/docker_booboo/python_project_zipkin/venv/bin/pip
+(python_project_zipkin) [root@foundation0 python_project_zipkin]# pip install –trusted-host pypi.org –trusted-host files.pythonhosted.org py_zipkin pyramid pyramid_zipkin
+Invalid requirement: '–trusted-host'
+Traceback (most recent call last):
+  File "/alidata/docker_booboo/python_project_zipkin/lib/python2.7/site-packages/pip/req/req_install.py", line 82, in __init__
+    req = Requirement(req)
+  File "/alidata/docker_booboo/python_project_zipkin/lib/python2.7/site-packages/pip/_vendor/packaging/requirements.py", line 96, in __init__
+    requirement_string[e.loc:e.loc + 8]))
+InvalidRequirement: Invalid requirement, parse error at "'\xe2\x80\x93trust'"
+
+You are using pip version 9.0.1, however version 20.1.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+(python_project_zipkin) [root@foundation0 python_project_zipkin]# pip install --upgrade pip
+Collecting pip
+  Downloading http://mirrors.aliyun.com/pypi/packages/43/84/23ed6a1796480a6f1a2d38f2802901d078266bda38388954d01d3f2e821d/pip-20.1.1-py2.py3-none-any.whl (1.5MB)
+    100% |████████████████████████████████| 1.5MB 61.9MB/s
+Installing collected packages: pip
+  Found existing installation: pip 9.0.1
+    Uninstalling pip-9.0.1:
+      Successfully uninstalled pip-9.0.1
+Successfully installed pip-20.1.1
+(python_project_zipkin) [root@foundation0 python_project_zipkin]# pip install --trusted-host pypi.org --trusted-host files.pythonhosted.org py_zipkin pyramid pyramid_zipkin
+DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020. Please upgrade your Python as Python 2.7 is no longer maintained. pip 21.0 will drop support for Python 2.7 in January 2021. More details about Python 2 support in pip, can be found at https://pip.pypa.io/en/latest/development/release-process/#python-2-support
+Looking in indexes: http://mirrors.aliyun.com/pypi/simple/
+Collecting py_zipkin
+  Downloading http://mirrors.aliyun.com/pypi/packages/08/fe/02e113bb7720d4ec04f03a9e0902e2fa221c703d00b66cc453b242fcf383/py_zipkin-0.20.0-py2.py3-none-any.whl (52 kB)
+     |████████████████████████████████| 52 kB 10.7 MB/s
+Collecting pyramid
+  Downloading http://mirrors.aliyun.com/pypi/packages/4e/4f/6fe39af43fadc6d6c12f4cff9ed438f4fed20245614170959b38fe9f762d/pyramid-1.10.4-py2.py3-none-any.whl (325 kB)
+     |████████████████████████████████| 325 kB 65.5 MB/s
+Collecting pyramid_zipkin
+  Downloading http://mirrors.aliyun.com/pypi/packages/de/70/62892aa6f6b80f83e8ba2a2b83bada1aef2854f4a51385c3344050d7828c/pyramid_zipkin-0.27.0-py2.py3-none-any.whl (11 kB)
+Collecting enum34; python_version == "2.7"
+  Downloading http://mirrors.aliyun.com/pypi/packages/6f/2c/a9386903ece2ea85e9807e0e062174dc26fdce8b05f216d00491be29fad5/enum34-1.1.10-py2-none-any.whl (11 kB)
+Collecting thriftpy2>=0.4.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/a9/f0/9bf08e6b5983aa6a6103818da21eadfaea1ad99ec9882be3e75a30e8e9ff/thriftpy2-0.4.11.tar.gz (498 kB)
+     |████████████████████████████████| 498 kB 67.2 MB/s
+Collecting six
+  Downloading http://mirrors.aliyun.com/pypi/packages/ee/ff/48bde5c0f013094d729fe4b0316ba2a24774b3ff1c52d924a8a4cb04078a/six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting hupper>=1.5
+  Downloading http://mirrors.aliyun.com/pypi/packages/48/7f/06ace28143b2cb3a4b14c9d9e5165741d2d133ef331b616acf47ab5c3517/hupper-1.10.2-py2.py3-none-any.whl (26 kB)
+Collecting venusian>=1.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/72/46/ffe45f3b4a99309387551f4a06ed7e6c06fb163226e63b09aa5d6a21a280/venusian-2.1.0-py2.py3-none-any.whl (33 kB)
+Collecting zope.interface>=3.8.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/bb/79/6840e9ca1a68717d36248eb15bc4c01a56d252c66f03abc0202cb9ff4cbb/zope.interface-5.1.0-cp27-cp27mu-manylinux2010_x86_64.whl (230 kB)
+     |████████████████████████████████| 230 kB 71.3 MB/s
+Collecting zope.deprecation>=3.5.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/f9/26/b935bbf9d27e898b87d80e7873a0200cebf239253d0afe7a59f82fe90fff/zope.deprecation-4.4.0-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: setuptools in ./lib/python2.7/site-packages (from pyramid) (28.8.0)
+Collecting plaster-pastedeploy
+  Downloading http://mirrors.aliyun.com/pypi/packages/11/c4/0470056ea324c7a420c22647be512dec1b5e32b1b6e77e27c61838d2811c/plaster_pastedeploy-0.7-py2.py3-none-any.whl (7.8 kB)
+Collecting repoze.lru>=0.4; python_version < "3.2"
+  Downloading http://mirrors.aliyun.com/pypi/packages/12/bc/595a77c4b5e204847fdf19268314ef59c85193a9dc9f83630fc459c0fee5/repoze.lru-0.7.tar.gz (19 kB)
+Collecting translationstring>=0.4
+  Downloading http://mirrors.aliyun.com/pypi/packages/3b/98/36187601a15e3d37e9bfcf0e0e1055532b39d044353b06861c3a519737a9/translationstring-1.4-py2.py3-none-any.whl (15 kB)
+Collecting plaster
+  Downloading http://mirrors.aliyun.com/pypi/packages/61/29/3ac8a5d03b2d9e6b876385066676472ba4acf93677acfc7360b035503d49/plaster-1.0-py2.py3-none-any.whl (14 kB)
+Collecting webob>=1.8.3
+  Downloading http://mirrors.aliyun.com/pypi/packages/18/3c/de37900faff3c95c7d55dd557aa71bd77477950048983dcd4b53f96fde40/WebOb-1.8.6-py2.py3-none-any.whl (114 kB)
+     |████████████████████████████████| 114 kB 79.8 MB/s
+Collecting ply<4.0,>=3.4
+  Downloading http://mirrors.aliyun.com/pypi/packages/a3/58/35da89ee790598a0700ea49b2a66594140f44dec458c07e8e3d4979137fc/ply-3.11-py2.py3-none-any.whl (49 kB)
+     |████████████████████████████████| 49 kB 68.0 MB/s
+Collecting PasteDeploy>=2.0
+  Downloading http://mirrors.aliyun.com/pypi/packages/fb/18/196e5070ced83bb81edd83c79545232d1d2ec55e3a099a146a3333244a6b/PasteDeploy-2.1.0-py2.py3-none-any.whl (17 kB)
+Building wheels for collected packages: thriftpy2, repoze.lru
+  Building wheel for thriftpy2 (setup.py) ... done
+  Created wheel for thriftpy2: filename=thriftpy2-0.4.11-cp27-cp27mu-linux_x86_64.whl size=832256 sha256=55e3a0d96f87598662b3ed7b16d81536e48768185ade7cc6074a006182d595f9
+  Stored in directory: /root/.cache/pip/wheels/3c/95/1f/eae02a041591574267b5216814814a804226c32061d9471b58
+  Building wheel for repoze.lru (setup.py) ... done
+  Created wheel for repoze.lru: filename=repoze.lru-0.7-py2-none-any.whl size=10931 sha256=fc0e76d5fbca10afcfc65253655d7a7aa63d875f73cb83ffbb8535ce1ee73b55
+  Stored in directory: /root/.cache/pip/wheels/1c/6e/0b/047aab9e3fd851dc1be351cb286f45513f812376baa966ac18
+Successfully built thriftpy2 repoze.lru
+Installing collected packages: enum34, ply, thriftpy2, six, py-zipkin, hupper, venusian, zope.interface, zope.deprecation, PasteDeploy, plaster, plaster-pastedeploy, repoze.lru, translationstring, webob, pyramid, pyramid-zipkin
+Successfully installed PasteDeploy-2.1.0 enum34-1.1.10 hupper-1.10.2 plaster-1.0 plaster-pastedeploy-0.7 ply-3.11 py-zipkin-0.20.0 pyramid-1.10.4 pyramid-zipkin-0.27.0 repoze.lru-0.7 six-1.15.0 thriftpy2-0.4.11 translationstring-1.4 venusian-2.1.0 webob-1.8.6 zope.deprecation-4.4.0 zope.interface-5.1.0
+
+```
+
+## 模拟dapper论文的调用链
+
+
+在这篇文章中我们将会模拟在Python项目中如何跟中dapper论文中的三层架构的例子：
+
+|层次|	服务名称|	父span|	调用顺序|
+|:--|:--|:--|:--|
+|前端|	Frontend：A|	无|	1|
+|中间|	MiddleTier：B|	A|	2|
+|中间|	MiddleTier：C|	A|	3|
+|后端|	Backend：D|	C|	4|
+|后端|	Backend：E	|C	|5|
+
+![](pic/01.png)
+
+
+## 模拟五个服务
+
+代码上传到了github上，可参看：https://github.com/liumiaocn/easypack/tree/master/zipkin/python
+
+使用python简单地模拟如上地A-E等五个服务，其中A和C为调用节点，而B/D/E为终端节点，A会调用B和C，其示例代码如下，C与之类似：
+
+```bash
+(venv) [root@foundation0 python_project_zipkin]# ll
+总用量 24
+-rw-r--r--. 1 root root 2109 7月  14 17:09 A.py
+-rw-r--r--. 1 root root 1767 7月  14 17:13 B.py
+-rw-r--r--. 1 root root 2155 7月  14 17:14 C.py
+-rw-r--r--. 1 root root 1812 7月  14 17:14 D.py
+-rw-r--r--. 1 root root 1812 7月  14 17:15 E.py
+-rw-r--r--. 1 root root 1246 7月  14 17:15 test_zipkin.sh
+drwxr-xr-x. 5 root root   52 7月  14 17:11 venv
+```
+
+再次确认zipkin镜像已pull在本地，如果本地开启了就先关闭并删除容器。
+
+```bash
+[root@foundation0 ~]# docker ps
+CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS              PORTS               NAMES
+cc6c1ec08693        openzipkin/zipkin   "/busybox/sh run.sh"   23 hours ago        Up 23 hours                             zipkin
+[root@foundation0 ~]# ss -luntp|grep docker
+[root@foundation0 ~]# ss -luntp|grep 9411
+tcp    LISTEN     0      128      :::9411                 :::*                   users:(("java",pid=5141,fd=163))
+[root@foundation0 ~]# docker stop cc6c1ec08693
+[root@foundation0 ~]# docker rm cc6c1ec08693
+```
+
+开始运行测试脚本
+
+```bash 
+(venv) [root@foundation0 python_project_zipkin]# bash test_zipkin.sh start
+
+## Operation: start
+## start begins ...
+## start zipkin service
+bdb9f0f3cf304385fddf3fb2d3b4e73f2286a54e88b9b0ded7ea1483f7a42eb6
+## before start action
+
+## Operation: status
+## status begins ...
+demo process: A.py
+demo process: B.py
+demo process: C.py
+demo process: D.py
+demo process: E.py
+## status ends...
+service Service_B listening : http://localhost:9002
+service Service_D listening : http://localhost:9004
+service Service_E listening : http://localhost:9005
+service Service_A listening : http://localhost:9001
+service Service_C listening : http://localhost:9003
+## after start action
+
+## Operation: status
+## status begins ...
+demo process: A.py
+root     15567 15398 19 17:33 pts/0    00:00:00 python A.py
+demo process: B.py
+root     15569 15398 19 17:33 pts/0    00:00:00 python B.py
+demo process: C.py
+root     15570 15398 19 17:33 pts/0    00:00:00 python C.py
+demo process: D.py
+root     15572 15398 18 17:33 pts/0    00:00:00 python D.py
+demo process: E.py
+root     15573 15398 19 17:33 pts/0    00:00:00 python E.py
+## status ends...
+## start ends...
+```
+
+
+我的环境比较特殊，直接启动docker无法访问，所以还是使用以下方法启动
+
+```bash 
+[root@foundation0 python_project_zipkin]# docker ps
+CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS              PORTS                              NAMES
+bdb9f0f3cf30        openzipkin/zipkin   "/busybox/sh run.sh"   15 minutes ago      Up 15 minutes       9410/tcp, 0.0.0.0:9411->9411/tcp   zipkin
+[root@foundation0 python_project_zipkin]# docker stop bdb9f0f3cf30
+bdb9f0f3cf30
+[root@foundation0 python_project_zipkin]# docker rm bdb9f0f3cf30
+bdb9f0f3cf30
+
+[root@foundation0 python_project_zipkin]# docker-compose up -d
+Creating zipkin ... done
+[root@foundation0 python_project_zipkin]# docker inspect
+"docker inspect" requires at least 1 argument.
+See 'docker inspect --help'.
+
+Usage:  docker inspect [OPTIONS] NAME|ID [NAME|ID...]
+
+Return low-level information on Docker objects
+[root@foundation0 python_project_zipkin]# docker ps
+CONTAINER ID        IMAGE               COMMAND                CREATED             STATUS              PORTS               NAMES
+daeab8b02ac8        openzipkin/zipkin   "/busybox/sh run.sh"   22 seconds ago      Up 20 seconds                           zipkin
+[root@foundation0 python_project_zipkin]# ss -luntp|grep docker
+[root@foundation0 python_project_zipkin]# ss -luntp|grep 9411
+tcp    LISTEN     0      128      :::9411                 :::*                   users:(("java",pid=19120,fd=163))
+```
+
+
+## 访问入口服务
+
+1. 通过命令行发起请求`curl http://localhost:9001/api`
+2. 通过浏览器发起请求`http://localhost:9001/api`
+
+
+```bash 
+(venv) [root@foundation0 python_project_zipkin]# curl http://localhost:9001/api
+127.0.0.1 - - [14/Jul/2020 17:52:52] "GET /apib HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 17:52:52] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 17:52:52] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 17:52:52] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 17:52:52] "GET /api HTTP/1.1" 200 26
+```
+
+![](pic/02.png)
+
+## 观察Zipkin Web
+
+### 确认服务个数
+
+再次刷新zipkin，即可看到service name发生变化
+
+![](pic/03.png)
+
+### 确认trace信息
+
+```bash 
+(venv) [root@foundation0 docker_booboo]# curl http://localhost:9001/api
+127.0.0.1 - - [14/Jul/2020 18:02:48] "GET /apib HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:02:48] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:02:48] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:02:48] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:02:48] "GET /api HTTP/1.1" 200 26
+2020-07-14 18:02:48.687811(venv) [root@foundation0 docker_booboo]# curl http://localhost:9002/apib
+127.0.0.1 - - [14/Jul/2020 18:02:52] "GET /apib HTTP/1.1" 200 26
+2020-07-14 18:02:52.543569(venv) [root@foundation0 docker_booboo]# curl http://localhost:9003/api
+127.0.0.1 - - [14/Jul/2020 18:02:57] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:02:57] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:02:57] "GET /api HTTP/1.1" 200 26
+2020-07-14 18:02:57.220548(venv) [root@foundation0 docker_booboo]# curl http://localhost:9004/api
+127.0.0.1 - - [14/Jul/2020 18:02:59] "GET /api HTTP/1.1" 200 26
+2020-07-14 18:02:59.585916(venv) [root@foundation0 docker_booboo]# curl http://localhost:9005/api
+127.0.0.1 - - [14/Jul/2020 18:03:01] "GET /api HTTP/1.1" 200 26
+2020-07-14 18:03:01.635659(venv) [root@foundation0 docker_booboo]# curl http://localhost:9001/api
+127.0.0.1 - - [14/Jul/2020 18:03:04] "GET /apib HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:03:04] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:03:04] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:03:04] "GET /api HTTP/1.1" 200 26
+127.0.0.1 - - [14/Jul/2020 18:03:04] "GET /api HTTP/1.1" 200 26
+```
+
+没有显示出trace信息，手动导入了json
+
+![](pic/06.png)
+
+
+### 依赖关系
+
+点击find trace即可看到含有5个span的如下信息
+
+![](pic/04.png)
+
+![](pic/05.png)
+
+
