@@ -33,7 +33,7 @@ Brave 是用来装备 Java 程序的类库，提供了面向 Standard Servlet、
 
 如下图是 Brave 的结构图。Brave 利用 reporter 向 Zipkin的 Collector 发送 trace 信息。
 
-![](https://img2018.cnblogs.com/blog/1153954/201905/1153954-20190528211846969-1126002065.png)
+![](pic/07.png)
 
 Brave 主要是利用拦截器在请求前和请求后分别埋点。例如 Spingmvc 监控使用 Interceptors，Mysql 监控使用 statementInterceptors。同理 Dubbo 的监控是利用 com.alibaba.dubbo.rpc.Filter 来过滤生产者和消费者的请求。
 
@@ -68,7 +68,7 @@ cr - cs = 一次调用的整体耗时
 
 Zipkin 会将 trace 相关的信息在调用链路上传递，并在每个调用边界结束时异步的把当前调用的耗时信息上报给 Zipkin Server。Zipkin Server 在收到 trace 信息后，将其存储起来。随后 Zipkin 的 Web UI 会通过 API 访问的方式从存储中将 trace 信息提取出来分析并展示。
 
-![](https://img2018.cnblogs.com/blog/1153954/201905/1153954-20190529124054604-116989993.png)
+![](pic/08.png)
 
 # 安装Zipkin
 
