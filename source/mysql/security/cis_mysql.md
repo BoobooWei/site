@@ -244,7 +244,7 @@ cis_mysql_57_benchmark = [
                                     }
             ]
 },
-{"name": "安装和规划","v_name":"InstallationandPlanning", value": []},
+{"name": "安装和规划","v_name":"InstallationandPlanning", "value": []},
 {"name": "文件系统权限","v_name":"FileSystemPermissions","value": []},
 {"name": "总则","v_name":"General","value": []},
 {"name": "MySQL权限","v_name":"MySQLPermissions","value": []},
