@@ -57,6 +57,9 @@ linux:
 mysql:
   getting_started:
     overview: index.html
+  security:
+    overview: /mysql/security/index.html
+    cis_mysql: /mysql/security/cis_mysql.html
 
 oracle:
   getting_started:

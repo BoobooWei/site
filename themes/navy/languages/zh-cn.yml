@@ -86,6 +86,8 @@ sidebar:
   mysql:
     getting_started: 开始使用
     overview: 概览
+    security: 安全篇
+    cis_mysql: MySQL安全基线
 
   oracle:
     getting_started: 开始使用
