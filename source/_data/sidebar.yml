@@ -119,3 +119,6 @@ aliyun:
     a03_quickdashboard: /aliyun/bigdata/qbi/a03_quickdashboard.html
   RDS:
     rds_introduce: /aliyun/rds/rds_introduce.html
+  CMS:
+    overview: /aliyun/cms/index.html
+    custom_event: /aliyun/cms/custom_event.html

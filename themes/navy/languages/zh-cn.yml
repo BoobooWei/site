@@ -141,3 +141,5 @@ sidebar:
     a03_quickdashboard: QBI可视化
     RDS: RDS
     rds_introduce: RDS配置
+    CMS: CMS
+    custom_event: 事件告警

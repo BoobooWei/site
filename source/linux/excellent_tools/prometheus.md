@@ -105,7 +105,7 @@ auto_check
 start_app
 ```
 
-# 优化方案1
+## 优化方案1
 
 {% note warn 优化方案1%}
 Prometheus优化方案1—systemctl和logrotate管理服务和日志
