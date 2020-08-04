@@ -53,6 +53,9 @@ linux:
   docker:
     install_docker: /linux/docker/install_docker.html
     install_zipkin: /linux/docker/zipkin.html
+  excellent_tools:
+    overview: /linux/excellent_tools/index.html
+    supervisor: /linux/excellent_tools/supervisor.html
 
 mysql:
   getting_started:

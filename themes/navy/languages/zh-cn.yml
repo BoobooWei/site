@@ -82,6 +82,8 @@ sidebar:
     docker: Docker
     install_docker: 安装Docker
     install_zipkin: 安装Zipkin
+    excellent_tools: Ex-Tools
+    supervisor: supervisor
 
   mysql:
     getting_started: 开始使用
