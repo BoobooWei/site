@@ -55,7 +55,10 @@ linux:
     install_zipkin: /linux/docker/zipkin.html
   excellent_tools:
     overview: /linux/excellent_tools/index.html
+    systemd: /linux/excellent_tools/systemd.html
     supervisor: /linux/excellent_tools/supervisor.html
+    prometheus: /linux/excellent_tools/prometheus.html
+
 
 mysql:
   getting_started:

@@ -84,6 +84,8 @@ sidebar:
     install_zipkin: 安装Zipkin
     excellent_tools: Ex-Tools
     supervisor: supervisor
+    prometheus: prometheus
+    systemd: systemd
 
   mysql:
     getting_started: 开始使用
