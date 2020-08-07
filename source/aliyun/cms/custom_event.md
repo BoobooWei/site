@@ -173,8 +173,8 @@ else
 fi
  
 [root@fms monitor]# bash -x web_monitor.sh
-+ accessid=LTAIjptFuxvL0wUF
-+ accesssecret=MQ25zOIocyHx9jo7UCMqCSmb9qmTh7
++ accessid=xx
++ accesssecret=xx
 + region=cn-shanghai
 + EventName=大宝的进程监控测试
 + Content=我的应用不可用-测试
