@@ -106,7 +106,7 @@ mse:
     dynamic_memory: /mse/c++/dynamic_memory.html
     cplus_project: /mse/c++/cplus_project.html
     function: /mse/c++/function.html
-	exploring_variables: /mse/c++/exploring_variables.html
+    exploring_variables:  /mes/c++/exploring_variables.html
   algorithm:
     overview: /mse/algorithm/index.html
   software:
