@@ -58,6 +58,10 @@ linux:
     systemd: /linux/excellent_tools/systemd.html
     supervisor: /linux/excellent_tools/supervisor.html
     prometheus: /linux/excellent_tools/prometheus.html
+  lamp:
+    overview: /linux/lamp/readme.html
+    phpems: /linux/lamp/phpems.html
+
 
 
 mysql:

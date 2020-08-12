@@ -86,6 +86,8 @@ sidebar:
     supervisor: supervisor
     prometheus: prometheus
     systemd: systemd
+    lamp: LAMP
+    phpems:  考试系统PHPEMS
 
   mysql:
     getting_started: 开始使用
