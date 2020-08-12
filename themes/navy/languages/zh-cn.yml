@@ -124,6 +124,7 @@ sidebar:
     dynamic_memory: 动态内存
     cplus_project: 项目实战
     function: 函数
+    exploring_variables: 探索变量
     algorithm: 数据结构与算法
     software: 软件工程
     computer_performance_evaluation: 计算机系统概述
