@@ -58,6 +58,10 @@ linux:
     systemd: /linux/excellent_tools/systemd.html
     supervisor: /linux/excellent_tools/supervisor.html
     prometheus: /linux/excellent_tools/prometheus.html
+  lamp:
+    overview: /linux/lamp/readme.html
+    phpems: /linux/lamp/phpems.html
+
 
 
 mysql:
@@ -102,8 +106,12 @@ mse:
     dynamic_memory: /mse/c++/dynamic_memory.html
     cplus_project: /mse/c++/cplus_project.html
     function: /mse/c++/function.html
+<<<<<<< HEAD
     exploring_variables: /mse/c++/exploring_variables.html
     class_and_objec: /mes/c++/class_and_object.html
+=======
+    exploring_variables:  /mes/c++/exploring_variables.html
+>>>>>>> 72e09af4bf02d1290df43347c8b346c8e312ef80
   algorithm:
     overview: /mse/algorithm/index.html
   software:
