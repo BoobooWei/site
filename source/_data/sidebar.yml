@@ -241,3 +241,11 @@ amy:
   kindergarten:
     overview: /amy/kindergarten/index.html
     m2-2020-08-15-amy: /amy/kindergarten/m2/2020-08-15-amy.html
+
+
+devops:
+  getting_started:
+    overview: /devops/index.html
+  bootstrap:
+    report-report-html: /devops/report/report-html.html
+
