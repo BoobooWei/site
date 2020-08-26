@@ -158,5 +158,20 @@ find "$BackupPath" -name "$DBname*[log,sql]" -type f -mtime +3 -exec rm -rf {} \
 ```
 
 
+# 批量修改
 
+```bash 
+sed -n  '/Copyright.*Copyright.*dba.toberoot.com.*\</p' ./data/html/core/tpls/app/index.html
+
+sed -i 's!Copyright.*Copyright.*dba.toberoot.com.*\<!Mail: rgweiyaping@hotmail.com   备案号：沪ICP备2020026043号\<!g' ./data/html/core/tpls/app/index.html
+
+while read line; do sed -n '/Copyright.*Copyright.*dba.toberoot.com.*\</p' $line;echo $line; done < copy.txt
+
+while read line; do sed -n '/Copyright.*Copyright.*dba.toberoot.com.*\</p' $line;echo $line; done < 2.txt	
+while read line; do sed -i 's!Copyright.*Copyright.*dba.toberoot.com.*\<!Mail: rgweiyaping@hotmail.com   备案号：沪ICP备2020026043号\<!g'	$line;echo $line; done < 2.txt	
+while read line; do sed -n '/Copyright.*dba.toberoot.com/p' $line;echo $line; done < copy.txt	
+while read line; do sed -i 's!Copyright.*dba.toberoot.com!Mail: rgweiyaping@hotmail.com   备案号：沪ICP备2020026043号!g'	$line;echo $line; done < copy.txt
+while read line; do sed -n '/沪ICP备2020026043号/p' $line;echo $line; done < copy.txt
+			
+```
 
