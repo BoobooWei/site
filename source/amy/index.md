@@ -1,5 +1,5 @@
 ---
-title: Amy 的幼儿园
+title: Amy
 ---
 
-记录Amy幼儿园时光
+记录Amy时光
