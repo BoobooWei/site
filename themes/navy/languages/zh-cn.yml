@@ -94,6 +94,8 @@ sidebar:
     overview: 概览
     security: 安全篇
     cis_mysql: MySQL安全基线
+    awesome-tools: 工具篇
+
 
   oracle:
     getting_started: 开始使用
