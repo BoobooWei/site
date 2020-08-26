@@ -172,6 +172,23 @@ while read line; do sed -i 's!Copyright.*Copyright.*dba.toberoot.com.*\<!Mail: r
 while read line; do sed -n '/Copyright.*dba.toberoot.com/p' $line;echo $line; done < copy.txt	
 while read line; do sed -i 's!Copyright.*dba.toberoot.com!Mail: rgweiyaping@hotmail.com   备案号：沪ICP备2020026043号!g'	$line;echo $line; done < copy.txt
 while read line; do sed -n '/沪ICP备2020026043号/p' $line;echo $line; done < copy.txt
-			
+		
+./data/compile/exam/tpls/app/%%cpl%%footer.php
+./data/compile/exam/tpls/master/%%cpl%%footer.php
+./data/compile/content/tpls/master/%%cpl%%footer.php
+./data/compile/bank/tpls/master/%%cpl%%footer.php
+./data/compile/autoform/tpls/master/%%cpl%%footer.php
+./data/compile/document/tpls/master/%%cpl%%footer.php
+./data/compile/course/tpls/app/%%cpl%%footer.php
+./data/compile/course/tpls/master/%%cpl%%footer.php
+./data/compile/user/tpls/app/%%cpl%%footer.php
+./data/compile/user/tpls/master/%%cpl%%footer.php
+./data/compile/user/tpls/center/%%cpl%%footer.php
+./data/compile/core/tpls/app/%%cpl%%footer.php
+./data/compile/core/tpls/master/%%cpl%%footer.php
+./data/compile/seminar/tpls/app/%%cpl%%footer.php
+./data/compile/seminar/tpls/master/%%cpl%%footer.php
+./data/compile/docs/tpls/master/%%cpl%%footer.php
+./data/compile/certificate/tpls/master/%%cpl%%footer.php	
 ```
 
