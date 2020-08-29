@@ -195,6 +195,9 @@ tick:
 mse:
   getting_started:
     overview: /mse/index.html
+  higher_mathematics:
+    overview: /mse/higher_mathematics/index.html
+    function_limit_and_continuity: /mse/higher_mathematics/function_limit_and_continuity.html
   computer:
     overview: /mse/computer/index.html
     computer_performance_evaluation: /mse/computer/computer_performance_evaluation.html

@@ -213,6 +213,8 @@ sidebar:
   mse:
     getting_started: 开始使用
     overview: 概览
+    higher_mathematics: 高等数学
+    function_limit_and_continuity: 函数极限与连续
     computer: 计算机系统
     c++: C++
     introduction: C++ 简介
