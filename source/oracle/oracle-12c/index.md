@@ -43,6 +43,8 @@ title: Oracle 12c 学习笔记
 
 > SQL开发工程师
 
+[Database PL/SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/lnpls/CREATE-PROCEDURE-statement.html#GUID-5F84DB47-B5BE-4292-848F-756BF365EC54)
+
 [Oracle SQL Developer可访问性指南](https://docs.oracle.com/en/database/oracle/sql-developer/19.2/sqdac/index.html)
 
 [Oracle SQL Developer安装指南](https://docs.oracle.com/en/database/oracle/sql-developer/19.2/rptig/index.html)
