@@ -80,6 +80,8 @@ oracle:
   ocp:
     overview: /oracle/ocp/index.html
     1z0-071: /oracle/ocp/1z0-071.html
+  oracle-12c:
+    overview: /oracle/oracle-12c/index.html
   oracle-11g:
     overview: /oracle/oracle-11g/index.html
   'A-数据库安装-00-index':
@@ -175,8 +177,7 @@ oracle:
   'Z-总结-00-index':
     'Z-总结-01-函数对比OracleVSMySQL': '/oracle/oracle-11g/Z-总结-01-函数对比OracleVSMySQL.html'
     'Z-总结-02-体系结构练习题': '/oracle/oracle-11g/Z-总结-02-体系结构练习题.html'
-  oracle-12c:
-    overview: /oracle/oracle-12c/index.html
+
 
 
 
