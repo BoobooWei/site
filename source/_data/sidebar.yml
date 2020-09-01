@@ -72,6 +72,7 @@ mysql:
     cis_mysql: /mysql/security/cis_mysql.html
   awesome-tools:
     overview: /mysql/awesome-tools/index.html
+    pt-archiver: /mysql/awesome-tools/pt-archiver.html
 
 
 oracle:

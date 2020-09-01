@@ -95,6 +95,7 @@ sidebar:
     security: 安全篇
     cis_mysql: MySQL安全基线
     awesome-tools: 工具篇
+    pt-archiver: pt-archiver
 
 
   oracle:
