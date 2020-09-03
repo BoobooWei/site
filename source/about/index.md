@@ -29,6 +29,7 @@ rgweiyaping@hotmail.com
 
 ## Recommend
  
+<p><a href="https://mysqlserverteam.com/" class="carbon-text" target="_blank" rel="noopener sponsored">MySQL服务团队</a></p>
 <p><a href="https://blog.jcole.us/" class="carbon-text" target="_blank" rel="noopener sponsored">Geek Jeremy Cole</a></p>
 <p><a href="https://www.changhai.org/" class="carbon-text" target="_blank" rel="noopener sponsored">科普作家卢昌海</a></p>
 <p><a href="http://www.vldb.org/" class="carbon-text" target="_blank" rel="noopener sponsored">VLDB</a></p>
