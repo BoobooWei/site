@@ -225,9 +225,10 @@ mse:
 aliyun:
   getting_started:
     overview: /aliyun/index.html
-    bigdata: /aliyun/bigdata/index.html
+#    bigdata: /aliyun/bigdata/index.html
   Darabonba:
     '01-intall-dara': /aliyun/dara/01-install-dara.html
+    '02-rds-demo': /aliyun/dara/02-rds-demo.html
   QBI:
     overview: /aliyun/bigdata/qbi/index.html
     a00_introduce: /aliyun/bigdata/qbi/a00_introduce.html

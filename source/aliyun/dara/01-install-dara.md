@@ -1,5 +1,5 @@
 ---
-title: 安装Darabonba 
+title: 安装 Darabonba 
 ---
 
 # Darabonba

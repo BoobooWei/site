@@ -239,7 +239,10 @@ sidebar:
   aliyun:
     getting_started: 开始使用
     overview: 概览
-    bigdata: 大数据概览
+#    bigdata: 大数据概览
+    Darabonba: Darabonba
+    '01-intall-dara': 安装 Darabonba
+    '02-rds-demo': RDS Demo
     QBI: Quick BI
     a00_introduce: 课程简介
     a01_qbi_product: QBI产品
