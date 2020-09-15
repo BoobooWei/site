@@ -234,6 +234,13 @@ sidebar:
     software: 软件工程
     computer_performance_evaluation: 计算机系统概述
     introduction_to_instruction_set: 计算机语言
+#    政治
+    politics: 政治
+    A-00-basic_principles_of_marxism: 马原体系
+    B-00-mzt: 毛中特体系
+    C-00-history: 史纲体系
+    D-00-ideology_and_morality: 思修体系
+    E-00-current_affairs: 时政体系
 
 
   aliyun:
