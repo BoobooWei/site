@@ -234,12 +234,22 @@ sidebar:
     software: 软件工程
     computer_performance_evaluation: 计算机系统概述
     introduction_to_instruction_set: 计算机语言
+#    政治
+    politics: 政治
+    A-00-basic_principles_of_marxism: 马原体系
+    B-00-mzt: 毛中特体系
+    C-00-history: 史纲体系
+    D-00-ideology_and_morality: 思修体系
+    E-00-current_affairs: 时政体系
 
 
   aliyun:
     getting_started: 开始使用
     overview: 概览
-    bigdata: 大数据概览
+#    bigdata: 大数据概览
+    Darabonba: Darabonba
+    '01-intall-dara': 安装 Darabonba
+    '02-rds-demo': RDS Demo
     QBI: Quick BI
     a00_introduce: 课程简介
     a01_qbi_product: QBI产品

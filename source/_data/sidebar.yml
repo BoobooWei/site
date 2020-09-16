@@ -222,10 +222,22 @@ mse:
     overview: /mse/algorithm/index.html
   software:
     overview: /mse/software/index.html
+  politics:
+    overview: /mse/politics/index.html
+    A-00-basic_principles_of_marxism: /mse/politics/A-00-basic_principles_of_marxism.html
+    B-00-mzt: /mse/politics/B-00-mzt.md
+    C-00-history:  /mse/politics/C-00-history.md
+    D-00-ideology_and_morality: /mse/politics/D-00-ideology_and_morality.md
+    E-00-current_affairs: /mse/politic/E-00-current_affairs.md
+
+
 aliyun:
   getting_started:
     overview: /aliyun/index.html
-    bigdata: /aliyun/bigdata/index.html
+#    bigdata: /aliyun/bigdata/index.html
+  Darabonba:
+    '01-intall-dara': /aliyun/dara/01-install-dara.html
+    '02-rds-demo': /aliyun/dara/02-rds-demo.html
   QBI:
     overview: /aliyun/bigdata/qbi/index.html
     a00_introduce: /aliyun/bigdata/qbi/a00_introduce.html
