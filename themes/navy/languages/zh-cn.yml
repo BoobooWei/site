@@ -257,6 +257,7 @@ sidebar:
     a03_quickdashboard: QBI可视化
     RDS: RDS
     rds_introduce: RDS配置
+    rds_lab_01: RDS实验-CPU问题
     CMS: CMS
     custom_event: 事件告警
 
