@@ -1,0 +1,52 @@
+- name: DBA在线测评系统
+  description: DBA 在线测评系统，构建在线DBA 在线测评，如IT、英语等练习系统。
+  link: https://github.com/SuperCloudDBA/exam
+  preview: http://exam.toberoot.com/
+  tags:
+    - PHP
+    - MySQL5.7
+    - 公开
+    - 考试
+- name: 数据库自动安装脚本
+  description: 数据库自动安装脚本，包含MySQL、Oracle、Redis、MongoDB单实例、主从、集群等。
+  link: https://github.com/SuperCloudDBA/auto_install_software
+  preview: https://github.com/SuperCloudDBA/auto_install_software/blob/master/README.md
+  tags:
+    - Bash
+    - 公开
+    - 安装
+- name: 云拓扑
+  description: 自动感知云产品架构、业务产品架构和在线画图的Web工具
+  link: https://github.com/SuperCloudDBA/CloudTopo
+  preview: https://github.com/SuperCloudDBA/CloudTopo
+  tags:
+    - Python3
+    - 公开
+    - 架构
+- name: 数据库健康检查
+  description: 混合云数据库管理中常用的数据库报告小工具，持续更新与维护。
+  link: https://github.com/SuperCloudDBA/dbreport
+  preview: https://github.com/SuperCloudDBA/dbreport
+  tags:
+    - Python3
+    - 公开
+    - 报告
+- name: 数据库观察者项目
+  description: 致力于提供一套开源地全面解决混合云数据库日常监控告警的功能。
+  link: https://github.com/SuperCloudDBA/dbobserver
+  preview: https://github.com/SuperCloudDBA/dbobserver
+  tags:
+    - Python3
+    - 公开
+    - 监控
+- name: 数据库观察者-后台管理系统
+  description: 数据库观察者项目Web，用于管理dboberser项目的进展。
+  link: https://github.com/SuperCloudDBA/dboverver_manager
+  preview: https://phosphorw.github.io/
+  tags:
+    - Python3
+    - MySQL8.0
+    - 私有
+    - 后台管理
+    - light
+    - responsive
