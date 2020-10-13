@@ -66,6 +66,16 @@ linux:
     '11-Linux内核': /linux/booboo_linux_base/11-Linux内核.html
     '12-SELINUX': /linux/booboo_linux_base/12-SELINUX.html
     '13-进程管理': /linux/booboo_linux_base/13-进程管理.html
+  linux_easy_service:
+    'overview': /linux/booboo_easy_service/index.html
+    '00_linux_classroom_env': /linux/booboo_easy_service/00_linux_classroom_env.html
+    '01_dns': /linux/booboo_easy_service/01_dns.html
+    '02_ftp': /linux/booboo_easy_service/02_ftp.html
+    '03_nfs': /linux/booboo_easy_service/03_nfs.html
+    '04_samba': /linux/booboo_easy_service/04_samba.html
+    '05_apache': /linux/booboo_easy_service/05_apache.html
+    '06_ntp_chrony': /linux/booboo_easy_service/06_ntp_chrony.html
+    '07_iptables_firewalld': /linux/booboo_easy_service/07_iptables_firewalld.html
   docker:
     install_docker: /linux/docker/install_docker.html
     install_zipkin: /linux/docker/zipkin.html

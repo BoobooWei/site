@@ -103,6 +103,15 @@ sidebar:
     '11-Linux内核': Linux内核
     '12-SELINUX': SELINUX
     '13-进程管理': 进程管理
+    linux_easy_service: Linux简易服务
+    '00_linux_classroom_env': 课程环境
+    '01_dns': DNS
+    '02_ftp': FTP
+    '03_nfs': NFS
+    '04_samba': SAMBA
+    '05_apache': APACHE
+    '06_ntp_chrony': 时间同步服务
+    '07_iptables_firewalld': 防火墙
 
   mysql:
     getting_started: 开始使用
