@@ -11,10 +11,7 @@ title: 安装 Docker
 Docker 的早期版本称为 `docker` 或 `docker-engine`。如果安装了这些版本，请卸载它们及关联的依赖资源。
 
 ```
-$ sudo yum remove docker \                  
-docker-common \                  
-docker-selinux \                  
-docker-engine
+$ sudo yum remove docker docker-common docker-selinux docker-engine
 
 ```
 
@@ -38,23 +35,31 @@ docker-engine
 1. 安装所需的软件包。`yum-utils` 提供了 `yum-config-manager` 实用程序，并且 `devicemapper` 存储驱动需要`device-mapper-persistent-data` 和 `lvm2`。
 
   ```bash
-  $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2`
+  $ sudo yum install -y yum-utils device-mapper-persistent-data lvm2
   ```
-  
+
 2. 使用下列命令设置 stable 镜像仓库。您始终需要使用 stable 镜像仓库，即使您还需要通过 edge 或 testing 镜像仓库安装构建也是如此。
 
    ```
-   $ sudo yum-config-manager \     --add-repo \     https://download.docker.com/linux/centos/docker-ce.repo
+   $ sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
    ```
-   
+
 3. 可选：启用 edge 和 testing 镜像仓库。这些镜像仓库包含在上述 `docker.repo` 文件中，但默认情况下处于禁用状态。您可以将它们与 stable 镜像仓库一起启用。
 
    > 注：从 Docker 17.06 开始，还会将 stable 版本推送到 edge 和 testing 镜像仓库。
 
    [了解 stable 和 edge 构建](http://docs.docker-cn.com/engine/installation/)。
 
+   ```bash
+   $ sudo yum-config-manager --enable docker-ce-edge  
+   $ sudo yum-config-manager --enable docker-ce-testing
    ```
-   $ sudo yum-config-manager --enable docker-ce-edge  $ sudo yum-config-manager --enable docker-ce-testing 您可以通过运行带有 --disable 标志的 yum-config-manager 命令来禁用 edge 或 testing 镜像仓库。如需将其重新启用，请使用 --enable 标志。以下命令用于禁用 edge 镜像仓库。 $ sudo yum-config-manager --disable docker-ce-edge
+
+   您可以通过运行带有 `--disable` 标志的 `yum-config-manager` 命令来禁用 `edge` 或 `testing` 镜像仓库。如需将其重新启用，请使用 `--enable` 标志。
+   以下命令用于禁用 edge 镜像仓库。
+
+   ```bash
+   $ sudo yum-config-manager --disable docker-ce-edge
    ```
 
    
@@ -77,7 +82,7 @@ docker-engine
 
    > 警告：如果您启用了多个 Docker 镜像仓库，进行安装 或者更新而不在 `yum install` 或 `yum update` 命令中指定版本将始终安装可用的最高版本， 这可能无法满足您的稳定性需求。
 
-   
+
 
 3. 在生产系统中，您应该安装特定版本的 Docker CE，而不是始终使用最新版本。列出可用版本。此示例使用 `sort -r` 命令按版本号（从最高到最低）对结果进行排序，并且已被截断。
 
@@ -88,7 +93,7 @@ docker-engine
    docker-ce.x86_64  17.06.0.el7                               docker-ce-stable   
    ```
 
-   此列表的内容取决于启用了哪些镜像仓库，并且将特定于您的 CentOS 版本（在本示例中，由版本中的 .el7 后缀表示）。选择一个特定版本进行安装。第二列为版本字符串。第三列为镜像仓库名称，它表示软件包来自哪个镜像仓库并按扩展其稳定性级别列出。如需安装特定版本，请将版本字符串附加到软件包名称，并使用连字符 (-) 分隔它们： 
+   此列表的内容取决于启用了哪些镜像仓库，并且将特定于您的 CentOS 版本（在本示例中，由版本中的 .el7 后缀表示）。选择一个特定版本进行安装。第二列为版本字符串。第三列为镜像仓库名称，它表示软件包来自哪个镜像仓库并按扩展其稳定性级别列出。如需安装特定版本，请将版本字符串附加到软件包名称，并使用连字符 (-) 分隔它们：
 
    ```bash
     $ sudo yum install docker-ce-<VERSION>
@@ -136,13 +141,13 @@ Docker CE 已安装并且正在运行。您需要使用 `sudo` 运行 Docker 命
    ```
    $ sudo systemctl start docker
    ```
-   
+
 4. 验证是否正确安装了 `docker`，方法是运行 `hello-world` 镜像。
 
    ```
    $ sudo docker run hello-world
    ```
-   
+
    此命令将下载一个测试镜像并在容器中运行它。容器运行时，它将输出一条参考消息并退出。
 
 Docker CE 已安装并且正在运行。您需要使用 `sudo` 运行 Docker 命令。继续执行 [Linux 的安装后步骤](http://docs.docker-cn.com/engine/installation/linux/docker-ce/linux-postinstall/)以允许非特权用户运行 Docker 命令，以及了解其他可选配置步骤。
@@ -226,13 +231,13 @@ docker-ce.x86_64            17.03.0.ce-1.el7.centos             docker-ce-stable
 Available Packages
 
 
-# http://mirrors.aliyun.com/repo/ 
+# http://mirrors.aliyun.com/repo/
 # 下载epel包 pigz
 [root@mastera yum.repos.d]# wget http://mirrors.aliyun.com/repo/epel-7.repo
 
 # http://mirror.centos.org/centos/7/extras/x86_64/
 # 下载extras包，container-selinux
-[root@mastera yum.repos.d]# cat extras.repo 
+[root@mastera yum.repos.d]# cat extras.repo
 [extras]
 name=extras
 baseurl=http://mirror.centos.org/centos/7/extras/x86_64/
@@ -260,4 +265,3 @@ enabled=1
 gpgcheck=0
 
 ```
-
