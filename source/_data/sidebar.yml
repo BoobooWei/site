@@ -77,14 +77,14 @@ linux:
     '06_ntp_chrony': /linux/booboo_easy_service/06_ntp_chrony.html
     '07_iptables_firewalld': /linux/booboo_easy_service/07_iptables_firewalld.html
   bash_shell_scripts:
-    'overview': /linux/bash_shell_scripts/index.html
-    '00_shell_variables': /linux/bash_shell_scripts/00_shell_variables.html
-    '01_shell_flow_control_statement': /linux/bash_shell_scripts/01_shell_flow_control_statement.html
-    '02_shell_regular_expression': /linux/bash_shell_scripts/02_shell_regular_expression.html
-    '03_shell_sed_awk': /linux/bash_shell_scripts/03_shell_sed_awk.html
-    '04_shell_brackets': /linux/bash_shell_scripts/04_shell_brackets.html
-    'shell上机': /linux/bash_shell_scripts/shell上机.html
-    'shell笔试': /linux/bash_shell_scripts/shell笔试.html
+    'overview': /linux/booboo_bash_shell_scripts/index.html
+    '00_shell_variables': /linux/booboo_bash_shell_scripts/00_shell_variables.html
+    '01_shell_flow_control_statement': /linux/booboo_bash_shell_scripts/01_shell_flow_control_statement.html
+    '02_shell_regular_expression': /linux/booboo_bash_shell_scripts/02_shell_regular_expression.html
+    '03_shell_sed_awk': /linux/booboo_bash_shell_scripts/03_shell_sed_awk.html
+    '04_shell_brackets': /linux/booboo_bash_shell_scripts/04_shell_brackets.html
+    'shell上机': /linux/booboo_bash_shell_scripts/shell上机.html
+    'shell笔试': /linux/booboo_bash_shell_scripts/shell笔试.html
   docker:
     install_docker: /linux/docker/install_docker.html
     install_zipkin: /linux/docker/zipkin.html
