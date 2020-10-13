@@ -88,6 +88,21 @@ sidebar:
     systemd: systemd
     lamp: LAMP
     phpems:  考试系统PHPEMS
+    linux_base: Linux 基础
+    '00-linux_history': Linux历史
+    '01-Linux基础命令': 基础命令
+    '02-Linux用户和组': 用户和组
+    '03-Linux文件和目录': 文件和目录
+    '04-Linux压缩打包': 压缩打包
+    '05-Linux软件安装': 软件安装
+    '06-Vim': Vim
+    '07-Bash简介': Bash简介
+    '08-日志和计划任务': 日志和计划任务
+    '09-Linux文件系统和磁盘管理': 文件系统
+    '10-Linux开机启动流程': 开机启动流程
+    '11-Linux内核': Linux内核
+    '12-SELINUX': SELINUX
+    '13-进程管理': 进程管理
 
   mysql:
     getting_started: 开始使用

@@ -50,6 +50,22 @@ api:
 linux:
   getting_started:
     overview: index.html
+  linux_base:
+    'overview': /linux/booboo_linux_base/index.html
+    '00-linux_history': /linux/booboo_linux_base/00-linux_history.html
+    '01-Linux基础命令': /linux/booboo_linux_base/01-Linux基础命令.html
+    '02-Linux用户和组': /linux/booboo_linux_base/02-Linux用户和组.html
+    '03-Linux文件和目录': /linux/booboo_linux_base/03-Linux文件和目录.html
+    '04-Linux压缩打包': /linux/booboo_linux_base/04-Linux压缩打包.html
+    '05-Linux软件安装': /linux/booboo_linux_base/05-Linux软件安装.html
+    '06-Vim': /linux/booboo_linux_base/06-Vim.html
+    '07-Bash简介': /linux/booboo_linux_base/07-Bash简介.html
+    '08-日志和计划任务': /linux/booboo_linux_base/08-日志和计划任务.html
+    '09-Linux文件系统和磁盘管理': /linux/booboo_linux_base/09-Linux文件系统和磁盘管理.html
+    '10-Linux开机启动流程': /linux/booboo_linux_base/10-Linux开机启动流程.html
+    '11-Linux内核': /linux/booboo_linux_base/11-Linux内核.html
+    '12-SELINUX': /linux/booboo_linux_base/12-SELINUX.html
+    '13-进程管理': /linux/booboo_linux_base/13-进程管理.html
   docker:
     install_docker: /linux/docker/install_docker.html
     install_zipkin: /linux/docker/zipkin.html
