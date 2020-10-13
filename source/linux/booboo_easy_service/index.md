@@ -1,5 +1,5 @@
 ---
-title: Linux简易服务
+title: Linux 简易服务
 ---
 
-Linux网络服务安装、配置、管理、安全审计及调优
+该课程是2015年准备的Linux简易服务讲义。包含了 DNS、FTP、NFS、Samba、Apache、NTP、Chrony、iptables、Firewalld等。

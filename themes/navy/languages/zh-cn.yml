@@ -112,6 +112,14 @@ sidebar:
     '05_apache': APACHE
     '06_ntp_chrony': 时间同步服务
     '07_iptables_firewalld': 防火墙
+    bash_shell_scripts: Shell Scripts
+    '00_shell_variables': 变量简介
+    '01_shell_flow_control_statement': 流程控制
+    '02_shell_regular_expression': 正则表达式
+    '03_shell_sed_awk': Sed_AWK
+    '04_shell_brackets': 各种括号的作用
+    'shell上机': 上机考试
+    'shell笔试': 笔试题目
 
   mysql:
     getting_started: 开始使用
