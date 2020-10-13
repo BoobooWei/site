@@ -62,7 +62,7 @@ $ sudo yum remove docker docker-common docker-selinux docker-engine
    $ sudo yum-config-manager --disable docker-ce-edge
    ```
 
-   
+
 
 #### 安装 DOCKER CE
 
@@ -77,7 +77,7 @@ $ sudo yum remove docker docker-common docker-selinux docker-engine
 2. 安装最新版本的 Docker CE，或者转至下一步以安装特定版本。
 
    ```
-   $ sudo yum install docker-ce
+   $ sudo yum install -y docker-ce
    ```
 
    > 警告：如果您启用了多个 Docker 镜像仓库，进行安装 或者更新而不在 `yum install` 或 `yum update` 命令中指定版本将始终安装可用的最高版本， 这可能无法满足您的稳定性需求。
@@ -112,6 +112,21 @@ $ sudo yum remove docker docker-common docker-selinux docker-engine
    ```
 
    此命令将下载一个测试镜像并在容器中运行它。容器运行时，它将输出一条参考消息并退出。
+
+   ```bash
+   [root@booboo ~]# docker ps --all
+   CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+   9b2faa86cbcd        hello-world         "/hello"            13 minutes ago      Exited (0) 13 minutes ago                       trusting_chatelet
+   [root@booboo ~]# docker stop 9b2faa86cbcd
+   9b2faa86cbcd
+   [root@booboo ~]# docker ps --all
+   CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
+   9b2faa86cbcd        hello-world         "/hello"            14 minutes ago      Exited (0) 14 minutes ago                       trusting_chatelet
+   [root@booboo ~]# docker rm  9b2faa86cbcd
+   9b2faa86cbcd
+   [root@booboo ~]# docker ps --all
+   CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+   ```
 
 
 Docker CE 已安装并且正在运行。您需要使用 `sudo` 运行 Docker 命令。继续执行 [Linux 安装后步骤](http://docs.docker-cn.com/engine/installation/linux/docker-ce/linux-postinstall/)以允许非特权用户运行 Docker 命令，以及了解其他可选配置步骤。
