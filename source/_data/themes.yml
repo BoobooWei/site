@@ -14,15 +14,15 @@
     - oracle
 - name: Redis
   description: Redis 核心技术笔记
-  link: /nosql/redis/
-  preview: /nosql/redis/
+  link: /nosql/
+  preview: /nosql/
   tags:
     - NoSQL
     - redis
 - name: MongoDB
   description: MongoDB 核心技术笔记
-  link: /nosql/mongodb/
-  preview: /nosql/mongodb/
+  link: /nosql/
+  preview: /nosql/
   tags:
     - NoSQL
     - mongodb

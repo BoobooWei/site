@@ -392,3 +392,14 @@ sidebar:
     '04-Redis集群': 'Redis 集群'
     '05-Redis排错指南': 'Redis 排错指南'
     # redis 进阶
+    # mongodb 基础
+    mongodb_base: MongoDB 基础
+    '00-mongodb课程': 'MongoDB课程'
+    '01-MongoDB简介': 'MongoDB 简介'
+    '02-MongoDB单实例安装': 'MongoDB 单实例安装'
+    '03-MongoDB认证权限管理': 'MongoDB 认证权限管理'
+    '04-MongoDBLanguage': 'MongoDB 语言'
+    '05-MongoDB备份恢复': 'ongoDB 备份恢复'
+    '06-MongoDB复制': 'MongoDB 复制'
+    '07-MongoDB副本集': 'MongoDB 副本集'
+    '10-MongoDB配置文件详解': 'MongoDB配置文件详解'

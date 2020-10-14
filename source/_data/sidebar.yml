@@ -378,5 +378,17 @@ nosql:
     '03-Redis主从': /nosql/redis/booboo_redis/03-Redis主从.html
     '04-Redis集群': /nosql/redis/booboo_redis/04-Redis集群.html
     '05-Redis排错指南': /nosql/redis/booboo_redis/05-Redis排错指南.html
+  mongodb_base:
+    'overview': /nosql/mongodb/booboo_mongodb/index.html
+    '00-mongodb课程': /nosql/mongodb/booboo_mongodb/00-mongodb课程.html
+    '01-MongoDB简介': /nosql/mongodb/booboo_mongodb/01-MongoDB简介.html
+    '02-MongoDB单实例安装': /nosql/mongodb/booboo_mongodb/02-MongoDB单实例安装.html
+    '03-MongoDB认证权限管理': /nosql/mongodb/booboo_mongodb/03-MongoDB认证权限管理.html
+    '04-MongoDBLanguage': /nosql/mongodb/booboo_mongodb/04-MongoDBLanguage.html
+    '05-MongoDB备份恢复': /nosql/mongodb/booboo_mongodb/05-MongoDB备份恢复.html
+    '06-MongoDB复制': /nosql/mongodb/booboo_mongodb/06-MongoDB复制.html
+    '07-MongoDB副本集': /nosql/mongodb/booboo_mongodb/07-MongoDB副本集.html
+    '10-MongoDB配置文件详解': /nosql/mongodb/booboo_mongodb/10-MongoDB配置文件详解.html
+
 
 
