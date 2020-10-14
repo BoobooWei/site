@@ -2,8 +2,6 @@
 title: Nginx
 ---
 
-![img](https://confluence.jiagouyun.com/plugins/servlet/confluence/placeholder/macro?definition=e3RvY30&locale=en_GB&version=2)
-
 # 概述
 
 Nginx 是俄罗斯人编写的十分轻量级的HTTP 服务器,Nginx，它的发音为“engine X”， 是一个高性能的HTTP 和反向代理服务器，同时也是一个IMAP/POP3/SMTP 代理服务器。
