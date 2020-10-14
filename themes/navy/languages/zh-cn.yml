@@ -380,3 +380,15 @@ sidebar:
     report-report-html: 表格Dmo
     # python
     python: Python
+
+  nosql:
+    getting_started: 开始使用
+    overview: 概览
+    # redis 基础
+    redis_base: Redis 基础
+    '01-Redis入门': 'Redis 入门'
+    '02-Redis持久化': 'Redis 持久化'
+    '03-Redis主从': 'Redis 主从'
+    '04-Redis集群': 'Redis 集群'
+    '05-Redis排错指南': 'Redis 排错指南'
+    # redis 进阶
