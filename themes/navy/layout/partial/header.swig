@@ -21,6 +21,7 @@
         {% endfor %}
       </select>
     </div>
+
     <a id="mobile-nav-toggle">
       <span class="mobile-nav-toggle-bar"></span>
       <span class="mobile-nav-toggle-bar"></span>

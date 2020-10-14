@@ -1,15 +1,15 @@
 #docs: /docs/
 MySQL8.0: /api/
+mse: /mse/
 linux: /linux/
 mysql: /mysql/
 oracle: /oracle/
-python: /python/
+devops: /devops/
 git: /git/
-tick: /tick/
-mse: /mse/
-aliyun: /aliyun/
+cloud: /cloud/
 #plugins: /plugins/
-#themes: /themes/
+themes: /themes/
 news: /news/
 #about: /about/
+#tick: /tick/
 

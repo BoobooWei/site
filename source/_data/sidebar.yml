@@ -230,11 +230,6 @@ oracle:
 
 
 
-
-python:
-  getting_started:
-    overview: /python/index.html
-
 git:
   getting_started:
     overview: /git/index.html
@@ -295,9 +290,9 @@ tick:
 mse:
   getting_started:
     overview: /mse/index.html
-  higher_mathematics:
-    overview: /mse/higher_mathematics/index.html
-    function_limit_and_continuity: /mse/higher_mathematics/function_limit_and_continuity.html
+  calculus:
+    overview: /mse/calculus/index.html
+    function_limit_and_continuity: /mse/calculus/function_limit_and_continuity.html
   computer:
     overview: /mse/computer/index.html
     computer_performance_evaluation: /mse/computer/computer_performance_evaluation.html
@@ -329,25 +324,27 @@ mse:
     E-00-current_affairs: /mse/politic/E-00-current_affairs.md
 
 
-aliyun:
+cloud:
   getting_started:
-    overview: /aliyun/index.html
-#    bigdata: /aliyun/bigdata/index.html
+    overview: /cloud/index.html
+  aliyun:
+    overview: /cloud/aliyun/index.html
+#    bigdata: /cloud/aliyun/bigdata/index.html
   Darabonba:
-    '01-intall-dara': /aliyun/dara/01-install-dara.html
-    '02-rds-demo': /aliyun/dara/02-rds-demo.html
+    '01-intall-dara': /cloud/aliyun/dara/01-install-dara.html
+    '02-rds-demo': /cloud/aliyun/dara/02-rds-demo.html
   QBI:
-    overview: /aliyun/bigdata/qbi/index.html
-    a00_introduce: /aliyun/bigdata/qbi/a00_introduce.html
-    a01_qbi_product: /aliyun/bigdata/qbi/a01_qbi_product.html
-    a02_quickstart: /aliyun/bigdata/qbi/a02_quickstart.html
-    a03_quickdashboard: /aliyun/bigdata/qbi/a03_quickdashboard.html
+    overview: /cloud/aliyun/bigdata/qbi/index.html
+    a00_introduce: /cloud/aliyun/bigdata/qbi/a00_introduce.html
+    a01_qbi_product: /cloud/aliyun/bigdata/qbi/a01_qbi_product.html
+    a02_quickstart: /cloud/aliyun/bigdata/qbi/a02_quickstart.html
+    a03_quickdashboard: /cloud/aliyun/bigdata/qbi/a03_quickdashboard.html
   RDS:
-    rds_introduce: /aliyun/rds/rds_introduce.html
-    rds_lab_01: /aliyun/rds/rds_lab_01.html
+    rds_introduce: /cloud/aliyun/rds/rds_introduce.html
+    rds_lab_01: /cloud/aliyun/rds/rds_lab_01.html
   CMS:
-    overview: /aliyun/cms/index.html
-    custom_event: /aliyun/cms/custom_event.html
+    overview: /cloud/aliyun/cms/index.html
+    custom_event: /cloud/aliyun/cms/custom_event.html
 
 amy:
   getting_started:
@@ -367,4 +364,6 @@ devops:
   getting_started:
     overview: /devops/index.html
   bootstrap:
-    report-report-html: /devops/report/report-html.html
+    report-report-html: /devops/bootstrap/report-html.html
+  python:
+    overview: /devops/python/index.html
