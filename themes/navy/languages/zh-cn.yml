@@ -355,17 +355,25 @@ sidebar:
     getting_started: 开始使用
     overview: 概览
 #    bigdata: 大数据概览
+    # Darabonba
     Darabonba: Darabonba
     '01-intall-dara': 安装 Darabonba
     '02-rds-demo': RDS Demo
+    # DATAV
+    datav: DataV
+    01_基础平面地图: 基础平面地图
+    02_员工路线: 员工路线实战
+    # QBI
     QBI: Quick BI
     a00_introduce: 课程简介
     a01_qbi_product: QBI产品
     a02_quickstart: QBI入门
     a03_quickdashboard: QBI可视化
+    # RDS
     RDS: RDS
     rds_introduce: RDS配置
     rds_lab_01: RDS实验-CPU问题
+    # CMS
     CMS: CMS
     custom_event: 事件告警
 
@@ -423,3 +431,15 @@ sidebar:
     '06-MongoDB复制': 'MongoDB 复制'
     '07-MongoDB副本集': 'MongoDB 副本集'
     '10-MongoDB配置文件详解': 'MongoDB配置文件详解'
+
+  hadoop:
+    getting_started: 开始使用
+    overview: 概览
+    # Hadoop基础
+    Hadoop基础: Hadoop 基础
+    '01-Hadoop的起源与体系介绍': Hadoop的起源与体系
+    '02-Hadoop-pagerank': Python实现pagerank算法
+    'hadoopInstall': 安装 Hadoop
+    'hbaseInstall': 安装 Hbase
+    'hiveInstall': 安装 Hive
+    'hivesql': Hive SQL

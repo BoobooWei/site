@@ -152,3 +152,11 @@
   preview: /hadoop/
   tags:
     - 大数据
+- name: DataV
+  description: DataV 笔记
+  link: /cloud/aliyun/bigdata/datav/
+  preview: /cloud/aliyun/bigdata/datav/
+  tags:
+    - 大数据
+    - 阿里云
+

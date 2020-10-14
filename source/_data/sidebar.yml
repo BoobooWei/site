@@ -342,6 +342,10 @@ cloud:
   Darabonba:
     '01-intall-dara': /cloud/aliyun/dara/01-install-dara.html
     '02-rds-demo': /cloud/aliyun/dara/02-rds-demo.html
+  datav:
+    overview: /cloud/aliyun/bigdata/datav/index.html
+    01_基础平面地图: /cloud/aliyun/bigdata/datav/01_基础平面地图.html
+    02_员工路线: /cloud/aliyun/bigdata/datav/02_员工路线.html
   QBI:
     overview: /cloud/aliyun/bigdata/qbi/index.html
     a00_introduce: /cloud/aliyun/bigdata/qbi/a00_introduce.html
@@ -410,6 +414,17 @@ nosql:
     '06-MongoDB复制': /nosql/mongodb/booboo_mongodb/06-MongoDB复制.html
     '07-MongoDB副本集': /nosql/mongodb/booboo_mongodb/07-MongoDB副本集.html
     '10-MongoDB配置文件详解': /nosql/mongodb/booboo_mongodb/10-MongoDB配置文件详解.html
+
+hadoop:
+  getting_started:
+    overview: /hadoop/index.html
+  Hadoop基础:
+    '01-Hadoop的起源与体系介绍': /hadoop/01-Hadoop理论/01-Hadoop的起源与体系介绍.html
+    '02-Hadoop-pagerank': /hadoop/01-Hadoop理论/02-Hadoop-pagerank.html
+    'hadoopInstall': /hadoop/02_operation/hadoopInstall.html
+    'hbaseInstall': /hadoop/02_operation/hbaseInstall.html
+    'hiveInstall': /hadoop/02_operation/hiveInstall.html
+    'hivesql': /hadoop/02_operation/hivesql.html
 
 
 
