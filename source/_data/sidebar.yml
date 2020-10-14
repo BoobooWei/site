@@ -1,6 +1,6 @@
 api:
   additions:
-    overview: index.html
+    overview: /api/index.html
     'additional target types for casts': additional-target-types-for-casts.html
     'aliases in single table delete statements': aliases-in-single-table-delete-statements.html
     'atomic ddl': atomic-ddl.html
@@ -49,7 +49,7 @@ api:
 
 linux:
   getting_started:
-    overview: index.html
+    overview: /linux/index.html
   linux_base:
     'overview': /linux/booboo_linux_base/index.html
     '00-linux_history': /linux/booboo_linux_base/00-linux_history.html
@@ -101,7 +101,21 @@ linux:
 
 mysql:
   getting_started:
-    overview: index.html
+    overview: /mysql/index.html
+  mysql_base:
+    'overview': /mysql/booboo_mysql/README.html
+    '00-MySQL管理课程简介': /mysql/booboo_mysql/00-MySQL管理课程简介.html
+    '01-MySQL和MariaDB数据库介绍': /mysql/booboo_mysql/01-MySQL和MariaDB数据库介绍.html
+    '02-结构化查询语言SQL介绍和基本操作': /mysql/booboo_mysql/02-结构化查询语言SQL介绍和基本操作.html
+    '02-结构化查询语言SQL介绍和基本操作2': /mysql/booboo_mysql/02-结构化查询语言SQL介绍和基本操作2.html
+    '03-MySQL备份与恢复': /mysql/booboo_mysql/03-MySQL备份与恢复.html
+    '03-MySQL逻辑架构和Innodb存储引擎': /mysql/booboo_mysql/03-MySQL逻辑架构和Innodb存储引擎.html
+    '04-MySQL复制replication': /mysql/booboo_mysql/04-MySQL复制replication.html
+    '05-MySQL高可用HA': /mysql/booboo_mysql/05-MySQL高可用HA.html
+    '06-MySQL压力测试工具sysbench': /mysql/booboo_mysql/06-MySQL压力测试工具sysbench.html
+    '07-MySQL5.6一主多从半同步复制': /mysql/booboo_mysql/07-MySQL5.6一主多从半同步复制.html
+    '08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper': /mysql/booboo_mysql/08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper.html
+    '09-SQL考试': /mysql/booboo_mysql/09-SQL考试.html
   security:
     overview: /mysql/security/index.html
     cis_mysql: /mysql/security/cis_mysql.html
@@ -219,7 +233,7 @@ oracle:
 
 python:
   getting_started:
-    overview: index.html
+    overview: /python/index.html
 
 git:
   getting_started:

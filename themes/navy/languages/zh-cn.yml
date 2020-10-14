@@ -79,15 +79,7 @@ sidebar:
   linux:
     getting_started: 开始使用
     overview: 概览
-    docker: Docker
-    install_docker: 安装Docker
-    install_zipkin: 安装Zipkin
-    excellent_tools: Ex-Tools
-    supervisor: supervisor
-    prometheus: prometheus
-    systemd: systemd
-    lamp: LAMP
-    phpems:  考试系统PHPEMS
+    # Linux 基础
     linux_base: Linux 基础
     '00-linux_history': Linux历史
     '01-Linux基础命令': 基础命令
@@ -103,7 +95,8 @@ sidebar:
     '11-Linux内核': Linux内核
     '12-SELINUX': SELINUX
     '13-进程管理': 进程管理
-    linux_easy_service: Linux简易服务
+    # Linux 简易服务
+    linux_easy_service: Linux 简易服务
     '00_linux_classroom_env': 课程环境
     '01_dns': DNS
     '02_ftp': FTP
@@ -120,12 +113,40 @@ sidebar:
     '04_shell_brackets': 各种括号的作用
     'shell上机': 上机考试
     'shell笔试': 笔试题目
+    # Docker
+    docker: Docker
+    install_docker: 安装Docker
+    install_zipkin: 安装Zipkin
+    # 工具
+    excellent_tools: Ex-Tools
+    supervisor: supervisor
+    prometheus: prometheus
+    systemd: systemd
+    # 网站
+    lamp: LAMP
+    phpems:  考试系统PHPEMS
 
   mysql:
     getting_started: 开始使用
     overview: 概览
+    # MySQL 基础
+    mysql_base: MySQL 基础
+    '00-MySQL管理课程简介': '课程简介'
+    '01-MySQL和MariaDB数据库介绍': 'MySQL简介'
+    '02-结构化查询语言SQL介绍和基本操作': 'SQL基础上'
+    '02-结构化查询语言SQL介绍和基本操作2': 'SQL基础下'
+    '03-MySQL备份与恢复': '备份与恢复'
+    '03-MySQL逻辑架构和Innodb存储引擎': '存储引擎'
+    '04-MySQL复制replication': '主从复制'
+    '05-MySQL高可用HA': '高可用HA'
+    '06-MySQL压力测试工具sysbench': '压力测试'
+    '07-MySQL5.6一主多从半同步复制': '半同步复制'
+    '08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper': '逻辑备份工具对比'
+    '09-SQL考试': 'MySQL考试'
+    # MySQL 安全
     security: 安全篇
     cis_mysql: MySQL安全基线
+    # MySQL 工具
     awesome-tools: 工具篇
     pt-archiver: pt-archiver
 
