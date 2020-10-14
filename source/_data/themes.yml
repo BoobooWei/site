@@ -1,14 +1,42 @@
-- name: MySQL
-  description: MySQL 核心技术笔记
-  link: /mysql/
-  preview: /mysql/
+- name: MySQL 基础管理
+  description: MySQL 基础管理
+  link: /mysql/booboo_mysql/
+  preview: /mysql/booboo_mysql/
   tags:
     - 关系型数据库
     - MySQL
-- name: Oracle
-  description: Oracle 核心技术笔记
-  link: /oracle/
-  preview: /oracle/
+- name: MySQL 安全篇
+  description: MySQL 安全篇
+  link: /mysql/security/
+  preview: /mysql/security/
+  tags:
+    - 关系型数据库
+    - MySQL
+- name: MySQL 工具篇
+  description: MySQL生产中使用的优秀工具
+  link: /mysql/awesome-tools/
+  preview: /mysql/awesome-tools/
+  tags:
+    - 关系型数据库
+    - MySQL
+- name: Oracle 11g
+  description: Oracle 11g 核心技术笔记
+  link: /oracle/oracle-11g/
+  preview: /oracle/oracle-11g/
+  tags:
+    - 关系型数据库
+    - oracle
+- name: Oracle 12c
+  description: Oracle 12c 核心技术笔记
+  link: /oracle/oracle-12c/
+  preview: /oracle/oracle-12c/
+  tags:
+    - 关系型数据库
+    - oracle
+- name: Oracle12C OCP
+  description: Oracle12C OCP 考试
+  link: /oracle/ocp/
+  preview: /oracle/ocp/
   tags:
     - 关系型数据库
     - oracle
@@ -159,4 +187,28 @@
   tags:
     - 大数据
     - 阿里云
+- name: Linux 基础
+  description: Linux 基础
+  link: /linux/booboo_linux_base/
+  preview: /linux/booboo_linux_base/
+  tags:
+    - Linux
+- name: Linux 简易服务
+  description: Linux 简易服务
+  link: /linux/booboo_easy_service/
+  preview: /linux/booboo_easy_service/
+  tags:
+    - Linux
+- name: Bash Shell 脚本编程
+  description: Bash Shell 脚本编程
+  link: /linux/booboo_easy_service/
+  preview: /linux/booboo_easy_service/
+  tags:
+    - Linux
+- name: Linux 服务
+  description: Linux 服务
+  link: /linux/booboo_middle_service/
+  preview: /linux/booboo_middle_service/
+  tags:
+    - Linux
 
