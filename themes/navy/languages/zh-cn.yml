@@ -389,6 +389,17 @@ sidebar:
     report-report-html: 表格Dmo
     # python
     python: Python
+    # python_base
+    python_base: Python 基础
+    '01-python': 'Python 简介'
+    '02-python': 'Python 数据类型'
+    '03-python': 'Python 语句和语法'
+    '04-python': 'Python 模块'
+    '05-python': 'Python 面向对象编程'
+    '06-python': 'Python 配置 Apache'
+    '07-python': 'Python 操作 MySQL'
+    '08-checkio': 'Python 练习'
+    '09-python考核': 'Python 考核'
 
   nosql:
     getting_started: 开始使用

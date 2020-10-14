@@ -146,3 +146,9 @@
   preview: /tick/
   tags:
     - TICK
+- name: Hadoop
+  description: Hadoop 笔记
+  link: /hadoop/
+  preview: /hadoop/
+  tags:
+    - 大数据

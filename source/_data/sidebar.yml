@@ -376,6 +376,18 @@ devops:
     report-report-html: /devops/bootstrap/report-html.html
   python:
     overview: /devops/python/index.html
+  python_base:
+    'overview': /devops/python/booboo_python/index.html
+    '01-python': /devops/python/booboo_python/01-python.html
+    '02-python': /devops/python/booboo_python/02-python.html
+    '03-python': /devops/python/booboo_python/03-python.html
+    '04-python': /devops/python/booboo_python/04-python.html
+    '05-python': /devops/python/booboo_python/05-python.html
+    '06-python': /devops/python/booboo_python/06-python.html
+    '07-python': /devops/python/booboo_python/07-python.html
+    '08-checkio': /devops/python/booboo_python/08-checkio.html
+    '09-python考核': /devops/python/booboo_python/09-python考核.html
+
 
 nosql:
   getting_started:
