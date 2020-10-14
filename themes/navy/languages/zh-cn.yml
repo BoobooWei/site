@@ -81,7 +81,7 @@ sidebar:
     getting_started: 开始使用
     overview: 概览
     # Linux 基础
-    linux_base: Linux 基础
+    booboo_linux_base: Linux 基础
     '00-linux_history': Linux历史
     '01-Linux基础命令': 基础命令
     '02-Linux用户和组': 用户和组
@@ -97,7 +97,7 @@ sidebar:
     '12-SELINUX': SELINUX
     '13-进程管理': 进程管理
     # Linux 简易服务
-    linux_easy_service: Linux 简易服务
+    booboo_easy_service: Linux 简易服务
     '00_linux_classroom_env': 课程环境
     '01_dns': DNS
     '02_ftp': FTP
@@ -106,7 +106,7 @@ sidebar:
     '05_apache': APACHE
     '06_ntp_chrony': 时间同步服务
     '07_iptables_firewalld': 防火墙
-    bash_shell_scripts: Shell Scripts
+    booboo_bash_shell_scripts: Shell Scripts
     '00_shell_variables': 变量简介
     '01_shell_flow_control_statement': 流程控制
     '02_shell_regular_expression': 正则表达式
@@ -115,7 +115,7 @@ sidebar:
     'shell上机': 上机考试
     'shell笔试': 笔试题目
     # Linux 中级服务
-    linux_middle_service: Linux 中级服务
+    booboo_middle_service: Linux 中级服务
     '01-pxe': PXE
     '02-nginx': Nginx
     '03-tomcat': Tomcat

@@ -50,7 +50,7 @@ api:
 linux:
   getting_started:
     overview: /linux/index.html
-  linux_base:
+  booboo_linux_base:
     'overview': /linux/booboo_linux_base/index.html
     '00-linux_history': /linux/booboo_linux_base/00-linux_history.html
     '01-Linux基础命令': /linux/booboo_linux_base/01-Linux基础命令.html
@@ -66,7 +66,7 @@ linux:
     '11-Linux内核': /linux/booboo_linux_base/11-Linux内核.html
     '12-SELINUX': /linux/booboo_linux_base/12-SELINUX.html
     '13-进程管理': /linux/booboo_linux_base/13-进程管理.html
-  linux_easy_service:
+  booboo_easy_service:
     'overview': /linux/booboo_easy_service/index.html
     '00_linux_classroom_env': /linux/booboo_easy_service/00_linux_classroom_env.html
     '01_dns': /linux/booboo_easy_service/01_dns.html
@@ -76,7 +76,7 @@ linux:
     '05_apache': /linux/booboo_easy_service/05_apache.html
     '06_ntp_chrony': /linux/booboo_easy_service/06_ntp_chrony.html
     '07_iptables_firewalld': /linux/booboo_easy_service/07_iptables_firewalld.html
-  bash_shell_scripts:
+  booboo_bash_shell_scripts:
     'overview': /linux/booboo_bash_shell_scripts/index.html
     '00_shell_variables': /linux/booboo_bash_shell_scripts/00_shell_variables.html
     '01_shell_flow_control_statement': /linux/booboo_bash_shell_scripts/01_shell_flow_control_statement.html
@@ -85,7 +85,7 @@ linux:
     '04_shell_brackets': /linux/booboo_bash_shell_scripts/04_shell_brackets.html
     'shell上机': /linux/booboo_bash_shell_scripts/shell上机.html
     'shell笔试': /linux/booboo_bash_shell_scripts/shell笔试.html
-  linux_middle_service:
+  booboo_middle_service:
     'overview': /linux/booboo_middle_service/index.html
     '01-pxe': /linux/booboo_middle_service/01-pxe.html
     '02-nginx': /linux/booboo_middle_service/02-nginx.html
