@@ -85,6 +85,15 @@ linux:
     '04_shell_brackets': /linux/booboo_bash_shell_scripts/04_shell_brackets.html
     'shell上机': /linux/booboo_bash_shell_scripts/shell上机.html
     'shell笔试': /linux/booboo_bash_shell_scripts/shell笔试.html
+  linux_middle_service:
+    'overview': /linux/booboo_middle_service/index.html
+    '01-pxe': /linux/booboo_middle_service/01-pxe.html
+    '02-nginx': /linux/booboo_middle_service/02-nginx.html
+    '03-tomcat': /linux/booboo_middle_service/03-tomcat.html
+    '04-ldap': /linux/booboo_middle_service/04-ldap.html
+    '05-zabbix': /linux/booboo_middle_service/05-zabbix.html
+    '06-ansible': /linux/booboo_middle_service/06-ansible.html
+    '07-cdn': /linux/booboo_middle_service/07-cdn.html
   docker:
     install_docker: /linux/docker/install_docker.html
     install_zipkin: /linux/docker/zipkin.html

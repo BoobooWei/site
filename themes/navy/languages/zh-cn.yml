@@ -114,6 +114,15 @@ sidebar:
     '04_shell_brackets': 各种括号的作用
     'shell上机': 上机考试
     'shell笔试': 笔试题目
+    # Linux 中级服务
+    linux_middle_service: Linux 中级服务
+    '01-pxe': PXE
+    '02-nginx': Nginx
+    '03-tomcat': Tomcat
+    '04-ldap': LDAP
+    '05-zabbix': Zabbix
+    '06-ansible': Ansible
+    '07-cdn': CDN
     # Docker
     docker: Docker
     install_docker: 安装Docker
