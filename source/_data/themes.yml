@@ -205,8 +205,8 @@
   preview: /linux/booboo_easy_service/
   tags:
     - Linux
-- name: Linux 服务
-  description: Linux 服务
+- name: Linux 中级管理
+  description: Linux 中级管理
   link: /linux/booboo_middle_service/
   preview: /linux/booboo_middle_service/
   tags:
