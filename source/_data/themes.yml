@@ -42,15 +42,15 @@
     - oracle
 - name: Redis 基础
   description: Redis 基础学习笔记
-  link: /nosql/redis/booboo_redis/
-  preview: /nosql/redis/booboo_redis/
+  link: /nosql/booboo_redis/
+  preview: /nosql/booboo_redis/
   tags:
     - NoSQL
     - redis
 - name: MongoDB
   description: MongoDB 核心技术笔记
-  link: /nosql/mongodb/booboo_mongodb/
-  preview: /nosql/mongodb/booboo_mongodb/
+  link: /nosql/booboo_mongodb/
+  preview: /nosql/booboo_mongodb/
   tags:
     - NoSQL
     - mongodb
@@ -122,10 +122,18 @@
     - MSE
 - name: Python 基础课程
   description: Python 基础学习笔记
-  link: /devops/python/booboo_python/
-  preview: /devops/python/booboo_python/
+  link: /devops/booboo_python/
+  preview: /devops/booboo_python/
   tags:
     - Devops
+    - Python
+- name: Python 进阶课程
+  description: Python 进阶学习笔记
+  link: /devops/DBA_python/
+  preview: /devops/DBA_python/
+  tags:
+    - Devops
+    - Python
 - name: BootStrap
   description: BootStrap 笔记
   link: /devops/bootstrap/

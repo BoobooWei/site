@@ -111,7 +111,7 @@ linux:
 mysql:
   getting_started:
     overview: /mysql/index.html
-  mysql_base:
+  booboo_mysql:
     'overview': /mysql/booboo_mysql/README.html
     '00-MySQL管理课程简介': /mysql/booboo_mysql/00-MySQL管理课程简介.html
     '01-MySQL和MariaDB数据库介绍': /mysql/booboo_mysql/01-MySQL和MariaDB数据库介绍.html
@@ -383,32 +383,79 @@ devops:
     overview: /devops/index.html
   bootstrap:
     report-report-html: /devops/bootstrap/report-html.html
-  python:
-    overview: /devops/python/index.html
-  python_base:
-    'overview': /devops/python/booboo_python/index.html
-    '01-python': /devops/python/booboo_python/01-python.html
-    '02-python': /devops/python/booboo_python/02-python.html
-    '03-python': /devops/python/booboo_python/03-python.html
-    '04-python': /devops/python/booboo_python/04-python.html
-    '05-python': /devops/python/booboo_python/05-python.html
-    '06-python': /devops/python/booboo_python/06-python.html
-    '07-python': /devops/python/booboo_python/07-python.html
-    '08-checkio': /devops/python/booboo_python/08-checkio.html
-    '09-python考核': /devops/python/booboo_python/09-python考核.html
-
+  booboo_python:
+    'overview': /devops/booboo_python/index.html
+    '01-python': /devops/booboo_python/01-python.html
+    '02-python': /devops/booboo_python/02-python.html
+    '03-python': /devops/booboo_python/03-python.html
+    '04-python': /devops/booboo_python/04-python.html
+    '05-python': /devops/booboo_python/05-python.html
+    '06-python': /devops/booboo_python/06-python.html
+    '07-python': /devops/booboo_python/07-python.html
+    '08-checkio': /devops/booboo_python/08-checkio.html
+    '09-python考核': /devops/booboo_python/09-python考核.html
+  00_python_base:
+    'overview': /devops/00_python_base/index.html
+    '01_Python的历史和展望': /devops/00_python_base/01_Python的历史和展望.html
+    '02_Python的基本数据类型': /devops/00_python_base/02_Python的基本数据类型.html
+    '03_Python的基本运算': /devops/00_python_base/03_Python的基本运算.html
+    '04_Python的控制和函数': /devops/00_python_base/04_Python的控制和函数.html
+    '05_Python的文件操作': /devops/00_python_base/05_Python的文件操作.html
+    '06_Python迭代器和生成器': /devops/00_python_base/06_Python迭代器和生成器.html
+    '07_Python深浅拷贝': /devops/00_python_base/07_Python深浅拷贝.html
+    '08_Python装饰器': /devops/00_python_base/08_Python装饰器.html
+    '09_Python模块和包': /devops/00_python_base/09_Python模块和包.html
+    '10_Python面向对象设计和类': /devops/00_python_base/10_Python面向对象设计和类.html
+    '11_Python面向对象进阶_内置函数': /devops/00_python_base/11_Python面向对象进阶_内置函数.html
+    '12_Python异常处理': /devops/00_python_base/12_Python异常处理.html
+    '13-Python工作中常用接口': /devops/00_python_base/13-Python工作中常用接口.html
+  01_python_net:
+    'overview': /devops/01_python_net/index.html
+    '01_Python网络开发之客户端服务器架构': /devops/01_python_net/01_Python网络开发之客户端服务器架构.html
+    '02_Python网络开发之OSI七层模型': /devops/01_python_net/02_Python网络开发之OSI七层模型.html
+    '03_Python网络开发之详解socket层': /devops/01_python_net/03_Python网络开发之详解socket层.html
+    '04_Python网络开发之基于TCP的套接字': /devops/01_python_net/04_Python网络开发之基于TCP的套接字.html
+    '05_Python网络开发之基于UDP的套接字': /devops/01_python_net/05_Python网络开发之基于UDP的套接字.html
+    '06_Python网络开发之粘包现象': /devops/01_python_net/06_Python网络开发之粘包现象.html
+    '07_Python网络开发之认证客户端的链接合法性': /devops/01_python_net/07_Python网络开发之认证客户端的链接合法性.html
+    '08_Python网络开发之socketserver实现并发': /devops/01_python_net/08_Python网络开发之socketserver实现并发.html
+  02_python_threads:
+    'overview': /devops/02_python_threads/index.html
+    '01_Python并发编程之背景知识': /devops/02_python_threads/01_Python并发编程之背景知识.html
+    '02_Python并发编程之多进程': /devops/02_python_threads/02_Python并发编程之多进程.html
+    '03_Python并发编程之多线程': /devops/02_python_threads/03_Python并发编程之多线程.html
+    '04_Python并发编程之协程': /devops/02_python_threads/04_Python并发编程之协程.html
+    '05_Python并发编程之IO模型': /devops/02_python_threads/05_Python并发编程之IO模型.html
+    '06_Python并发编程之paramiko模块': /devops/02_python_threads/06_Python并发编程之paramiko模块.html
+  11_flask_admin:
+    'overview': /devops/11_flask_admin/index.html
+    '01_搭建工作记录管理系统的准备工作': /devops/11_flask_admin/01_搭建工作记录管理系统的准备工作.html
+    '02_调整网站色调为蓝色': /devops/11_flask_admin/02_调整网站色调为蓝色.html
+    '03_添加一个静态页面': /devops/11_flask_admin/03_添加一个静态页面.html
+    '04_网站从英文改为中文': /devops/11_flask_admin/04_网站从英文改为中文.html
+    '05_使用MySQL数据库存放数据': /devops/11_flask_admin/05_使用MySQL数据库存放数据.html
+    '06_展示数据库表单': /devops/11_flask_admin/06_展示数据库表单.html
+    '07_新增登陆界面': /devops/11_flask_admin/07_新增登陆界面.html
+    '08_展示数据库指定的列': /devops/11_flask_admin/08_展示数据库指定的列.html
+    '09_开启导出表格功能': /devops/11_flask_admin/09_开启导出表格功能.html
+    '10-使用模板': /devops/11_flask_admin/10-使用模板.html
+    '11-修改Flask_admin前端页面表格一行显示文字不换行': /devops/11_flask_admin/11-修改Flask_admin前端页面表格一行显示文字不换行.html
+    '12-修改Flask_admin前端页面添加表格名称': /devops/11_flask_admin/12-修改Flask_admin前端页面添加表格名称.html
+    '13-修改Flask_admin前端表格通过js计算生成合计行': /devops/11_flask_admin/13-修改Flask_admin前端表格通过js计算生成合计行.html
+  12_mini_project:
+    'overview': /devops/12_mini_project/index.html
 
 nosql:
   getting_started:
     overview: /nosql/index.html
-  redis_base:
+  booboo_redis:
     'overview': /nosql/redis/booboo_redis/index.html
     '01-Redis入门': /nosql/redis/booboo_redis/01-Redis入门.html
     '02-Redis持久化': /nosql/redis/booboo_redis/02-Redis持久化.html
     '03-Redis主从': /nosql/redis/booboo_redis/03-Redis主从.html
     '04-Redis集群': /nosql/redis/booboo_redis/04-Redis集群.html
     '05-Redis排错指南': /nosql/redis/booboo_redis/05-Redis排错指南.html
-  mongodb_base:
+  booboo_mongodb:
     'overview': /nosql/mongodb/booboo_mongodb/index.html
     '00-mongodb课程': /nosql/mongodb/booboo_mongodb/00-mongodb课程.html
     '01-MongoDB简介': /nosql/mongodb/booboo_mongodb/01-MongoDB简介.html

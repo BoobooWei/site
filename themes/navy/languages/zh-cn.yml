@@ -106,6 +106,7 @@ sidebar:
     '05_apache': APACHE
     '06_ntp_chrony': 时间同步服务
     '07_iptables_firewalld': 防火墙
+    # Shell Scripts
     booboo_bash_shell_scripts: Shell Scripts
     '00_shell_variables': 变量简介
     '01_shell_flow_control_statement': 流程控制
@@ -140,7 +141,7 @@ sidebar:
     getting_started: 开始使用
     overview: 概览
     # MySQL 基础
-    mysql_base: MySQL 基础
+    booboo_mysql: MySQL 基础
     '00-MySQL管理课程简介': '课程简介'
     '01-MySQL和MariaDB数据库介绍': 'MySQL简介'
     '02-结构化查询语言SQL介绍和基本操作': 'SQL基础上'
@@ -397,10 +398,8 @@ sidebar:
     # bootstrap
     bootstrap: Bootstrap
     report-report-html: 表格Dmo
-    # python
-    python: Python
     # python_base
-    python_base: Python 基础
+    booboo_python: Python 基础
     '01-python': 'Python 简介'
     '02-python': 'Python 数据类型'
     '03-python': 'Python 语句和语法'
@@ -410,12 +409,63 @@ sidebar:
     '07-python': 'Python 操作 MySQL'
     '08-checkio': 'Python 练习'
     '09-python考核': 'Python 考核'
+    # 00_python_base
+    00_python_base: Python 基础高阶
+    '01_Python的历史和展望': '历史和展望'
+    '02_Python的基本数据类型': '基本数据类型'
+    '03_Python的基本运算': '基本运算'
+    '04_Python的控制和函数': '控制和函数'
+    '05_Python的文件操作': '文件操作'
+    '06_Python迭代器和生成器': '迭代器和生成器'
+    '07_Python深浅拷贝': '深浅拷贝'
+    '08_Python装饰器': '装饰器'
+    '09_Python模块和包': '模块和包'
+    '10_Python面向对象设计和类': '面向对象设计和类'
+    '11_Python面向对象进阶_内置函数': '面向对象进阶_内置函数'
+    '12_Python异常处理': '异常处理'
+    '13-Python工作中常用接口': '工作中常用接口'
+    # 01_python_net
+    01_python_net: Python 网络开发
+    '01_Python网络开发之客户端服务器架构': '客户端服务器架构'
+    '02_Python网络开发之OSI七层模型': 'OSI七层模型'
+    '03_Python网络开发之详解socket层': '详解socket层'
+    '04_Python网络开发之基于TCP的套接字': '基于TCP的套接字'
+    '05_Python网络开发之基于UDP的套接字': '基于UDP的套接字'
+    '06_Python网络开发之粘包现象': '粘包现象'
+    '07_Python网络开发之认证客户端的链接合法性': '认证客户端的链接合法性'
+    '08_Python网络开发之socketserver实现并发': 'socketserver实现并发'
+    # 02_python_threads
+    02_python_threads: Python 并发编程
+    '01_Python并发编程之背景知识': '背景知识'
+    '02_Python并发编程之多进程': '多进程'
+    '03_Python并发编程之多线程': '多线程'
+    '04_Python并发编程之协程': '协程'
+    '05_Python并发编程之IO模型': 'IO模型'
+    '06_Python并发编程之paramiko模块': 'paramiko模块'
+    # 11_flask_admin
+    11_flask_admin: Flask_admin
+    '01_搭建工作记录管理系统的准备工作': '准备工作'
+    '02_调整网站色调为蓝色': '调整网站色调'
+    '03_添加一个静态页面': '添加静态页面'
+    '04_网站从英文改为中文': '英文改为中文'
+    '05_使用MySQL数据库存放数据': '使用MySQL'
+    '06_展示数据库表单': '展示表单'
+    '07_新增登陆界面': '新增登陆界面'
+    '08_展示数据库指定的列': '展示数据库指定的列'
+    '09_开启导出表格功能': '开启导出表格功能'
+    '10-使用模板': '使用模板'
+    '11-修改Flask_admin前端页面表格一行显示文字不换行': '修改前端页面表格'
+    '12-修改Flask_admin前端页面添加表格名称': '添加表格名称'
+    '13-修改Flask_admin前端表格通过js计算生成合计行': 'js计算生成合计行'
+    # 12_mini_project
+    12_mini_project: 迷你小项目
+
 
   nosql:
     getting_started: 开始使用
     overview: 概览
     # redis 基础
-    redis_base: Redis 基础
+    booboo_redis: Redis 基础
     '01-Redis入门': 'Redis 入门'
     '02-Redis持久化': 'Redis 持久化'
     '03-Redis主从': 'Redis 主从'
@@ -423,7 +473,7 @@ sidebar:
     '05-Redis排错指南': 'Redis 排错指南'
     # redis 进阶
     # mongodb 基础
-    mongodb_base: MongoDB 基础
+    booboo_mongodb: MongoDB 基础
     '00-mongodb课程': 'MongoDB课程'
     '01-MongoDB简介': 'MongoDB 简介'
     '02-MongoDB单实例安装': 'MongoDB 单实例安装'
