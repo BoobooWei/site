@@ -125,6 +125,10 @@ mysql:
     '07-MySQL5.6一主多从半同步复制': /mysql/booboo_mysql/07-MySQL5.6一主多从半同步复制.html
     '08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper': /mysql/booboo_mysql/08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper.html
     '09-SQL考试': /mysql/booboo_mysql/09-SQL考试.html
+  dba_mysql:
+    'overview': /mysql/dba_mysql/index.html
+    '00-数据库工作软件推荐': /mysql/dba_mysql/00-数据库工作软件推荐.html
+    '01-精品_MySQL常用SQL': /mysql/dba_mysql/01-精品_MySQL常用SQL.html
   security:
     overview: /mysql/security/index.html
     cis_mysql: /mysql/security/cis_mysql.html

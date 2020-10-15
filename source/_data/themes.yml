@@ -5,6 +5,13 @@
   tags:
     - 关系型数据库
     - MySQL
+- name: MySQL 运维实践
+  description: MySQL 运维实践
+  link: /mysql/dba_mysql/
+  preview: /mysql/dba_mysql/
+  tags:
+    - 关系型数据库
+    - MySQL
 - name: MySQL 安全篇
   description: MySQL 安全篇
   link: /mysql/security/

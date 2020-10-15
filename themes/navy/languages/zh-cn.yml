@@ -156,6 +156,11 @@ sidebar:
     '07-MySQL5.6一主多从半同步复制': '半同步复制'
     '08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper': '逻辑备份工具对比'
     '09-SQL考试': 'MySQL考试'
+    # MySQL 运维实践
+    dba_mysql: MuySQL 运维实践
+    '00-数据库工作软件推荐': '00-数据库工作软件推荐'
+    '01-精品_MySQL常用SQL': '01-精品_MySQL常用SQL'
+
     # MySQL 安全
     security: 安全篇
     cis_mysql: MySQL安全基线
