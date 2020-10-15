@@ -494,7 +494,7 @@ sidebar:
     '02-MongoDB单实例安装': 'MongoDB 单实例安装'
     '03-MongoDB认证权限管理': 'MongoDB 认证权限管理'
     '04-MongoDBLanguage': 'MongoDB 语言'
-    '05-MongoDB备份恢复': 'ongoDB 备份恢复'
+    '05-MongoDB备份恢复': 'MongoDB 备份恢复'
     '06-MongoDB复制': 'MongoDB 复制'
     '07-MongoDB副本集': 'MongoDB 副本集'
     '10-MongoDB配置文件详解': 'MongoDB配置文件详解'
