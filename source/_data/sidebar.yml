@@ -455,6 +455,20 @@ nosql:
     '03-Redis主从': /nosql/redis/booboo_redis/03-Redis主从.html
     '04-Redis集群': /nosql/redis/booboo_redis/04-Redis集群.html
     '05-Redis排错指南': /nosql/redis/booboo_redis/05-Redis排错指南.html
+  dba_redis:
+    'overview': /nosql/dba_redis/index.html
+    '0_hash_tables': /nosql/dba_redis/0_hash_tables.html
+    '1_redis_server': /nosql/dba_redis/1_redis_server.html
+    '2_redis_rdb_aof': /nosql/dba_redis/2_redis_rdb_aof.html
+    '3_redis_expire': /nosql/dba_redis/3_redis_expire.html
+    '4_redis_client': /nosql/dba_redis/4_redis_client.html
+    '5_redis_client_server': /nosql/dba_redis/5_redis_client_server.html
+    '6_redis_server_cmd': /nosql/dba_redis/6_redis_server_cmd.html
+    '7_redis_server_serverCron': /nosql/dba_redis/7_redis_server_serverCron.html
+    '8_redis_server_initialize': /nosql/dba_redis/8_redis_server_initialize.html
+    '9_redis_replication': /nosql/dba_redis/9_redis_replication.html
+    '10_redis_demo': /nosql/dba_redis/10_redis_demo.html
+    '11_redis_ops': /nosql/dba_redis/11_redis_ops.html
   booboo_mongodb:
     'overview': /nosql/mongodb/booboo_mongodb/index.html
     '00-mongodb课程': /nosql/mongodb/booboo_mongodb/00-mongodb课程.html

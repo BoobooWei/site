@@ -8,12 +8,14 @@ menu:
   MySQL8.0: MySQL8.0
   news: News
   plugins: 插件
-  themes: Themes
+  themes: 技术广角
   about: About
   search: 搜索
   mse: MSE
   aliyun: AliYun
   cloud: Cloud
+  nosql: NoSQL
+
 
 index:
   get_started: 开始使用
@@ -115,8 +117,8 @@ sidebar:
     '04_shell_brackets': 各种括号的作用
     'shell上机': 上机考试
     'shell笔试': 笔试题目
-    # Linux 中级服务
-    booboo_middle_service: Linux 中级服务
+    # Linux 进阶
+    booboo_middle_service: Linux 进阶
     '01-pxe': PXE
     '02-nginx': Nginx
     '03-tomcat': Tomcat
@@ -472,6 +474,19 @@ sidebar:
     '04-Redis集群': 'Redis 集群'
     '05-Redis排错指南': 'Redis 排错指南'
     # redis 进阶
+    dba_redis: Redis 进阶
+    '0_hash_tables': '哈希表'
+    '1_redis_server': '数据库键值空间'
+    '2_redis_rdb_aof': '持久化'
+    '3_redis_expire': '过期键值清理'
+    '4_redis_client': '客户端'
+    '5_redis_client_server': '客户端与服务器'
+    '6_redis_server_cmd': '命令请求'
+    '7_redis_server_serverCron': 'serverCron函数'
+    '8_redis_server_initialize': '服务初始化'
+    '9_redis_replication': '主从复制'
+    '10_redis_demo': '开发小案例'
+    '11_redis_ops': '运维实践'
     # mongodb 基础
     booboo_mongodb: MongoDB 基础
     '00-mongodb课程': 'MongoDB课程'

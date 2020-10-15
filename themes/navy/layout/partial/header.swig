@@ -14,13 +14,9 @@
       </div>
     </nav>
     <div id="lang-select-wrap">
-      <label id="lang-select-label"><i class="fa fa-globe"></i><span>{{ lang_name(page.lang) }}</span></label>
-      <select id="lang-select" data-canonical="{{ canonical_path_for_nav() }}">
-        {% for lang in site.data.languages %}
-          <option value="{{ loop.key }}"{% if page.lang === loop.key %} selected{% endif %}>{{ lang_name(loop.key) }}</option>
-        {% endfor %}
-      </select>
+      <a href="/themes/" class="main-nav-link"><label id="lang-select-label"><i class="fa fa-globe"></i><span>技术广角</span></label></a>
     </div>
+
 
     <a id="mobile-nav-toggle">
       <span class="mobile-nav-toggle-bar"></span>

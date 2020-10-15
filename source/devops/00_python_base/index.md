@@ -1,5 +1,5 @@
 ---
-title: Python 基本功进阶版
+title: Python 进阶
 ---
 
 ## 简介
