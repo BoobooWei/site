@@ -410,7 +410,7 @@ sidebar:
     '08-checkio': 'Python 练习'
     '09-python考核': 'Python 考核'
     # 00_python_base
-    00_python_base: Python 基础高阶
+    00_python_base: Python 进阶
     '01_Python的历史和展望': '历史和展望'
     '02_Python的基本数据类型': '基本数据类型'
     '03_Python的基本运算': '基本运算'

@@ -120,17 +120,45 @@
   preview: /mse/software/
   tags:
     - MSE
-- name: Python 基础课程
+- name: Python 基础
   description: Python 基础学习笔记
   link: /devops/booboo_python/
   preview: /devops/booboo_python/
   tags:
     - Devops
     - Python
-- name: Python 进阶课程
+- name: Python 进阶
   description: Python 进阶学习笔记
-  link: /devops/DBA_python/
-  preview: /devops/DBA_python/
+  link: /devops/01_python_net/
+  preview: /devops/01_python_net/
+  tags:
+    - Devops
+    - Python
+- name: Python 网络开发
+  description: Python 网络开发学习笔记
+  link: /devops/01_python_net/
+  preview: /devops/01_python_net/
+  tags:
+    - Devops
+    - Python
+- name: Python 并发编程
+  description: Python 并发编程学习笔记
+  link: /devops/02_python_threads/
+  preview: /devops/02_python_threads/
+  tags:
+    - Devops
+    - Python
+- name: Python Flask_admin
+  description: Python Flask_admin 学习笔记
+  link: /devops/11_flask_admin/
+  preview: /devops/11_flask_admin/
+  tags:
+    - Devops
+    - Python
+- name: Python 迷你小项目
+  description: Python 迷你小项目
+  link: /devops/12_mini_project/
+  preview: /devops/12_mini_project/
   tags:
     - Devops
     - Python
