@@ -336,6 +336,7 @@ mse:
 cloud:
   getting_started:
     overview: /cloud/index.html
+  # 阿里云
   aliyun:
     overview: /cloud/aliyun/index.html
 #    bigdata: /cloud/aliyun/bigdata/index.html
@@ -358,6 +359,10 @@ cloud:
   CMS:
     overview: /cloud/aliyun/cms/index.html
     custom_event: /cloud/aliyun/cms/custom_event.html
+  # 腾讯云
+  tencent:
+      overview: /cloud/tencent/index.html
+
 
 amy:
   getting_started:
@@ -425,6 +430,3 @@ hadoop:
     'hbaseInstall': /hadoop/02_operation/hbaseInstall.html
     'hiveInstall': /hadoop/02_operation/hiveInstall.html
     'hivesql': /hadoop/02_operation/hivesql.html
-
-
-

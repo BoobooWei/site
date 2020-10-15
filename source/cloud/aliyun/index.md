@@ -1,10 +1,5 @@
 ---
-title: 阿里云大学
-date: 2020-06-19T08:00:00.000Z
-categories:
-- [阿里云]
-tags:
-- 阿里云
+title: Aliyun Cloud
 ---
 
 记录阿里云学习轨迹

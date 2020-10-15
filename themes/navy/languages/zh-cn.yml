@@ -376,7 +376,9 @@ sidebar:
     # CMS
     CMS: CMS
     custom_event: 事件告警
-
+    # 腾讯云
+    tencent: 腾讯云
+    
   amy:
     getting_started: 开始使用
     overview: 概览

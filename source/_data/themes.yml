@@ -40,8 +40,8 @@
   tags:
     - 关系型数据库
     - oracle
-- name: Redis
-  description: Redis 核心技术笔记
+- name: Redis 基础
+  description: Redis 基础学习笔记
   link: /nosql/redis/booboo_redis/
   preview: /nosql/redis/booboo_redis/
   tags:
@@ -56,8 +56,8 @@
     - mongodb
 - name: Aliyun Cloud
   description: 阿里云数据库、大数据实践
-  link: /aliyun/
-  preview: /aliyun/
+  link: /cloud/aliyun/
+  preview: /cloud/aliyun/
   tags:
     - Cloud
 - name: AWS Cloud
@@ -120,10 +120,10 @@
   preview: /mse/software/
   tags:
     - MSE
-- name: Python
-  description: Python 笔记
-  link: /devops/python/
-  preview: /devops/python/
+- name: Python 基础课程
+  description: Python 基础学习笔记
+  link: /devops/python/booboo_python/
+  preview: /devops/python/booboo_python/
   tags:
     - Devops
 - name: BootStrap
@@ -201,8 +201,8 @@
     - Linux
 - name: Bash Shell 脚本编程
   description: Bash Shell 脚本编程
-  link: /linux/booboo_easy_service/
-  preview: /linux/booboo_easy_service/
+  link: /linux/booboo_bash_shell_scripts/
+  preview: /linux/booboo_bash_shell_scripts/
   tags:
     - Linux
 - name: Linux 中级管理
