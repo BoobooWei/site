@@ -386,6 +386,7 @@ sidebar:
     custom_event: 事件告警
     # 腾讯云
     tencent: 腾讯云
+    cloud_lite_mysql: 腾讯云CloudLite认证
     
   amy:
     getting_started: 开始使用

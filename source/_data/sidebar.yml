@@ -365,7 +365,9 @@ cloud:
     custom_event: /cloud/aliyun/cms/custom_event.html
   # 腾讯云
   tencent:
-      overview: /cloud/tencent/index.html
+    overview: /cloud/tencent/index.html
+    cloud_lite_mysql: /cloud/tencent/cloud_lite_mysql.html
+
 
 
 amy:
