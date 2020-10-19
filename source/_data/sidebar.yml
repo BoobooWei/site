@@ -129,6 +129,7 @@ mysql:
     'overview': /mysql/dba_mysql/index.html
     '00-数据库工作软件推荐': /mysql/dba_mysql/00-数据库工作软件推荐.html
     '01-精品_MySQL常用SQL': /mysql/dba_mysql/01-精品_MySQL常用SQL.html
+    '02-参数优化': /mysql/dba_mysql/02-参数优化.html
   security:
     overview: /mysql/security/index.html
     cis_mysql: /mysql/security/cis_mysql.html

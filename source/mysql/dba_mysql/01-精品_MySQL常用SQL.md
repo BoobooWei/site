@@ -1187,4 +1187,379 @@ SUM(if(engine = 'myisam', index_length, 0)) AS myisam_index_size,
 POW(1024, 3) gb
 FROM information_schema.tables
 WHERE table_type = 'BASE TABLE') a;
+
+
+# 生成查询语句中的列
+[root@toberoot ~]# mysql -e "select column_name from information_schema.columns where table_name='vg_sales_alipay';" | awk '{if (NR>1){a=$1;printf("%s,\n", $1)}}'
+trade_no_vingoo,
+trade_no_alipay,
+brand_id,
+trade_type,
+trade_status,
+total_fee,
+price,
+amount,
+refund_fee,
+refund_status,
+refund_times,
+refund_date,
+refund_type,
+refund_desc,
+refund_op,
+trade_subject,
+trade_body,
+gmt_create,
+gmt_payment,
+buyer_email,
+buyer_id,
+date_add,
+apply_re_fee,
+apply_re_desc,
+apply_re_op,
+apply_re_tag,
+apply_re_date,
+```
+
+# 生成测试数据
+
+```SQL
+CREATE TABLE t1(   
+id int primary key auto_increment,    
+uname  varchar(20) ,   
+ucreatetime  datetime  ,   
+age  int(11)) DEFAULT CHARACTER SET=utf8 COLLATE=utf8_general_ci;
+
+delimiter $$
+
+create  procedure test1()  
+begin
+
+declare v_cnt decimal (10)  default 0 ;
+start transaction;
+dd:loop            
+        insert  into t1 values         
+        (null,'用户1',sysdate(),20),         
+        (null,'用户2',sysdate(),20),         
+        (null,'用户3',sysdate(),20),         
+        (null,'用户4',sysdate(),20),         
+        (null,'用户5',sysdate(),20),         
+        (null,'用户6',sysdate(),20),         
+        (null,'用户7',sysdate(),20),         
+        (null,'用户8',sysdate(),20),         
+        (null,'用户9',sysdate(),20),         
+        (null,'用户0',sysdate(),20)             
+                ;                                        
+        set v_cnt = v_cnt+10 ;                            
+            if  v_cnt = 100000 then leave dd;                           
+            end if;          
+        end loop dd ; 
+commit;
+end $$
+
+delimiter ;
+call test1();
+```
+
+
+# 索引
+
+创建的索引默认是BTREE
+
+## 索引相关命令集合
+
+```sql
+利用alter命令修改id列为自增主键列：alter table student change id id int primary key auto_increment;
+
+删除主键索引：alter table student drop primary key;
+
+创建普通索引：alter table student add index index_dept(dept);
+
+根据列的前n个字符创建索引：alter table student add index index_dept(dept(8));  create index index_dept on student(dept(8));
+
+根据多个列创建联合索引create index index_name_dept on student(name,dept);
+
+删除普通索引：alter table student drop index index_name;drop index index_name_dept on student;
+
+创建唯一索引（非主键）：create unique index uni_ind_name on student(name);
+```
+
+## 基本索引条件
+
+1. 要在表的列上创建索引。
+2. 索引会加快查询速度，但频繁更新需要维护索引，影响更新速度。
+3. 索引不是越多越好，要在频繁查询的where后的条件列上创建索引。
+4. 小表或唯一值极少的列上不建立索引，要在大表以及唯一值多的列上创建索引。
+
+## 避免过度使用索引
+
+* 索引的建立对提高检索能力很有用，但是数据库维护它也很费资源
+* 对性别列(或状态列)索引，被称为过度索引；只有两个值，建立索引不仅没优势，还会影响到插入、更新速度。
+* 索引会占用磁盘空间，降低更新操作性能。
+* 索引不是越多越好，索引过多，执行计划要考虑使用哪个索引
+* 行数比较少的表可以不建索引（100行以内）
+
+## SQL执行计划
+
+①使用explain命令查看sql语句的执行情况(是否走索引)
+
+```sql
+mysql> explain select * from test where name='oldgirl'\G; 
+*************************** 1. row ***************************
+           id: 1
+ select_type: SIMPLE
+       table: test
+         type: ALL
+possible_keys: NULL 从查看的结果看出，查询的时候没有走索引
+         key: NULL
+     key_len: NULL
+         ref: NULL
+         rows: 4   总结查询了4行
+       Extra: Using where
+1 row in set (0.00 sec)
+```
+
+②SQL优化后的测试，explain命令不走缓存测试
+
+```sql
+mysql> explain SQL_NO_CACHE select * from test where name='oldgirl'\G; 
+```
+ 
+③查看表的索引：
+
+```sql
+mysql> show index from 表名\G
+```
+
+④查建表的语句（可以看索引及创建表的相关信息）
+
+```sql
+show create table 表名\G
+```
+
+⑤查是不是authorid列内容不同的列，越大建立索引效果越好(查看唯一值的数量)
+
+```sql
+select count(distinct authorid) from 表名;
+select count(authorid) from 表名;
+select count(*) from 表名; #<--查看整个表的列的总数是多少
+```
+
+## MySQL数据库使用索引的条件
+
+①MySQL(BTREE)使用索引的比较条件：<, <=, =, >, >=, BETTWEEN, IN!= 或者<> 或者LIKE 'xxx%'
+②索引的列不包含NULL值
+复合索引中只要有一列含有NULL值，那么这一列将不会使用索引。
+所以在数据库设计时，不要让字段的默认值为NULL
+③列类型是字符串，要在where条件中把字符串值用引号括起来
+④用or分割开的条件，or前条件有索引，而后面列无索引，那么设计的索引都不会被用到
+⑤条件不是索引列的第一部分。key(a,b)...where b=5 will not use index
+⑥like语句操作
+一般情况下尽量不适用like操作。like "%aaa%" 不会使用索引，而like "aaa%"可以使用索引。
+可以建立fulltext或者Sphinx(斯芬克司)，去专门应对搜索功能，不要使用数据库去完成这种搜索。
+⑦不要在列上进行计算
+select * from users where YEAR(adddate)<2007;将在每个行上进行计算，这将导致索引失效而进行全表扫描，因此我们可以改成select * from users where adddate<'2007-01-01';
+⑧不使用NOT IN和<>操作
+NOT IN 和<>操作都不会使用索引，将进行全表扫描。NOT IN可以NOT EXISTS代替，id<>3则可使用id>3 or id<3来代替
+其它：尽量用连接查询代替子查询(嵌套查询)
+⑨Order by的索引问题
+mysql查询只是用一个索引，因此如果where子句中已经使用了索引，order by中的列就不会再使用索引。因此数据库默认排序可以符合要求的情况下不要使用排序操作；尽量不要包含多个列的排序，如果需要最好给这些列创建复合索引。
+
+
+## 相关的系统视图
+
+```sql
+# 索引存放在statistics
+# 表存放在tables
+# 列存放在columns
+
+
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='cm_app_case' and column_name in ('app_id','approve_rst','case_id')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='cm_app_consumptioninst' and column_name in ('app_id','applicant_huko_city','APPLICANT_HUKO_COUNTY','applicant_huko_province','company_city','company_province','CUR_HOME_CITY','CUR_HOME_COUNTY','CUR_HOME_PROVINCE','EDUCTION_LEVEL','leafOrg','MARITAL_STATUS','merchant_cde','src_case_id','store_cde')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='cm_case_survey' and column_name in ('case_id' ,'survey_result')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='cm_loan_monitoring' and column_name in ('APPLICATIon_NUMBER','contract_id','id','report_id')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='cm_loan_risklist' and column_name in ('report_id')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='cm_return_hit_rule_record' and column_name in ('case_id','rule_id')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='cm_return_visit_case' and column_name in ('app_id','case_id','create_time','customer_result_code','sales_result_code','store_result_code')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='fe_org_relation' and column_name in ('org_id','company_name')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='fe_business' and column_name in ('id')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='lm_account' and column_name in ('contract_id','id','status')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='lm_contract_history' and column_name in ('application_number','id')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='lm_repayment_plan' and column_name in ('contract_id','tenor')
+union
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where table_name='pr_code_table' and column_name in ('id','type_id');
+
+-------------
+select table_schema,table_name,index_name,index_type,column_name from STATISTICS where (table_name='cm_app_case' and column_name in ('app_id','approve_rst','case_id')) or  (table_name='cm_app_consumptioninst' and column_name in ('app_id','applicant_huko_city','APPLICANT_HUKO_COUNTY','applicant_huko_province','company_city','company_province','CUR_HOME_CITY','CUR_HOME_COUNTY','CUR_HOME_PROVINCE','EDUCTION_LEVEL','leafOrg','MARITAL_STATUS','merchant_cde','src_case_id','store_cde')) or
+(table_name='cm_case_survey' and column_name in ('case_id' ,'survey_result')) or 
+(table_name='cm_loan_monitoring' and column_name in ('APPLICATIon_NUMBER','contract_id','id','report_id')) or
+(table_name='cm_loan_risklist' and column_name in ('report_id')) or
+(table_name='cm_return_hit_rule_record' and column_name in ('case_id','rule_id')) or
+(table_name='cm_return_visit_case' and column_name in ('app_id','case_id','create_time','customer_result_code','sales_result_code','store_result_code')) or
+(table_name='fe_org_relation' and column_name in ('org_id','company_name') ) or
+(table_name='fe_business' and column_name in ('id')) or
+(table_name='lm_account' and column_name in ('contract_id','id','status')) or
+(table_name='lm_contract_history' and column_name in ('application_number','id')) or
+(table_name='lm_repayment_plan' and column_name in ('contract_id','tenor')) or
+(table_name='pr_code_table' and column_name in ('id','type_id'));
+-----------------------------
+--------------------------
+
+select table_schema,table_name,column_name from columns where table_name='cm_app_consumptioninst' and column_name in ('applicant_huko_city','APPLICANT_HUKO_COUNTY','applicant_huko_province','company_city','company_province','CUR_HOME_CITY','CUR_HOME_COUNTY','CUR_HOME_PROVINCE','EDUCTION_LEVEL','leafOrg','MARITAL_STATUS')
+union
+select table_schema,table_name,column_name from columns where table_name='cm_case_survey' and column_name in ('survey_result')
+union
+select table_schema,table_name,column_name from columns where table_name='cm_loan_monitoring' and column_name in ('APPLICATIon_NUMBER','contract_id')
+union
+select table_schema,table_name,column_name from columns where table_name='cm_return_hit_rule_record' and column_name in ('rule_id')
+union
+select table_schema,table_name,column_name from columns where table_name='cm_return_visit_case' and column_name in ('create_time','customer_result_code','sales_result_code','store_result_code')
+union
+select table_schema,table_name,column_name from columns where table_name='fe_org_relation' and column_name in ('company_name');
+
+```
+
+# 报告权限
+
+```sql
+grant select on `mysql`.* to zyreport@'%' identified by 'xxx';
+grant select on `performance_schema`.* to zyreport@'%' identified by 'xxx';
+grant replication client on *.* to report@'%' identified by 'xxx';
+flush privileges;
+```
+
+# SQL开发军规
+
+```sql
+写在前面的话：
+总是在灾难发生后，才想起容灾的重要性；
+总是在吃过亏后，才记得曾经有人提醒过。
+(一)核心军规
+(1)不在数据库做运算
+   cpu计算务必移至业务层；
+(2)控制单表数据量
+   int型不超过1000w，含char则不超过500w；
+   合理分表；
+   限制单库表数量在300以内；
+(3)控制列数量
+   字段少而精，字段数建议在20以内；
+(4)平衡范式与冗余
+   效率优先；
+   往往牺牲范式；
+(5)拒绝3B
+   拒绝大sql语句：big sql
+   拒绝大事物：big transaction
+   拒绝大批量：big batch
+
+(二)字段类军规
+(6)用好数值类型
+   tinyint(1Byte)
+   smallint(2Byte)
+   mediumint(3Byte)
+   int(4Byte)
+   bigint(8Byte)
+   bad case：int(1)/int(11)
+(7)字符转化为数字
+   用int而不是char(15)存储ip
+(8)优先使用enum或set
+   例如：`sex` enum (‘F’, ‘M’)
+(9)避免使用NULL字段
+   NULL字段很难查询优化；
+   NULL字段的索引需要额外空间；
+   NULL字段的复合索引无效；
+   bad case：
+    `name` char(32) default null
+    `age` int not null
+   good case：
+    `age` int not null default 0
+(10)少用text/blob
+    varchar的性能会比text高很多；
+    实在避免不了blob，请拆表；
+(11)不在数据库里存图片
+    这个我不能理解！
+    但这是赶集网的经验，求detail！
+
+(三)索引类军规
+(12)谨慎合理使用索引
+    改善查询、减慢更新；
+    索引一定不是越多越好(能不加就不加，要加的一定得加)；
+    覆盖记录条数过多不适合建索引，例如“性别”；
+(13)字符字段必须建前缀索引
+(14)不在索引做列运算
+！！！不只是索引，都不能做列运算吧！！！
+    bad case：
+    select id where age +1 = 10;
+(15)innodb主键推荐使用自增列；
+    主键建立聚簇索引；
+    主键不应该被修改；
+    字符串不应该做主键；
+    如果不指定主键，innodb会使用唯一且非空值索引代替；
+(16)不用外键
+    请由程序保证约束；
+
+(四)sql类军规
+(17)sql语句尽可能简单
+    一条sql只能在一个cpu运算；
+    大语句拆小语句，减少锁时间；
+    一条大sql可以堵死整个库；
+(18)简单的事务
+    事务时间尽可能短；
+    bad case：
+    上传图片事务
+(19)避免使用trig/func
+    触发器、函数不用；
+    客户端程序取而代之；
+(20)不用select *
+    消耗cpu，io，内存，带宽；
+    这种程序不具有扩展性；
+(21)OR改写为IN()
+    or的效率是n级别；
+    in的消息时log(n)级别；
+    in的个数建议控制在200以内；
+      select id from t where phone=’159′ or phone=’136′;
+      =>
+      select id from t where phone in (’159′, ’136′);
+(22)OR改写为UNION
+    mysql的索引合并很弱智
+     select id from t where phone = ’159′ or name = ‘john’;
+     =>
+     select id from t where phone=’159′
+     union
+     select id from t where name=’jonh’
+(23)避免负向%
+(24)慎用count(*)
+(25)同上
+(26)limit高效分页
+    limit越大，效率越低
+    select id from t limit 10000, 10;
+    =>
+    select id from t where id > 10000 limit 10;
+(27)使用union all替代union
+    union有去重开销
+(28)少用连接join
+(29)使用group by
+    分组；
+    自动排序；
+(30)请使用同类型比较
+(31)使用load data导数据
+    load data比insert快约20倍；
+(32)打散批量更新
+(33)新能分析工具
+    show profile;
+    mysqlsla;
+    mysqldumpslow;
+    explain;
+    show slow log;
+    show processlist;
+    show query_response_time(percona);
 ```

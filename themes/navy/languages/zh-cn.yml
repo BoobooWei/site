@@ -160,7 +160,7 @@ sidebar:
     dba_mysql: MuySQL 运维实践
     '00-数据库工作软件推荐': '00-数据库工作软件推荐'
     '01-精品_MySQL常用SQL': '01-精品_MySQL常用SQL'
-
+    '02-参数优化': '02-参数优化'
     # MySQL 安全
     security: 安全篇
     cis_mysql: MySQL安全基线
