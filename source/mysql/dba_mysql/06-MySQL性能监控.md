@@ -5,8 +5,7 @@ title: MySQL 性能监控
 > 根据 罗小波 专家的分享整理 本系列文章所使用的数据库版本为 MySQL 官方 5.7.17版本 
 
 <!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
-
-   - [title: MySQL 性能监控](#title-mysql-性能监控)   
+   
 - [performance_schema](#performance_schema)   
    - [简介](#简介)   
    - [开启情况](#开启情况)   

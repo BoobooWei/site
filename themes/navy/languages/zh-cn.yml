@@ -190,7 +190,7 @@ sidebar:
     '03-MySQL认证OCP': 'MySQL认证OCP'
     '04-MySQL技术积累': 'MySQL技术积累'
     '05-MySQL自动化管理': 'MySQL自动化管理'
-    '06-MySQL性能监控': 06-MySQL性能监控
+    '06-MySQL性能监控': 'MySQL性能监控'
     '基于MyCat的MySQL高可用架构规划建议': 分布式架构规划
     '基于MyCAT的分布式数据库架构': 分布式架构配置
 

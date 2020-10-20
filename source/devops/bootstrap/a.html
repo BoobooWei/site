@@ -1,0 +1,2185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Bootstrap Table Examples</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+          content="An extended Bootstrap table with radio, checkbox, sort, pagination, and other added features.">
+    <meta name="keywords"
+          content="table, bootstrap, bootstrap plugin, bootstrap resources, bootstrap table, jQuery plugin">
+    <meta name="author" content="Zhixin Wen, and Bootstrap table contributors">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hint.css/2.5.1/hint.min.css">
+    <link rel="stylesheet" href="assets/css/docs.min.css">
+    <link rel="stylesheet" href="assets/css/template.css?v=131">
+
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sprintf/1.1.2/sprintf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://unpkg.com/flexibility@2.0.1/flexibility.js"></script>
+    <script src="assets/js/template.js?v=131"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-132747866-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || []
+    function gtag() {window.dataLayer.push(arguments)}
+    gtag('js', new Date())
+    gtag('config', 'UA-132747866-1')
+
+
+
+
+    </script>
+    <link href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.js"></script>
+    <script id="_carbonads_projs" type="text/javascript"
+            src="https://srv.carbonads.net/ads/CK7DL2J7.json?segment=placement:bootstrap-tablecom&amp;callback=_carbonads_go"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header-wrapper">
+        <div class="title-desc">
+
+            <p class="bd-lead">
+            <p>Use <code>showFooter</code> option to show the summary footer row.</p>
+            </p>
+        </div>
+
+        <div id="example">
+            <script>
+              init({
+                title: 'Show Footer',
+                desc: 'Use `showFooter` option to show the summary footer row.',
+                links: ['bootstrap-table.min.css'],
+                scripts: ['bootstrap-table.min.js']
+              })
+
+
+            </script>
+
+    <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover model-list" style="white-space:nowrap"
+                    data-toggle="table"
+                    data-height="800"
+                    data-show-columns="true"
+                    data-show-footer="true"
+                    >
+        <thead>
+            <tr>
+
+
+
+
+                        <th class="col-md-1">&nbsp;</th>
+
+
+
+
+                    <th class="column-header col-id">
+
+                            编号
+
+
+                    </th>
+
+
+                    <th class="column-header col-cloud_resource_account">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=1" title="按 阿里云账号名称 进行排序">阿里云账号名称</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-recorded_customer">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=2" title="按 实际入账客户 进行排序">实际入账客户</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-request_time">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=3" title="按 索取时间 进行排序">索取时间</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-invoice_price" data-footer-formatter="priceFormatter">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=4" title="按 发票金额 进行排序">发票金额</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-tax_free_amount" data-footer-formatter="priceFormatter">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=5" title="按 不含税金额 进行排序">不含税金额</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-tax_amount" data-footer-formatter="priceFormatter">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=6" title="按 税额 进行排序">税额</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-invoice_ids">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=7" title="按 发票编号 进行排序">发票编号</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-remarks">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=8" title="按 备注信息 进行排序">备注信息</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-invoice_adjustment">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=9" title="按 发票调整 进行排序">发票调整</a>
+
+
+
+                    </th>
+
+
+                    <th class="column-header col-zy_company">
+
+
+                                <a href="/admin/cloudresourceinvoicerequesthistory/?sort=10" title="按 所属公司 进行排序">所属公司</a>
+
+
+
+                    </th>
+
+
+            </tr>
+        </thead>
+
+        <tbody><tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=1" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=1" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    1
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    mpserver@qq.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海宜铺信息科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-01-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    74.70
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    74.70
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=2" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=2" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    2
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    cloud@sinohow.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    昆明晨昊科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-01-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    133.92
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    133.92
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=3" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=3" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    3
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    lenoray@163.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海茂源软件科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-01-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    103.16
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    103.16
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=4" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=4" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    4
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    idcadmin@zkh360.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    震坤行工业超市（上海）有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-01-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    6523.09
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    6523.09
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=5" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=5" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    5
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    lyfyun@laiyifen.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海来伊份股份有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-01-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    130.30
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    130.30
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=6" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=6" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    6
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    idada56it@126.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海百成大达物流有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-01-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    684.48
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    684.48
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=7" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=7" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    7
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    zli2@hersheys.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海金丝猴食品股份有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-01-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    2303.58
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    2303.58
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=8" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=8" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    8
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    hb@cnhongbo.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    创艺港国际电子商务产业园有限责任公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-01-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    1889.76
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    1889.76
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=9" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=9" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    9
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    mpserver@qq.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海宜铺信息科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-02-28 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    69.85
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    69.85
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=10" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=10" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    10
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    cloud@sinohow.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    昆明晨昊科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-02-28 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    125.28
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    125.28
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=11" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=11" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    11
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    lenoray@163.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海茂源软件科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-02-28 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    101.16
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    101.16
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=12" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=12" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    12
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    idcadmin@zkh360.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    震坤行工业超市（上海）有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-02-28 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    12957.43
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    12957.43
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=13" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=13" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    13
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    idada56it@126.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海百成大达物流有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-02-28 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    639.62
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    639.62
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=14" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=14" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    14
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    zli2@hersheys.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海金丝猴食品股份有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-02-28 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    71.34
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    71.34
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=15" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=15" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    15
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    hb@cnhongbo.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    创艺港国际电子商务产业园有限责任公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-02-28 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    1767.84
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    1767.84
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=16" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=16" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    16
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    admcloud_roadchina
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    路华救援（北京）有限公司上海分公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-02-28 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    320.91
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    320.91
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=17" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=17" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    17
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    mpserver@qq.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海宜铺信息科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-03-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    74.70
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    74.70
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=18" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=18" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    18
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    cloud@sinohow.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    昆明晨昊科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-03-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    133.92
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    133.92
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=19" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=19" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    19
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    lenoray@163.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    上海茂源软件科技有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-03-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    110.00
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    110.00
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+        <tr>
+
+
+
+
+                    <td class="list-buttons-column">
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/details/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=20" title="查看记录">
+  <span class="fa fa-eye glyphicon glyphicon-eye-open"></span>
+</a>
+
+
+
+
+
+<a class="icon" href="/admin/cloudresourceinvoicerequesthistory/edit/?url=%2Fadmin%2Fcloudresourceinvoicerequesthistory%2F&amp;id=20" title="编辑记录">
+  <span class="fa fa-pencil glyphicon glyphicon-pencil"></span>
+</a>
+
+
+
+
+                    </td>
+
+
+                    <td class="col-id">
+
+                    20
+
+                    </td>
+
+                    <td class="col-cloud_resource_account">
+
+                    idcadmin@zkh360.com
+
+                    </td>
+
+                    <td class="col-recorded_customer">
+
+                    震坤行工业超市（上海）有限公司
+
+                    </td>
+
+                    <td class="col-request_time">
+
+                    2016-03-31 00:00:00
+
+                    </td>
+
+                    <td class="col-invoice_price">
+
+                    478.34
+
+                    </td>
+
+                    <td class="col-tax_free_amount">
+
+                    478.34
+
+                    </td>
+
+                    <td class="col-tax_amount">
+
+
+
+                    </td>
+
+                    <td class="col-invoice_ids">
+
+
+
+                    </td>
+
+                    <td class="col-remarks">
+
+                    ok
+
+                    </td>
+
+                    <td class="col-invoice_adjustment">
+
+
+
+                    </td>
+
+                    <td class="col-zy_company">
+
+                    上海驻云
+
+                    </td>
+
+
+        </tr>
+
+    </tbody></table>
+    </div>
+           <script>
+  function idFormatter() {
+    return 'Total'
+  }
+
+  function nameFormatter(data) {
+    return data.length
+  }
+
+  function priceFormatter(data) {
+    var field = this.field
+    return '$' + data.map(function (row) {
+      return +row[field].substring(1)
+    }).reduce(function (sum, i) {
+      return sum + i
+    }, 0)
+  }
+
+            </script>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+                integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+        <script>$.browser = {}</script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-hashchange@2.0.0/jquery.ba-hashchange.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.0/dist/algoliasearchLite.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.0.0/dist/instantsearch.production.min.js"></script>
+        <script src="assets/js/docs.min.js"></script>
+        <script src="assets/js/index.js?v=131"></script>
+    </div>
+</div>
+</body>
+</html>
+
+
+
