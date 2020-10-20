@@ -50,3 +50,11 @@
     - 后台管理
     - light
     - responsive
+- name: DataX自动配置工具
+  description: 自动生成DataX数据同步配置脚本。
+  link: https://github.com/SuperCloudDBA/datax_tools
+  preview: https://github.com/SuperCloudDBA/datax_tools
+  tags:
+    - Python
+    - 公开
+    - 同步

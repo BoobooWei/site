@@ -4,6 +4,81 @@ title: MySQL 常用 SQL （精品）
 
 > 支持的MySQL数据库版本：5.5 5.6 5.7 8.0
 
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+ 
+- [批处理](#批处理)   
+   - [批量生成删除和创建视图的语句](#批量生成删除和创建视图的语句)   
+   - [批量生成删除和创建索引的语句](#批量生成删除和创建索引的语句)   
+- [常用健康检查](#常用健康检查)   
+   - [主从检查](#主从检查)   
+   - [Definer检查](#definer检查)   
+   - [无主键的表](#无主键的表)   
+   - [全表扫描的SQL](#全表扫描的sql)   
+   - [创建大量临时表的SQL](#创建大量临时表的sql)   
+   - [大表(单表行数大于500w，且平均行长大于10KB)](#大表单表行数大于500w，且平均行长大于10kb)   
+   - [表碎片](#表碎片)   
+   - [热点表](#热点表)   
+   - [全表扫描的表](#全表扫描的表)   
+   - [未使用的索引](#未使用的索引)   
+   - [冗余索引](#冗余索引)   
+   - [库空间统计](#库空间统计)   
+   - [表空间统计](#表空间统计)   
+- [常用故障排查](#常用故障排查)   
+   - [客户端会话连接统计](#客户端会话连接统计)   
+   - [查看有元锁的线程](#查看有元锁的线程)   
+   - [生成解决元锁的语句](#生成解决元锁的语句)   
+   - [完整元锁检查](#完整元锁检查)   
+   - [创建MySQL事件-自动清理长时间执行的查询](#创建mysql事件-自动清理长时间执行的查询)   
+   - [查看InnoDB未提交的事务信息](#查看innodb未提交的事务信息)   
+   - [查看InnoDB事务锁冲突](#查看innodb事务锁冲突)   
+   - [获取到InnoDB事务锁冲突的原始id](#获取到innodb事务锁冲突的原始id)   
+- [MySQL Binglog](#mysql-binglog)   
+   - [查看当前二进制日志](#查看当前二进制日志)   
+   - [查看所有的binlog文件名和文件大小](#查看所有的binlog文件名和文件大小)   
+   - [查看binlog日志中具体的事件](#查看binlog日志中具体的事件)   
+- [字符集相关](#字符集相关)   
+   - [查看支持的字符编码和校验集信息](#查看支持的字符编码和校验集信息)   
+   - [检查库的字符集和字符校验规则](#检查库的字符集和字符校验规则)   
+   - [检查表的字符集和字符校验规则](#检查表的字符集和字符校验规则)   
+   - [检查列的字符集和字符校验规则](#检查列的字符集和字符校验规则)   
+   - [修改列的字符校验规则](#修改列的字符校验规则)   
+- [会话查询](#会话查询)   
+   - [属于某个库的会话](#属于某个库的会话)   
+   - [执行命令为sleep的会话](#执行命令为sleep的会话)   
+   - [执行命令为query的会话](#执行命令为query的会话)   
+   - [会话时间超过多少秒的的](#会话时间超过多少秒的的)   
+   - [找到某个库中事务状态为lock的会话id](#找到某个库中事务状态为lock的会话id)   
+   - [所有的会话id](#所有的会话id)   
+   - [属于某个用户的会话](#属于某个用户的会话)   
+- [Kill Session](#kill-session)   
+   - [kill_long_session](#kill_long_session)   
+   - [kill_all_session](#kill_all_session)   
+   - [kill_databases_session](#kill_databases_session)   
+   - [kille_blocking_trx_id](#kille_blocking_trx_id)   
+   - [forget_password](#forget_password)   
+- [参数查询](#参数查询)   
+   - [内存查看](#内存查看)   
+   - [慢查询参数查询](#慢查询参数查询)   
+- [其他命令](#其他命令)   
+   - [查看存储引擎的状态](#查看存储引擎的状态)   
+   - [查看库名](#查看库名)   
+   - [查看对象](#查看对象)   
+   - [抓包工具](#抓包工具)   
+   - [RDS逻辑备份恢复预处理](#rds逻辑备份恢复预处理)   
+- [大表优化思路](#大表优化思路)   
+- [其他命令](#其他命令)   
+- [生成测试数据](#生成测试数据)   
+- [索引](#索引)   
+   - [索引相关命令集合](#索引相关命令集合)   
+   - [基本索引条件](#基本索引条件)   
+   - [避免过度使用索引](#避免过度使用索引)   
+   - [SQL执行计划](#sql执行计划)   
+   - [MySQL数据库使用索引的条件](#mysql数据库使用索引的条件)   
+   - [相关的系统视图](#相关的系统视图)   
+- [报告权限](#报告权限)   
+- [SQL开发军规](#sql开发军规)   
+
+<!-- /MDTOC -->
 
 # 批处理
 
@@ -102,7 +177,7 @@ select table_schema,table_name,definer from views;
 ## 无主键的表
 
 ```sql
-select table_schema,table_name from information_schema.tables where (table_schema,table_name) not in(     select distinct table_schema,table_name from information_schema.columns where COLUMN_KEY='PRI'  ) and  table_schema not in ('mysql','performance_schema','information_schema','booboo') and table_type='BASE TABLE' 
+select table_schema,table_name from information_schema.tables where (table_schema,table_name) not in(     select distinct table_schema,table_name from information_schema.columns where COLUMN_KEY='PRI'  ) and  table_schema not in ('mysql','performance_schema','information_schema','booboo') and table_type='BASE TABLE'
 and table_name not like 'pm_%' and table_name not like 'cloudods_moni%';
 ```
 
@@ -394,12 +469,12 @@ WHERE
 
 ```SQL
 select concat('kill ',i.trx_mysql_thread_id,';') from information_schema.innodb_trx i,
-  (select 
+  (select
          id, time
      from
          information_schema.processlist
      where
-         time = (select 
+         time = (select
                  max(time)
              from
                  information_schema.processlist
@@ -418,12 +493,12 @@ select concat('kill ',i.trx_mysql_thread_id,';') from information_schema.innodb_
 # 查询 information_schema.innodb_trx 看到有长时间未完成的事务， 使用 kill 命令终止该查询。
 
 select concat('kill ',i.trx_mysql_thread_id,';') from information_schema.innodb_trx i,
-  (select 
+  (select
          id, time
      from
          information_schema.processlist
      where
-         time = (select 
+         time = (select
                  max(time)
              from
                  information_schema.processlist
@@ -722,13 +797,13 @@ user=
 password=
 host=
 port=
- 
+
 # processlist snapshot
 mysql -u$user -p$password -h$host  -P$port -e "select concat('kill ',id,';'),'KYHINFO',now(),id,user,host,db,command,time,state,info from information_schema.processlist where db='kyh' and  time > 60"  > tmpfile
- 
+
 # save
 cat tmpfile >> processlist_history.log
- 
+
 # kill
 awk -F 'KYHINFO' '{if (NR != 1) print $1 }' tmpfile | mysql -u$user -p$password -h$host  -P$port
 ```
@@ -742,10 +817,10 @@ user=
 password=
 host=
 port=
- 
- 
+
+
 mysql -u$user -p$password -h$host  -P$port -e "select concat('kill ',id,';') from information_schema.processlist" > tmpfile
- 
+
 awk '{if (NR != 1) print $0 }' tmpfile | mysql -u$user -p$password -h$host  -P$port
 ```
 
@@ -758,10 +833,10 @@ user=
 password=
 host=
 port=
- 
- 
+
+
 mysql -u$user -p$password -h$host  -P$port -e "select concat('kill ',id,';') from information_schema.processlist where db in ("dbname","dbname2") > tmpfile
- 
+
 awk '{if (NR != 1) print $0 }' tmpfile | mysql -u$user -p$password -h$host  -P$port
 ```
 
@@ -774,9 +849,9 @@ user=
 password=
 host=
 port=
- 
+
 mysql -u$user -p$password -h$host  -P$port -e "select concat('kill ',id,';') from information_schema.processlist,information_schema.innodb_trx  where trx_mysql_thread_id=id and trx_id in (select blocking_trx_id from (select blocking_trx_id, count(blocking_trx_id) as countnum from (select a.trx_id,a.trx_state,b.requesting_trx_id,b.blocking_trx_id from information_schema.innodb_lock_waits as  b left join information_schema.innodb_trx as a on a.trx_id=b.requesting_trx_id) as t1 group by blocking_trx_id order by  countnum desc limit 1) c) ;" > tmpfile
- 
+
 awk '{if (NR != 1) print $0 }' tmpfile | mysql -u$user -p$password -h$host  -P$port
 ```
 
@@ -785,7 +860,7 @@ awk '{if (NR != 1) print $0 }' tmpfile | mysql -u$user -p$password -h$host  -P$p
 ```bash
 #!/bin/bash
 # mysql的root密码不停服务破解方式 支持5.5 5.6 5.7
- 
+
 user=booboo
 password="(Uploo00king)"
 host=localhost
@@ -795,24 +870,24 @@ database="cloudcare"
 dbdir=${datadir}/${database}
 echo ${dbdir}
 rootpwd='(Uploo00king)'
- 
- 
- 
+
+
+
 # linux系统内的操作，拷贝mysql下的用户表，到cloudcare库下
 \cp -avx ${datadir}/mysql/user.* ${dbdir}
- 
+
 # 登陆低权限用户连接mysql,修改root密码
 echo "update ${database}.user set authentication_string=password('${rootpwd}') where user='root';" | mysql -u$user -p$password -h$host  -P$port $database
- 
+
 # 拷贝更改后的user表到mysql库下
 \cp -avx ${dbdir}/user.*  ${datadir}/mysql/
- 
+
 # 查找mysqld的父进程
 mysqld_pid=`pgrep -n mysqld`
- 
+
 # 向mysqld发送SIGHUP信号，强制刷新
 kill -SIGHUP ${mysqld_pid}
- 
+
 # ok 牢记密码即可
 echo "root password is $rootpwd , Please remember the password!!! "
 ```
@@ -834,30 +909,30 @@ mysql>show variables where variable_name in (
 
 ```sql
 SELECT  
-  'slow_query_log' as  parameter, 
+  'slow_query_log' as  parameter,
   @@slow_query_log  as  value, '慢查询日志开启状态' as  info
 UNION  
 SELECT  
-  'long_query_time', 
-  @@long_query_time, '慢查询阈值' 
+  'long_query_time',
+  @@long_query_time, '慢查询阈值'
 UNION  
 SELECT  
-  'log_output', 
-  @@log_output, 
-  '慢查询保存方式' 
+  'log_output',
+  @@log_output,
+  '慢查询保存方式'
 UNION  
 SELECT  
-  'slow_query_log_file', 
-  @@slow_query_log_file, '慢查询日志文件' 
+  'slow_query_log_file',
+  @@slow_query_log_file, '慢查询日志文件'
 UNION  
 SELECT  
-  'log_queries_not_using_indexes', 
-  @@log_queries_not_using_indexes, 
-  '未使用索引查询是否记录' 
+  'log_queries_not_using_indexes',
+  @@log_queries_not_using_indexes,
+  '未使用索引查询是否记录'
 UNION  
 SELECT  
-  'log_slow_admin_statements', 
-  @@log_slow_admin_statements, 
+  'log_slow_admin_statements',
+  @@log_slow_admin_statements,
   '是否将慢管理语句包含例如analyze';
 ```
 
@@ -981,7 +1056,7 @@ select max(id) id from
   and i.trx_mysql_thread_id  not in (connection_id(),p.id)
   union select 0 id) t1
   )b;
-  
+
 select i.trx_mysql_thread_id from information_schema.innodb_trx i,
   (select
          id, time
@@ -1059,12 +1134,12 @@ FROM
     information_schema.innodb_trx a3 ON a2.blocking_trx_id = a3.trx_id
         JOIN
     information_schema.processlist a1 ON a1.id = a3.trx_mysql_thread_id;
-    
-    select * from information_schema.innodb_locks;
-    
-    
 
-# 总核数 = 物理CPU个数 X 每颗物理CPU的核数 
+    select * from information_schema.innodb_locks;
+
+
+
+# 总核数 = 物理CPU个数 X 每颗物理CPU的核数
 # 总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数
 
 # 查看物理CPU个数
@@ -1087,9 +1162,9 @@ from information_schema.`tables` where table_schema = "vingoo_ms") t1)t2;
 vmstat 1 5 													
 iostat -dkx 1 5												
 netstat -nat | awk '{print $6}'| sort | uniq -c				
-netstat -na | grep ESTABLISHED|awk '{print $5}' | awk -F: '{print $1}' | sort|uniq -c	
-ps -aux 2> /dev/null | sort -k3nr | head -n 5 | awk 'BEGIN{print "%CPU\tPID\tCOMMAD"}{print $4,'\t',$2,'\t',$11}' 
-ps -aux 2> /dev/null | sort -k4nr | head -n 5 | awk 'BEGIN{print "%MEM\tPID\tCOMMAD"}{print $4,'\t',$2,'\t',$11}' 
+netstat -na | grep ESTABLISHED|awk '{print $5}' | awk -F: '{print $1}' | sort|uniq -c
+ps -aux 2> /dev/null | sort -k3nr | head -n 5 | awk 'BEGIN{print "%CPU\tPID\tCOMMAD"}{print $4,'\t',$2,'\t',$11}'
+ps -aux 2> /dev/null | sort -k4nr | head -n 5 | awk 'BEGIN{print "%MEM\tPID\tCOMMAD"}{print $4,'\t',$2,'\t',$11}'
 
 
 
@@ -1102,21 +1177,21 @@ show global status like 'Threads_connected';
 
 
 select table_schema,round(sum(data_length/1024/1024),2) as data_length_MB,
-round(sum(index_length/1024/1024),2) as index_length_MB 
+round(sum(index_length/1024/1024),2) as index_length_MB
 from information_schema.tables  
 group by table_schema order by data_length_MB desc,index_length_MB desc;
 
 select table_schema,table_name,table_rows,round(data_length/1024/1024,2) as data_length_MB,
-round(index_length/1024/1024,2) as index_length_MB 
+round(index_length/1024/1024,2) as index_length_MB
 from information_schema.tables  
 where table_schema =  and table_name in ();
 
 
 select table_schema,table_name, TABLE_ROWS,
 round(data_length/1024/1024,2) as data_length_MB,
-round(index_length/1024/1024,2) as index_length_MB 
-from information_schema.tables 
-order by data_length_MB desc,index_length_MB desc 
+round(index_length/1024/1024,2) as index_length_MB
+from information_schema.tables
+order by data_length_MB desc,index_length_MB desc
 limit 10;
 
 select count(table_name) table_count from information_schema.tables
@@ -1252,7 +1327,7 @@ dd:loop
         set v_cnt = v_cnt+10 ;                            
             if  v_cnt = 100000 then leave dd;                           
             end if;          
-        end loop dd ; 
+        end loop dd ;
 commit;
 end $$
 
@@ -1303,7 +1378,7 @@ call test1();
 ①使用explain命令查看sql语句的执行情况(是否走索引)
 
 ```sql
-mysql> explain select * from test where name='oldgirl'\G; 
+mysql> explain select * from test where name='oldgirl'\G;
 *************************** 1. row ***************************
            id: 1
  select_type: SIMPLE
@@ -1321,9 +1396,9 @@ possible_keys: NULL 从查看的结果看出，查询的时候没有走索引
 ②SQL优化后的测试，explain命令不走缓存测试
 
 ```sql
-mysql> explain SQL_NO_CACHE select * from test where name='oldgirl'\G; 
+mysql> explain SQL_NO_CACHE select * from test where name='oldgirl'\G;
 ```
- 
+
 ③查看表的索引：
 
 ```sql
@@ -1401,7 +1476,7 @@ select table_schema,table_name,index_name,index_type,column_name from STATISTICS
 
 -------------
 select table_schema,table_name,index_name,index_type,column_name from STATISTICS where (table_name='cm_app_case' and column_name in ('app_id','approve_rst','case_id')) or  (table_name='cm_app_consumptioninst' and column_name in ('app_id','applicant_huko_city','APPLICANT_HUKO_COUNTY','applicant_huko_province','company_city','company_province','CUR_HOME_CITY','CUR_HOME_COUNTY','CUR_HOME_PROVINCE','EDUCTION_LEVEL','leafOrg','MARITAL_STATUS','merchant_cde','src_case_id','store_cde')) or
-(table_name='cm_case_survey' and column_name in ('case_id' ,'survey_result')) or 
+(table_name='cm_case_survey' and column_name in ('case_id' ,'survey_result')) or
 (table_name='cm_loan_monitoring' and column_name in ('APPLICATIon_NUMBER','contract_id','id','report_id')) or
 (table_name='cm_loan_risklist' and column_name in ('report_id')) or
 (table_name='cm_return_hit_rule_record' and column_name in ('case_id','rule_id')) or

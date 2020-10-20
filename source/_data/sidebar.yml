@@ -102,6 +102,32 @@ linux:
     systemd: /linux/excellent_tools/systemd.html
     supervisor: /linux/excellent_tools/supervisor.html
     prometheus: /linux/excellent_tools/prometheus.html
+    'fluentd': /linux/excellent_tools/fluentd/fluentd.html
+    'fluentd_config': /linux/excellent_tools/fluentd/fluentd_config.html
+    'fluentd_config_input_mongodblogtail_output_datahub': /linux/excellent_tools/fluentd/fluentd_config_input_mongodblogtail_output_datahub.html
+    'fluentd_config_output_mysql': /linux/excellent_tools/fluentd/fluentd_config_output_mysql.html
+    'kettle_install': /linux/excellent_tools/kettle/kettle_install.html
+  linux:
+    'Intel_network_firmware': /linux/linux/Intel_network_firmware.html
+    'U盘装机': /linux/linux/U盘装机.html
+    'curl断点续传': /linux/linux/curl断点续传.html
+    'edusoho-install': /linux/linux/edusoho-install.html
+    'fio压测磁盘': /linux/linux/fio压测磁盘.html
+    'git日常使用场景记录': /linux/linux/git日常使用场景记录.html
+    'kvm_桥接配置': /linux/linux/kvm_桥接配置.html
+    'linux_free': /linux/linux/linux_free.html
+    'rhel7.2_install_mplayer': /linux/linux/rhel7.2_install_mplayer.html
+    'rhel7.2最小安装到图形化界面': /linux/linux/rhel7.2最小安装到图形化界面.html
+    'rhel中文乱码问题': /linux/linux/rhel中文乱码问题.html
+    'screen': /linux/linux/screen.html
+    'strace故障排查': /linux/linux/strace故障排查.html
+    'tcp内存限制': /linux/linux/tcp内存限制.html
+    'ubuntu_dpkg': /linux/linux/ubuntu_dpkg.html
+    'zabbix_3': /linux/linux/zabbix_3.html
+    '常用操作系统命令': /linux/linux/常用操作系统命令.html
+    '常用脚本': /linux/linux/常用脚本.html
+
+
   lamp:
     overview: /linux/lamp/index.html
     phpems: /linux/lamp/phpems.html
@@ -112,7 +138,7 @@ mysql:
   getting_started:
     overview: /mysql/index.html
   booboo_mysql:
-    'overview': /mysql/booboo_mysql/README.html
+    'overview': /mysql/booboo_mysql/index.html
     '00-MySQL管理课程简介': /mysql/booboo_mysql/00-MySQL管理课程简介.html
     '01-MySQL和MariaDB数据库介绍': /mysql/booboo_mysql/01-MySQL和MariaDB数据库介绍.html
     '02-结构化查询语言SQL介绍和基本操作': /mysql/booboo_mysql/02-结构化查询语言SQL介绍和基本操作.html
@@ -127,15 +153,28 @@ mysql:
     '09-SQL考试': /mysql/booboo_mysql/09-SQL考试.html
   dba_mysql:
     'overview': /mysql/dba_mysql/index.html
-    '00-数据库工作软件推荐': /mysql/dba_mysql/00-数据库工作软件推荐.html
-    '01-精品_MySQL常用SQL': /mysql/dba_mysql/01-精品_MySQL常用SQL.html
-    '02-参数优化': /mysql/dba_mysql/02-参数优化.html
+    '00-数据库工作软件推荐': /mysql/dba_mysql/00-MySQL软件推荐.html
+    '01-MySQL常用SQL': /mysql/dba_mysql/01-MySQL常用SQL.html
+    '02-MySQL参数优化': /mysql/dba_mysql/02-MySQL参数优化.html
+    '03-MySQL认证OCP': /mysql/dba_mysql/03-MySQL认证OCP.html
+    '04-MySQL技术积累': /mysql/dba_mysql/04-MySQL技术积累.html
+    '05-MySQL自动化管理': /mysql/dba_mysql/05-MySQL自动化管理.html
+    '06-MySQL性能监控': /mysql/dba_mysql/06-MySQL性能监控.html
+
+    # MyCat
+    '基于MyCat的MySQL高可用架构规划建议': /mysql/dba_mysql/mycat/基于MyCat的MySQL高可用架构规划建议.html
+    '基于MyCAT的分布式数据库架构': /mysql/dba_mysql/mycat/基于MyCAT的分布式数据库架构.html
+
   security:
     overview: /mysql/security/index.html
     cis_mysql: /mysql/security/cis_mysql.html
   awesome-tools:
     overview: /mysql/awesome-tools/index.html
     pt-archiver: /mysql/awesome-tools/pt-archiver.html
+    percona_tookit: /mysql/awesome-tools/pt-percona_tookit.html
+    workbench: /mysql/awesome-tools/workbench.html
+    otter: /mysql/awesome-tools/otter/Otter实现上海美国异地机房双向同步.html
+
 
 
 oracle:
@@ -345,9 +384,12 @@ cloud:
   aliyun:
     overview: /cloud/aliyun/index.html
 #    bigdata: /cloud/aliyun/bigdata/index.html
-  Darabonba:
+  dara:
     '01-intall-dara': /cloud/aliyun/dara/01-install-dara.html
     '02-rds-demo': /cloud/aliyun/dara/02-rds-demo.html
+  drds:
+    'DRDS使用记录': /cloud/aliyun/drds/DRDS使用记录.html
+    'JDBC连接DRDS超时故障': /cloud/aliyun/drds/JDBC连接DRDS超时故障.html
   datav:
     overview: /cloud/aliyun/bigdata/datav/index.html
     01_基础平面地图: /cloud/aliyun/bigdata/datav/01_基础平面地图.html
@@ -361,9 +403,31 @@ cloud:
   RDS:
     rds_introduce: /cloud/aliyun/rds/rds_introduce.html
     rds_lab_01: /cloud/aliyun/rds/rds_lab_01.html
+    RDS升级速率: /cloud/aliyun/rds/RDS升级速率.html
+    rds_for_mysql_5.6_relay: /cloud/aliyun/rds/rds_for_mysql_5.6_relay.html
+    rds_for_mysql_5.6_修改字符编码: /cloud/aliyun/rds/rds_for_mysql_5.6_修改字符编码.html
+    rds_for_mysql_5.6_清空大表数据: /cloud/aliyun/rds/rds_for_mysql_5.6_清空大表数据.html
+    rds_for_mysql_5.7_主键为字符串性能低: /cloud/aliyun/rds/rds_for_mysql_5.7_主键为字符串性能低.html
+    rds_for_mysql_5.7mysqldump备份恢复: /cloud/aliyun/rds/rds_for_mysql_5.7mysqldump备份恢复.html
+    rds_for_mysql_5.7修改字符编码: /cloud/aliyun/rds/rds_for_mysql_5.7修改字符编码.html
+    rds_for_mysql_5.7物理备份恢复必备: /cloud/aliyun/rds/rds_for_mysql_5.7物理备份恢复必备.html
+    突破阿里限制实现RDSForMySQL5.7到自建MySQL数据实时同步: /cloud/aliyun/rds/突破阿里限制实现RDSForMySQL5.7到自建MySQL数据实时同步.html
+
+
   CMS:
     overview: /cloud/aliyun/cms/index.html
     custom_event: /cloud/aliyun/cms/custom_event.html
+  dts:
+    'DTS传输速率': /cloud/aliyun/dts/DTS传输速率.html
+    'DTS同步级联测试': /cloud/aliyun/dts/DTS同步级联测试.html
+    'DTS同步实现异地三中心': /cloud/aliyun/dts/DTS同步实现异地三中心.html
+    'DTS迁移服务实现云上RDS与本地IDC自建mysql同步测试': /cloud/aliyun/dts/sync/test01.html
+    'DTS同步实现RDS公有云和金融云数据迁移测试': /cloud/aliyun/dts/migr/test02.html
+  hybridDB:
+    'HybirdDB_VS_RDS查询测试': /cloud/aliyun/hybridDB/HybirdDB_VS_RDS查询测试.html
+    'HybridDB测试使用': /cloud/aliyun/hybridDB/HybridDB测试使用.html
+    'HybridDB时间戳异常': /cloud/aliyun/hybridDB/HybridDB时间戳异常.html
+
   # 腾讯云
   tencent:
     overview: /cloud/tencent/index.html

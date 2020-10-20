@@ -30,6 +30,6 @@ $ hexo server
 ## Commands
 
 ```bash 
-dir=/mysql/booboo_mysql/;ll | grep md| awk '{print $9}' | awk -F '.' '{print "@"$1"@: %dir%"$1".html"}' | sed "s/@/'/g;s@%dir%@${dir}@g"
-ll | grep md| awk '{print $9}' | awk -F '.' '{print "@"$1"@: @"$1"@"}' | sed "s/@/'/g"
+dir=/mysql/dba_mysql/tec/;ll | grep md| awk '{print $9}' | awk -F '.md' '{print "@"$1"@: %dir%"$1".html"}' | sed "s/@/'/g;s@%dir%@${dir}@g"
+ll | grep md| awk '{print $9}' | awk -F '.md' '{print "@"$1"@: @"$1"@"}' | sed "s/@/'/g"
 ```

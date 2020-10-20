@@ -135,6 +135,32 @@ sidebar:
     supervisor: supervisor
     prometheus: prometheus
     systemd: systemd
+    'fluentd': fluented
+    'fluentd_config': 'fluented配置'
+    'fluentd_config_input_mongodblogtail_output_datahub': 'fluented_mongodblogtail'
+    'fluentd_config_output_mysql': 'fluentd_output_mysql'
+    'kettle_install': kettle
+    # Linux 日常记录
+    linux: Linux 日常
+    'Intel_network_firmware': '无线网卡'
+    'U盘装机': 'U盘装机'
+    'curl断点续传': 'curl断点续传'
+    'edusoho-install': 'edusoho'
+    'fio压测磁盘': 'fio压测磁盘'
+    'git日常使用场景记录': 'git日常使用场景记录'
+    'kvm_桥接配置': 'kvm_桥接配置'
+    'linux_free': 'linux_free'
+    'rhel7.2_install_mplayer': 'mplayer'
+    'rhel7.2最小安装到图形化界面': '最小安装到图形化界面'
+    'rhel中文乱码问题': 'rhel中文乱码问题'
+    'screen': 'screen'
+    'strace故障排查': 'strace故障排查'
+    'tcp内存限制': 'tcp内存限制'
+    'ubuntu_dpkg': 'ubuntu_dpkg'
+    'zabbix_3': 'zabbix_3'
+    '常用操作系统命令': '常用操作系统命令'
+    '常用脚本': '常用脚本'
+
     # 网站
     lamp: LAMP
     phpems:  考试系统PHPEMS
@@ -155,18 +181,29 @@ sidebar:
     '06-MySQL压力测试工具sysbench': '压力测试'
     '07-MySQL5.6一主多从半同步复制': '半同步复制'
     '08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper': '逻辑备份工具对比'
-    '09-SQL考试': 'MySQL考试'
+    '09-SQL考试': '基础考试'
     # MySQL 运维实践
-    dba_mysql: MuySQL 运维实践
-    '00-数据库工作软件推荐': '00-数据库工作软件推荐'
-    '01-精品_MySQL常用SQL': '01-精品_MySQL常用SQL'
-    '02-参数优化': '02-参数优化'
+    dba_mysql: MySQL 运维实践
+    '00-数据库工作软件推荐': 'MySQL软件推荐'
+    '01-MySQL常用SQL': 'MySQL常用SQL'
+    '02-MySQL参数优化': 'MySQL参数优化'
+    '03-MySQL认证OCP': 'MySQL认证OCP'
+    '04-MySQL技术积累': 'MySQL技术积累'
+    '05-MySQL自动化管理': 'MySQL自动化管理'
+    '06-MySQL性能监控': 06-MySQL性能监控
+    '基于MyCat的MySQL高可用架构规划建议': 分布式架构规划
+    '基于MyCAT的分布式数据库架构': 分布式架构配置
+
     # MySQL 安全
     security: 安全篇
     cis_mysql: MySQL安全基线
     # MySQL 工具
     awesome-tools: 工具篇
     pt-archiver: pt-archiver
+    percona_tookit: percona_tookit
+    workbench: workbench
+    otter: otter
+
 
 
   oracle:
@@ -364,9 +401,13 @@ sidebar:
     overview: 概览
 #    bigdata: 大数据概览
     # Darabonba
-    Darabonba: Darabonba
+    dara: Darabonba
     '01-intall-dara': 安装 Darabonba
     '02-rds-demo': RDS Demo
+    # DRDS
+    drds: DRDS
+    'DRDS使用记录': DRDS 分库分表
+    'JDBC连接DRDS超时故障': JDBC连接DRDS超时故障
     # DATAV
     datav: DataV
     01_基础平面地图: 基础平面地图
@@ -381,9 +422,34 @@ sidebar:
     RDS: RDS
     rds_introduce: RDS配置
     rds_lab_01: RDS实验-CPU问题
+    RDS升级速率: RDS升级速率
+    rds_for_mysql_5.6_relay: RDS只读实例大表DDL导致主从延迟大
+    rds_for_mysql_5.6_修改字符编码: 修改字符编码
+    rds_for_mysql_5.6_清空大表数据: 清空大表数据
+    rds_for_mysql_5.7_主键为字符串性能低: 主键为字符串性能低
+    rds_for_mysql_5.7mysqldump备份恢复: mysqldump备份恢复
+    rds_for_mysql_5.7修改字符编码: 修改字符编码
+    rds_for_mysql_5.7物理备份恢复必备: 物理备份恢复必备
+    突破阿里限制实现RDSForMySQL5.7到自建MySQL数据实时同步: 突破阿里限制实现RDSForMySQL5.7到自建MySQL数据实时同步
+
+
     # CMS
     CMS: CMS
     custom_event: 事件告警
+    # DTS
+    dts: DTS
+    'DTS传输速率': 'DTS传输速率'
+    'DTS同步级联测试': 'DTS同步级联测试'
+    'DTS同步实现异地三中心': 'DTS同步实现异地三中心'
+    'DTS迁移服务实现云上RDS与本地IDC自建mysql同步测试': DTS迁移实现云上RDS与本地IDC自建MySQL同步测试
+    'DTS同步实现RDS公有云和金融云数据迁移测试': DTS同步实现RDS公有云和金融云数据迁移测试
+
+    # HybirdDB
+    hybridDB: HybirdDB
+    'HybirdDB_VS_RDS查询测试': 'HybirdDB_VS_RDS查询测试'
+    'HybridDB测试使用': 'HybridDB测试使用'
+    'HybridDB时间戳异常': 'HybridDB时间戳异常'
+
     # 腾讯云
     tencent: 腾讯云
     cloud_lite_mysql: 腾讯云CloudLite认证
