@@ -187,7 +187,7 @@ find "$BackupPath" -name "$DBname*[log,sql]" -type f -mtime +3 -exec rm -rf {} \
 
 ### 问题原因
 
-mysql5.7 版本中，如果`DISTINCT` 和 `order by` 一起使用将会报`3065`错误，sql语句无法执行。 这是由于5.7版本语法比之前版本语法要求更加严格导致的。
+mysql5.7 版本中，如果`DISTINCT` 和 `group by` 一起使用将会报`3065`错误，sql语句无法执行。 这是由于5.7版本语法比之前版本语法要求更加严格导致的。
 
 ### 解决方案
 
