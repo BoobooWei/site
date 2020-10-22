@@ -165,6 +165,9 @@ mysql:
     '基于MyCat的MySQL高可用架构规划建议': /mysql/dba_mysql/mycat/基于MyCat的MySQL高可用架构规划建议.html
     '基于MyCAT的分布式数据库架构': /mysql/dba_mysql/mycat/基于MyCAT的分布式数据库架构.html
 
+    # TiDB
+    'tidb':  /mysql/dba_mysql/tidb/tidb.html
+
   security:
     overview: /mysql/security/index.html
     cis_mysql: /mysql/security/cis_mysql.html
