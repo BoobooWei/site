@@ -1416,9 +1416,9 @@ DB_ROW_ID | 用户名  | 年龄 | DB_TRX_ID | DB_ROLL_PTR
 
 Undo Log
 
- | DB_ROW_ID | 用户名 | 年龄 | DB_TRX_ID | DB_ROLL_PTR
-:- | :-------- | :-- | :- | :-------- | -----------
- | 1         | Amy | 5  | NULL      | NULL        |
+DB_ROW_ID | 用户名 | 年龄 | DB_TRX_ID | DB_ROLL_PTR
+:-------- | :-- | :- | :-------- | :----------
+1         | Amy | 5  | NULL      | NULL
 
 现在来了一个 `事务1` 对该记录的 `name` 做出了修改，改为 `Sage`。
 
@@ -1443,9 +1443,9 @@ DB_ROW_ID | 用户名  | 年龄 | DB_TRX_ID | DB_ROLL_PTR
 :-------- | :--- | :- | :-------- | :----------
 1         | Sage | 5  | 1         | ox1234567
 
- | DB_ROW_ID | 用户名 | 年龄 | DB_TRX_ID | DB_ROLL_PTR
-:- | :-------- | :-- | :- | :-------- | -----------
- | 1         | Amy | 5  | NULL      | NULL        |
+DB_ROW_ID | 用户名 | 年龄 | DB_TRX_ID | DB_ROLL_PTR
+:-------- | :-- | :- | :-------- | :----------
+1         | Amy | 5  | NULL      | NULL
 
 - 第一步: 事务2修改该行数据时，数据库也先为该行加锁；
 - 第二步: 然后把该行数据拷贝到 `undo log`中，作为旧记录，发现该行记录已经有`undo log`了，那么最新的旧数据作为链表的表头，插在该行记录的 `undo log` 最前面；
