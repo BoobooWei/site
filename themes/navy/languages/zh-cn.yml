@@ -309,6 +309,7 @@ sidebar:
     oracle-12c: Oracle 12c
     ocp: OCP认证
     1z0-071: 1z0-071
+    1z0-062: 1z0-062
 
   git:
     getting_started: '开始使用'

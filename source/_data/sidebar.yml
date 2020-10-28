@@ -186,6 +186,7 @@ oracle:
   ocp:
     overview: /oracle/ocp/index.html
     1z0-071: /oracle/ocp/1z0-071.html
+    1z0-062: /oracle/ocp/1z0-062.html
   oracle-12c:
     overview: /oracle/oracle-12c/index.html
   oracle-11g:
