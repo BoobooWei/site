@@ -242,25 +242,25 @@ spfiledbtest.ora: data
 
 spfile启动的实例，如何修改动态参数内存中的值：
 
-* ```sql
+  ```sql
   alter system set open_cursors=400 scope=memory;
   ```
 
 spfile启动的实例，如何修改动态参数在参数文件中的值：
 
-* ```sql
+  ```sql
   alter system set open_cursors=500 scope=spfile;
   ```
 
 spfile启动的实例，如何修改动态参数内存中的值和参数文件中的值：
 
-* ```sql
+  ```sql
   alter system set open_cursors=600 scope=both;
   ```
 
 spfile启动的实例，如何修改静态参数在参数文件中的值：
 
-* ```sql
+  ```sql
   alter system set memory_max_target=1g scope=spfile;
   ```
 
@@ -277,14 +277,14 @@ spfile启动的实例，如何修改静态参数在参数文件中的值：
 
 创建pfile：使用sys创建会话之后就可以使用的命令，不需要启动数据库。
 
-* ```sql
+  ```sql
   create pfile from spfile;
   ```
 
 
 pfile启动的实例，如何修改动态参数内存中的值：
 
-* ```sql
+  ```sql
   alter system set open_cursors=400;
   ```
 
@@ -294,7 +294,7 @@ pfile启动的实例，如何修改动态参数在参数文件中的值：
 
 pfile启动的实例，如何修改动态参数内存中的值和参数文件中的值：
 
-* ```sql
+  ```sql
   alter system set open_cursors=500;
   ```
 
@@ -308,14 +308,14 @@ pfile启动的实例，如何修改静态参数在参数文件中的值：
 
 修改pfile的位置：
 
-* ```sql
+  ```sql
   startup pfile='/home/oracle/orcl.ora'
   ```
 
 
 修改spfile的位置：
 
-* ```bash
+  ```bash
   vi $ORACLE_HOME/dbs/initorcl.ora
   -------------------------------------
   spfile='/home/oracle/2.ora'
@@ -326,19 +326,19 @@ pfile启动的实例，如何修改静态参数在参数文件中的值：
 
 制作二进制文件
 
-* ```bash
+  ```bash
   dd if=/dev/zero of=/disk1 bs=1M count=10
   ```
 
 将二进制文件初始化为块设备
 
-* ```bash
+  ```bash
   losetup /dev/loop1 /disk1
   ```
 
 将块设备初始化为字符设备（裸设备）
 
-* ```bash
+  ```bash
   raw /dev/raw/raw1 /dev/loop1
   chown oracle.oinstall /dev/raw/raw1
 

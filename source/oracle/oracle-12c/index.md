@@ -18,21 +18,39 @@ title: Oracle 12c 学习笔记
 
 [Oracle数据库12 *c*版本2 管理](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/administration.html)
 
+### 管理基础篇
+
+* [数据库概念 ](https://docs.oracle.com/database/121/CNCPT/process.htm#CNCPT008)
+* [Oracle数据库12 *c*新特性](https://docs.oracle.com/database/121/NEWFT/toc.htm)
 * [数据库管理员指南12 c版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/admin/index.html)
+
+### 管理专项篇
+
 * [数据库安装指南 适用于Linux的12 c版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/ladbi/index.html)
 * [数据库网络服务管理员指南12 c版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/netag/index.html)
-* [数据库升级指南12 *c*版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/index.html)
 * [数据库备份和恢复用户指南12 c版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/bradv/index.html)
+* [数据库升级指南12 *c*版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/upgrd/index.html)
 * [数据库安全指南12 c版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/dbseg/index.html)
-* [数据库性能调优指南12 *c*版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/tgdba/index.html)
-* [SQL *PLUS®用户指南和参考 发行版2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqpug/index.html)
+* [Unicode数据库迁移助手指南 ](https://docs.oracle.com/database/121/DUMAG/toc.htm)
+
+### SQL语句篇
+
 * [SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqlrf/index.html)
-* [数据库工具](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sutil/index.html)
 * [Schema Demo](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/comsc/lot.html)
 * [Schema Demo Github](https://github.com/oracle/db-sample-schemas)
-* [Oracle数据库12 *c*新特性](https://docs.oracle.com/database/121/NEWFT/toc.htm)
-* [数据库概念 ](https://docs.oracle.com/database/121/CNCPT/process.htm#CNCPT008)
-* [Unicode数据库迁移助手指南 ](https://docs.oracle.com/database/121/DUMAG/toc.htm)
+
+### 管理工具篇
+
+* [SQL *PLUS®用户指南和参考 发行版2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sqpug/index.html)
+* [数据库工具](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/sutil/index.html)
+
+
+### 性能调优篇
+
+* [数据库性能调优指南12 *c*版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/tgdba/index.html)
+* [SQL优化指南12 c版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/tgsql/index.html)
+
+
 
 
 
