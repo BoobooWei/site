@@ -307,9 +307,80 @@ sidebar:
     'Z-总结-01-函数对比OracleVSMySQL': 函数总结
     'Z-总结-02-体系结构练习题': 体系结构
     oracle-12c: Oracle 12c
+    student: Oracle12c学生手册
+    '01-配置使用Oracle企业管理工具em': '企业管理工具 EM'
+    '02-配置使用Oracle企业云管理工具ocm': '企业云管理工具 OEM'
+    '03-导入DemoSchemaOE': '导入DemoSchemaOE'
+    # 1Z0-062-Oracle数据库12c-管理
+    '1Z0-062-Oracle数据库12c-管理': 062-Oracle12c-中级管理
+    '02-ExploringOracleDatabaseArchitecture-体系架构': '02-ExploringOracleDatabaseArchitecture-体系架构'
+    '03-OracleDatabaseManagementTools-管理工具': '03-OracleDatabaseManagementTools-管理工具'
+    '04-ManagingtheDatabaseInstance-管理实例': '04-ManagingtheDatabaseInstance-管理实例'
+    '05-ConfiguringtheOracleNetworkEnvironment-管理网络': '05-ConfiguringtheOracleNetworkEnvironment-管理网络'
+    '06-AdministeringUserSecurity-管理用户': '06-AdministeringUserSecurity-管理用户'
+    '07-ManagingDatabaseStorageStructures-管理存储': '07-ManagingDatabaseStorageStructures-管理存储'
+    '08-ManagingSpace-管理空间': '08-ManagingSpace-管理空间'
+    '09-ManagingUndoData-管理回滚': '09-ManagingUndoData-管理回滚'
+    '10-ManagingDataConcurrency-管理并发': '10-ManagingDataConcurrency-管理并发'
+    '11-ImplementingOracleDatabaseAuditing-管理审计': '11-ImplementingOracleDatabaseAuditing-管理审计'
+    '12-BackupandRecoveryConcepts-备份恢复概念': '12-BackupandRecoveryConcepts-备份恢复概念'
+    '13-BackupandRecoveryConfiguration-备份恢复配置': '13-BackupandRecoveryConfiguration-备份恢复配置'
+    '14-PerformingDatabaseBackups-执行备份': '14-PerformingDatabaseBackups-执行备份'
+    '15-PerformingDatabaseRecovery-执行恢复': '15-PerformingDatabaseRecovery-执行恢复'
+    '16-MovingData-移动数据': '16-MovingData-移动数据'
+    '17-DatabaseMaintenance-数据库维护': '17-DatabaseMaintenance-数据库维护'
+    '18-ManagingPerformance-管理性能': '18-ManagingPerformance-管理性能'
+    '19-ManagingPerformanceSQLTuning-SQL调优': '19-ManagingPerformanceSQLTuning-SQL调优'
+    '20-UsingDatabaseResourceManager-管理资源': '20-UsingDatabaseResourceManager-管理资源'
+    '21-UsingOracleSchedulertoAutomateTasks-自动化任务': '21-UsingOracleSchedulertoAutomateTasks-自动化任务'
+    # 1Z0-063-Oracle数据库12c-高级管理
+    1Z0-063-Oracle数据库12c-高级管理: 063-Oracle12c-高级管理
+    Oracle数据库12c-备份和恢复研讨: Oracle数据库12c-备份和恢复研讨
+    '01-Introduction-入门练习': '01-Introduction-入门练习'
+    '02-GettingStarted-入门准备': '02-GettingStarted-入门准备'
+    '03-ConfiguringforRecoverability-配置可恢复性': '03-ConfiguringforRecoverability-配置可恢复性'
+    '04-UsingtheRMANRecoveryCatalog-使用RMAN恢复目录的实践': '04-UsingtheRMANRecoveryCatalog-使用RMAN恢复目录的实践'
+    '05-BackupStrategiesandTerminology-备份策略和术语的实践': '05-BackupStrategiesandTerminology-备份策略和术语的实践'
+    '06-CreatingBackups-创建备份的练习': '06-CreatingBackups-创建备份的练习'
+    '07-ImprovingYourBackups-改善备份的实践': '07-ImprovingYourBackups-改善备份的实践'
+    '08-UsingRMAN-EncryptedBackups-使用RMAN加密的备份': '08-UsingRMAN-EncryptedBackups-使用RMAN加密的备份'
+    '09-DiagnosingDatabaseFailure-诊断数据库故障的实践': '09-DiagnosingDatabaseFailure-诊断数据库故障的实践'
+    '10-RestoreandRecoveryConcepts-还原和恢复概念的实践': '10-RestoreandRecoveryConcepts-还原和恢复概念的实践'
+    '11-PerformingRecovery-执行恢复的实践': '11-PerformingRecovery-执行恢复的实践'
+    '12-PerformingRecoveryII-执行恢复的实践II': '12-PerformingRecoveryII-执行恢复的实践II'
+    '13-RMANandOracleSecureBackup-RMAN和OracleSecureBackup的实践': '13-RMANandOracleSecureBackup-RMAN和OracleSecureBackup的实践'
+    '14-UsingFlashbackTechnologies-使用闪回技术的实践': '14-UsingFlashbackTechnologies-使用闪回技术的实践'
+    '15-FlashbackDatabase-闪回数据库的练习': '15-FlashbackDatabase-闪回数据库的练习'
+    '16-TransportingData-传输数据的实践': '16-TransportingData-传输数据的实践'
+    '17-PerformingPoint-in-TimeRecovery-执行时间点恢复的实践': '17-PerformingPoint-in-TimeRecovery-执行时间点恢复的实践'
+    '18-DuplicatingaDatabase-复制数据库': '18-DuplicatingaDatabase-复制数据库'
+    '19-RMANTroubleshootingandTuning-RMAN故障排除和调整的实践': '19-RMANTroubleshootingandTuning-RMAN故障排除和调整的实践'
+    '20-Workshop-研讨会': '20-Workshop-研讨会'
+
+    Oracle数据库12c-管理多租户架构: Oracle数据库12c-管理多租户架构
+    '01-EnterpriseManagerCloudControlandOtherTools-企业管理器云控制和其他工具': '01-EnterpriseManagerCloudControlandOtherTools-企业管理器云控制和其他工具'
+    '02-BasicsofMultitenantContainerDatabaseandPluggableDatabases-多租户容器数据库和可插拔数据库的基础': '02-BasicsofMultitenantContainerDatabaseandPluggableDatabases-多租户容器数据库和可插拔数据库的基础'
+    '03-CreatingaMultitenantContainerDatabaseandPluggableDatabases-创建多租户容器数据库和可插拔数据库': '03-CreatingaMultitenantContainerDatabaseandPluggableDatabases-创建多租户容器数据库和可插拔数据库'
+    '04-ManagingaMultitenantContainerDatabaseandPluggableDatabase-管理多租户容器数据库和可插拔数据库的实践': '04-ManagingaMultitenantContainerDatabaseandPluggableDatabase-管理多租户容器数据库和可插拔数据库的实践'
+    '05-ManagingTablespacesinCDBandPDBs-在CDB和PDB中管理表空间的实践': '05-ManagingTablespacesinCDBandPDBs-在CDB和PDB中管理表空间的实践'
+    '06-ManagingSecurityinCDBandPDBs-管理CDB和PDB中的安全性的实践': '06-ManagingSecurityinCDBandPDBs-管理CDB和PDB中的安全性的实践'
+    '07-BackupRecoveryFlashbackCDBandPDBs-备份恢复闪回CDB和PDB的实践': '07-BackupRecoveryFlashbackCDBandPDBs-备份恢复闪回CDB和PDB的实践'
+    '08-Performance-性能': '08-Performance-性能'
+    '09-Miscellaneous-其他': '09-Miscellaneous-其他'
+    teacher: Oracle12c 课堂笔记
+    '01-InstallOracle12c': '01-InstallOracle12c'
+    '02-CreateDatabase': '02-CreateDatabase'
+    '03-StartListener': '03-StartListener'
+    '04-ImportDemoHT': '04-ImportDemoHT'
+    '05-SQL-common': '05-SQL-common'
+    '06-SQL-advanced': '06-SQL-advanced'
+    '07-Manage': '07-Manage'
+
     ocp: OCP认证
     1z0-071: 1z0-071
     1z0-062: 1z0-062
+    1z0-063: 1z0-063
+    12c-ocm: 12c-ocm
 
   git:
     getting_started: '开始使用'
