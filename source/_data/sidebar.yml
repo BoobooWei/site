@@ -161,6 +161,7 @@ mysql:
     '05-MySQL自动化管理': /mysql/dba_mysql/05-MySQL自动化管理.html
     '06-MySQL性能监控': /mysql/dba_mysql/06-MySQL性能监控.html
     '07-MySQL系统库SYS': /mysql/dba_mysql/07-MySQL系统库SYS.html
+    '08-MySQL管理规范': /mysql/dba_mysql/08-MySQL管理规范.html
 
     # MyCat
     '基于MyCat的MySQL高可用架构规划建议': /mysql/dba_mysql/mycat/基于MyCat的MySQL高可用架构规划建议.html
