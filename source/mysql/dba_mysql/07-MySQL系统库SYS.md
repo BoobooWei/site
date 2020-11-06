@@ -4,6 +4,8 @@ title: 全方位认识 sys 系统库
 
 > 基于MySQL 5.7.18 版本整理
 
+![](pic/13.png)
+
 # 初识 SYS 系统库
 
 [SYS系统库开发网站](https://github.com/mysql/mysql-sys)
