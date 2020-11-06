@@ -163,8 +163,8 @@ fluentd -c /alidata/install/fluentd/conf/datahub.conf
   </source>
   <match test>
     @type datahub
-    access_id "LTAIbM8NZXpEV0DR"
-    access_key "cDVWPPkjjUqtYY9bofnqfy8WNrfW7U"
+    access_id "xxx"
+    access_key "xxx"
     endpoint "https://dh-cn-hangzhou.aliyuncs.com"
     project_name "datahub_43_booboowei"
     topic_name "mongodb_log_ana_43_booboowei"

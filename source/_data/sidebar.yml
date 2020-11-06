@@ -153,6 +153,7 @@ mysql:
     '09-SQL考试': /mysql/booboo_mysql/09-SQL考试.html
   dba_mysql:
     'overview': /mysql/dba_mysql/index.html
+    '08-MySQL管理规范': /mysql/dba_mysql/08-MySQL管理规范.html
     '00-数据库工作软件推荐': /mysql/dba_mysql/00-MySQL软件推荐.html
     '01-MySQL常用SQL': /mysql/dba_mysql/01-MySQL常用SQL.html
     '02-MySQL参数优化': /mysql/dba_mysql/02-MySQL参数优化.html
@@ -161,7 +162,7 @@ mysql:
     '05-MySQL自动化管理': /mysql/dba_mysql/05-MySQL自动化管理.html
     '06-MySQL性能监控': /mysql/dba_mysql/06-MySQL性能监控.html
     '07-MySQL系统库SYS': /mysql/dba_mysql/07-MySQL系统库SYS.html
-    '08-MySQL管理规范': /mysql/dba_mysql/08-MySQL管理规范.html
+
 
     # MyCat
     '基于MyCat的MySQL高可用架构规划建议': /mysql/dba_mysql/mycat/基于MyCat的MySQL高可用架构规划建议.html
@@ -176,7 +177,7 @@ mysql:
   awesome-tools:
     overview: /mysql/awesome-tools/index.html
     pt-archiver: /mysql/awesome-tools/pt-archiver.html
-    percona_tookit: /mysql/awesome-tools/pt-percona_tookit.html
+    percona_tookit: /mysql/awesome-tools/percona_tookit.html
     workbench: /mysql/awesome-tools/workbench.html
     otter: /mysql/awesome-tools/otter/Otter实现上海美国异地机房双向同步.html
 
