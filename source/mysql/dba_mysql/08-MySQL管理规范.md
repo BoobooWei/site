@@ -37,7 +37,7 @@ title: MySQL管理规范
 
 * [团队管理规范](/mysql/dba_mysql/08-MySQL管理规范/团队管理规范.html)
 
-
+# 思维导图
 
 <head>
     <meta charset="utf-8"/>
