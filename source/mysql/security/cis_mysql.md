@@ -2,6 +2,8 @@
 title: MySQL 5.7 安全基线
 ---
 
+> [MySQL安全基线检查表格自动生成工具](https://github.com/SuperCloudDBA/dbreport/blob/master/get_cis_mysql_57_benchmark.py)
+
 # 概述
 
 本文根据以下文章进行整理学习：
