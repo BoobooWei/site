@@ -33,8 +33,28 @@ page:
 sidebar:
   api:
     'overview': 概览
+    'mysql_8.0_reference_manual': MySQL 8.0 企业管理
     'additions': 添加的功能
     'deprecations': 不推荐使用的功能
+    # 企业管理
+    01-MySQL-Secure-Deployment-Guide: 安全部署指南
+    02-Starting-and-Stopping-MySQL: 启动和关闭
+    03-MySQL-Tutorial: 基础入门
+    04-MySQL-Globalization: 全球化
+    05-MySQL-Restrictions-and-Limitations: 限制和局限
+    06-MySQL-Partitioning: 分区
+    07-MySQL-Backup-and-Recovery: 备份和恢复
+    08-MySQL-Information-Schema: Information Schema
+    09-MySQL-Performance-Schema: Performance Schema
+    10-MySQL-SYS-Schema: SYS Schema
+    11-MySQL-Replication: Replication 复制
+    12-MySQL-Group-Replication: MGR 组复制
+    13-MySQL-Shell: MySQL Shell
+    14-MySQL-InnoDB-Storage-Engine: InnoDB 存储引擎
+    15-MySQL-Optimization: MySQL 优化
+    16-MySQL-Utilities: MySQL Utilities
+    00-others: MySQL 其他
+    # 添加的功能
     'removals': 删除的功能
     'data dictionary': 数据字典
     'atomic ddl': Atomic DDL
@@ -530,7 +550,7 @@ sidebar:
     # 腾讯云
     tencent: 腾讯云
     cloud_lite_mysql: 腾讯云CloudLite认证
-    
+
   amy:
     getting_started: 开始使用
     overview: 概览
@@ -539,6 +559,15 @@ sidebar:
     k_star-2020-08-09-amy: Kstar第三节
     k_star-2020-08-15-amy: Kstar第四节
     k_star-2020-08-23-amy: Kstar第五节
+    k_star-2020-08-30-amy: Kstar第六节
+    k_star-2020-09-06-amy: Kstar第七节
+    k_star-2020-09-13-amy: Kstar第八节
+    k_star-2020-09-20-amy: Kstar第九节
+    k_star-2020-10-11-amy: Kstar第十节
+    k_star-2020-10-18-amy: Kstar第十一节
+    k_star-2020-10-25-amy: Kstar第十二节
+    k_star-2020-11-01-amy: Kstar第十三节
+    k_star-2020-11-08-amy: Kstar第十四节
     kindergarten: 幼儿园
     m2-2020-08-15-amy: 中二班21天读绘本
 

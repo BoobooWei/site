@@ -1,8 +1,8 @@
 ---
-title: :Python 实现 PageRank 脚本
+title: Python 实现 PageRank 脚本
 ---
 
-```python 
+```python
 # -*- coding:utf8 -*-
 """
 Created on:
@@ -28,7 +28,7 @@ class PageRank():
 
     def get_G(self):
         """
-		根据 G = \alpha S + ( 1 - \alpha ) \frac{1}{N} U 计算 G_a G_b G_c G_d
+        根据 G = \alpha S + ( 1 - \alpha ) \frac{1}{N} U 计算 G_a G_b G_c G_d
         :return:
         """
         G_dict = {}
@@ -106,8 +106,3 @@ if __name__ == '__main__':
     for i in sorted(result.items(), key=lambda x: x[1], reverse=True):
         print(i)
 ```
-
-
-
-
-

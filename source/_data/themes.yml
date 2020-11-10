@@ -6,7 +6,7 @@
     - 关系型数据库
     - MySQL
 - name: MySQL 运维实践
-  description: MySQL 运维实践
+  description: MySQL 运维实践 来自生产中的实战经验。
   link: /mysql/dba_mysql/
   preview: /mysql/dba_mysql/
   tags:
@@ -23,6 +23,13 @@
   description: MySQL生产中使用的优秀工具
   link: /mysql/awesome-tools/
   preview: /mysql/awesome-tools/
+  tags:
+    - 关系型数据库
+    - MySQL
+- name: MySQL 8.0 企业管理
+  description: MySQL 8.0 企业管理技术学习篇
+  link: /api/mysql_8.0_reference_manual/index.html
+  preview: /api/mysql_8.0_reference_manual/index.html
   tags:
     - 关系型数据库
     - MySQL
@@ -261,4 +268,3 @@
   preview: /linux/booboo_middle_service/
   tags:
     - Linux
-

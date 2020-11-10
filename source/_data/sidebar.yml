@@ -1,51 +1,70 @@
 api:
+  mysql_8.0_reference_manual:
+    overview: /api/mysql_8.0_reference_manual/index.html
+    01-MySQL-Secure-Deployment-Guide: /api/mysql_8.0_reference_manual/01-MySQL-Secure-Deployment-Guide/index.html
+    02-Starting-and-Stopping-MySQL: /api/mysql_8.0_reference_manual/02-Starting-and-Stopping-MySQL/index.html
+    03-MySQL-Tutorial: /api/mysql_8.0_reference_manual/03-MySQL-Tutorial/index.html
+    04-MySQL-Globalization: /api/mysql_8.0_reference_manual/04-MySQL-Globalization/index.html
+    05-MySQL-Restrictions-and-Limitations: /api/mysql_8.0_reference_manual/05-MySQL-Restrictions-and-Limitations/index.html
+    06-MySQL-Partitioning: /api/mysql_8.0_reference_manual/06-MySQL-Partitioning/index.html
+    07-MySQL-Backup-and-Recovery: /api/mysql_8.0_reference_manual/07-MySQL-Backup-and-Recovery/index.html
+    08-MySQL-Information-Schema: /api/mysql_8.0_reference_manual/08-MySQL-Information-Schema/index.html
+    09-MySQL-Performance-Schema: /api/mysql_8.0_reference_manual/09-MySQL-Performance-Schema/index.html
+    10-MySQL-SYS-Schema: /api/mysql_8.0_reference_manual/10-MySQL-SYS-Schema/index.html
+    11-MySQL-Replication: /api/mysql_8.0_reference_manual/11-MySQL-Replication/index.html
+    12-MySQL-Group-Replication: /api/mysql_8.0_reference_manual/12-MySQL-Group-Replication/index.html
+    13-MySQL-Shell: /api/mysql_8.0_reference_manual/13-MySQL-Shell/index.html
+    14-MySQL-InnoDB-Storage-Engine: /api/mysql_8.0_reference_manual/14-MySQL-InnoDB-Storage-Engine/index.html
+    15-MySQL-Optimization: /api/mysql_8.0_reference_manual/15-MySQL-Optimization/index.html
+    16-MySQL-Utilities: /api/mysql_8.0_reference_manual/16-MySQL-Utilities/index.html
+    00-others: /api/mysql_8.0_reference_manual/00-others/index.html
   additions:
-    overview: /api/index.html
-    'additional target types for casts': additional-target-types-for-casts.html
-    'aliases in single table delete statements': aliases-in-single-table-delete-statements.html
-    'atomic ddl': atomic-ddl.html
-    'backup lock': backup-lock.html
-    'c api': c-api.html
-    'character set support': character-set-support.html
-    'common table expressions': common-table-expressions.html
-    'configuration': configuration.html
-    'connection management': connection-management.html
-    'data dictionary': data-dictionary.html
-    'data type support': data-type-support.html
-    'explain analyze statement': explain-analyze-statement.html
-    'hash join optimization': hash-join-optimization.html
-    'hintable time zone': hintable-time-zone.html
-    'innodb enhancements': innodb-enhancements.html
-    'internal tempoary tables': internal-tempoary-tables.html
-    'json enhancements': json-enhancements.html
-    'json schema validation': json-schema-validation.html
-    'json value function': json-value-function.html
-    'lateral derived tables': lateral-derived-tables.html
-    'multi valued indexes': multi-valued-indexes.html
-    'mysql upgrade': mysql-upgrade.html
-    'new optimizer switch flags': new-optimizer-switch-flags.html
-    'optimizer hints for force index ignore index': optimizer-hints-for-force-index-ignore-index.html
-    'optimizer': optimizer.html
-    'plugins': plugins.html
-    'precise information for json schema check constraint': precise-information-for-json-schema-check-constraint.html
-    'query cast injection': query-cast-injection.html
-    'redo log archiving': redo-log-archiving.html
-    'regular expression support': regular-expression-support.html
-    'replication': replication.html
-    'resource management': resource-management.html
-    'row and columns aliases with on duplicate key update': row-and-columns-aliases-with-on-duplicate-key-update.html
-    'security and account management': security-and-account-management.html
-    'sql standard explicit table clause and table value constructor': sql-standard-explicit-table-clause-and-table-value-constructor.html
-    'table encryption management': table-encryption-management.html
-    'the clone plugin': the-clone-plugin.html
-    'time zone support for timestamp and datatime': time-zone-support-for-timestamp-and-datatime.html
-    'user comments and user attributes': user-comments-and-user-attributes.html
-    'window functions': window-functions.html
-    'xml enhancements': xml-enhancements.html
+    overview: /api/new/index.html
+    'additional target types for casts': /api/new/additional-target-types-for-casts.html
+    'aliases in single table delete statements': /api/new/aliases-in-single-table-delete-statements.html
+    'atomic ddl': /api/new/atomic-ddl.html
+    'backup lock': /api/new/backup-lock.html
+    'c api': /api/new/c-api.html
+    'character set support': /api/new/character-set-support.html
+    'common table expressions': /api/new/common-table-expressions.html
+    'configuration': /api/new/configuration.html
+    'connection management': /api/new/connection-management.html
+    'data dictionary': /api/new/data-dictionary.html
+    'data type support': /api/new/data-type-support.html
+    'explain analyze statement': /api/new/explain-analyze-statement.html
+    'hash join optimization': /api/new/hash-join-optimization.html
+    'hintable time zone': /api/new/hintable-time-zone.html
+    'innodb enhancements': /api/new/innodb-enhancements.html
+    'internal tempoary tables': /api/new/internal-tempoary-tables.html
+    'json enhancements': /api/new/json-enhancements.html
+    'json schema validation': /api/new/json-schema-validation.html
+    'json value function': /api/new/json-value-function.html
+    'lateral derived tables': /api/new/lateral-derived-tables.html
+    'multi valued indexes': /api/new/multi-valued-indexes.html
+    'mysql upgrade': /api/new/mysql-upgrade.html
+    'new optimizer switch flags': /api/new/new-optimizer-switch-flags.html
+    'optimizer hints for force index ignore index': /api/new/optimizer-hints-for-force-index-ignore-index.html
+    'optimizer': /api/new/optimizer.html
+    'plugins': /api/new/plugins.html
+    'precise information for json schema check constraint': /api/new/precise-information-for-json-schema-check-constraint.html
+    'query cast injection': /api/new/query-cast-injection.html
+    'redo log archiving': /api/new/redo-log-archiving.html
+    'regular expression support': /api/new/regular-expression-support.html
+    'replication': /api/new/replication.html
+    'resource management': /api/new/resource-management.html
+    'row and columns aliases with on duplicate key update': /api/new/row-and-columns-aliases-with-on-duplicate-key-update.html
+    'security and account management': /api/new/security-and-account-management.html
+    'sql standard explicit table clause and table value constructor': /api/new/sql-standard-explicit-table-clause-and-table-value-constructor.html
+    'table encryption management': /api/new/table-encryption-management.html
+    'the clone plugin': /api/new/the-clone-plugin.html
+    'time zone support for timestamp and datatime': /api/new/time-zone-support-for-timestamp-and-datatime.html
+    'user comments and user attributes': /api/new/user-comments-and-user-attributes.html
+    'window functions': /api/new/window-functions.html
+    'xml enhancements': /api/new/xml-enhancements.html
   deprecations:
-    'window functions': window-functions.html
+    'window functions': /api/new/window-functions.html
   removals:
-    'xml enhancements': xml-enhancements.html
+    'xml enhancements': /api/new/xml-enhancements.html
 
 linux:
   getting_started:
@@ -530,6 +549,15 @@ amy:
     k_star-2020-08-09-amy: /amy/english/k_star/2020-08-09-amy.html
     k_star-2020-08-15-amy: /amy/english/k_star/2020-08-15-amy.html
     k_star-2020-08-23-amy: /amy/english/k_star/2020-08-23-amy.html
+    k_star-2020-08-30-amy: /amy/english/k_star/2020-08-30-amy.html
+    k_star-2020-09-06-amy: /amy/english/k_star/2020-09-06-amy.html
+    k_star-2020-09-13-amy: /amy/english/k_star/2020-09-13-amy.html
+    k_star-2020-09-20-amy: /amy/english/k_star/2020-09-20-amy.html
+    k_star-2020-10-11-amy: /amy/english/k_star/2020-10-11-amy.html
+    k_star-2020-10-18-amy: /amy/english/k_star/2020-10-18-amy.html
+    k_star-2020-10-25-amy: /amy/english/k_star/2020-10-25-amy.html
+    k_star-2020-11-01-amy: /amy/english/k_star/2020-11-01-amy.html
+    k_star-2020-11-08-amy: /amy/english/k_star/2020-11-08-amy.html
   kindergarten:
     overview: /amy/kindergarten/index.html
     m2-2020-08-15-amy: /amy/kindergarten/m2/2020-08-15-amy.html
@@ -606,12 +634,12 @@ nosql:
   getting_started:
     overview: /nosql/index.html
   booboo_redis:
-    'overview': /nosql/redis/booboo_redis/index.html
-    '01-Redis入门': /nosql/redis/booboo_redis/01-Redis入门.html
-    '02-Redis持久化': /nosql/redis/booboo_redis/02-Redis持久化.html
-    '03-Redis主从': /nosql/redis/booboo_redis/03-Redis主从.html
-    '04-Redis集群': /nosql/redis/booboo_redis/04-Redis集群.html
-    '05-Redis排错指南': /nosql/redis/booboo_redis/05-Redis排错指南.html
+    'overview': /nosql/booboo_redis/index.html
+    '01-Redis入门': /nosql/booboo_redis/01-Redis入门.html
+    '02-Redis持久化': /nosql/booboo_redis/02-Redis持久化.html
+    '03-Redis主从': /nosql/booboo_redis/03-Redis主从.html
+    '04-Redis集群': /nosql/booboo_redis/04-Redis集群.html
+    '05-Redis排错指南': /nosql/booboo_redis/05-Redis排错指南.html
   dba_redis:
     'overview': /nosql/dba_redis/index.html
     '0_hash_tables': /nosql/dba_redis/0_hash_tables.html
