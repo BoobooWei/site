@@ -181,14 +181,14 @@ mysql:
     '05-MySQL自动化管理': /mysql/dba_mysql/05-MySQL自动化管理.html
     '06-MySQL性能监控': /mysql/dba_mysql/06-MySQL性能监控.html
     '07-MySQL系统库SYS': /mysql/dba_mysql/07-MySQL系统库SYS.html
-
-
     # MyCat
     '基于MyCat的MySQL高可用架构规划建议': /mysql/dba_mysql/mycat/基于MyCat的MySQL高可用架构规划建议.html
     '基于MyCAT的分布式数据库架构': /mysql/dba_mysql/mycat/基于MyCAT的分布式数据库架构.html
 
-    # TiDB
-    'tidb':  /mysql/dba_mysql/tidb/tidb.html
+  rds_mysql:
+    'overview': /mysql/rds_mysql/index.html
+
+
 
   security:
     overview: /mysql/security/index.html
@@ -199,6 +199,8 @@ mysql:
     percona_tookit: /mysql/awesome-tools/percona_tookit.html
     workbench: /mysql/awesome-tools/workbench.html
     otter: /mysql/awesome-tools/otter/Otter实现上海美国异地机房双向同步.html
+    # TiDB
+    'tidb':  /mysql/dba_mysql/tidb/tidb.html
 
 
 
@@ -488,55 +490,15 @@ cloud:
   # 阿里云
   aliyun:
     overview: /cloud/aliyun/index.html
-#    bigdata: /cloud/aliyun/bigdata/index.html
-  dara:
-    '01-intall-dara': /cloud/aliyun/dara/01-install-dara.html
-    '02-rds-demo': /cloud/aliyun/dara/02-rds-demo.html
-  drds:
-    'DRDS使用记录': /cloud/aliyun/drds/DRDS使用记录.html
-    'JDBC连接DRDS超时故障': /cloud/aliyun/drds/JDBC连接DRDS超时故障.html
-  datav:
-    overview: /cloud/aliyun/bigdata/datav/index.html
-    01_基础平面地图: /cloud/aliyun/bigdata/datav/01_基础平面地图.html
-    02_员工路线: /cloud/aliyun/bigdata/datav/02_员工路线.html
-  QBI:
-    overview: /cloud/aliyun/bigdata/qbi/index.html
-    a00_introduce: /cloud/aliyun/bigdata/qbi/a00_introduce.html
-    a01_qbi_product: /cloud/aliyun/bigdata/qbi/a01_qbi_product.html
-    a02_quickstart: /cloud/aliyun/bigdata/qbi/a02_quickstart.html
-    a03_quickdashboard: /cloud/aliyun/bigdata/qbi/a03_quickdashboard.html
-  RDS:
-    rds_introduce: /cloud/aliyun/rds/rds_introduce.html
-    rds_lab_01: /cloud/aliyun/rds/rds_lab_01.html
-    RDS升级速率: /cloud/aliyun/rds/RDS升级速率.html
-    rds_for_mysql_5.6_relay: /cloud/aliyun/rds/rds_for_mysql_5.6_relay.html
-    rds_for_mysql_5.6_修改字符编码: /cloud/aliyun/rds/rds_for_mysql_5.6_修改字符编码.html
-    rds_for_mysql_5.6_清空大表数据: /cloud/aliyun/rds/rds_for_mysql_5.6_清空大表数据.html
-    rds_for_mysql_5.7_主键为字符串性能低: /cloud/aliyun/rds/rds_for_mysql_5.7_主键为字符串性能低.html
-    rds_for_mysql_5.7mysqldump备份恢复: /cloud/aliyun/rds/rds_for_mysql_5.7mysqldump备份恢复.html
-    rds_for_mysql_5.7修改字符编码: /cloud/aliyun/rds/rds_for_mysql_5.7修改字符编码.html
-    rds_for_mysql_5.7物理备份恢复必备: /cloud/aliyun/rds/rds_for_mysql_5.7物理备份恢复必备.html
-    突破阿里限制实现RDSForMySQL5.7到自建MySQL数据实时同步: /cloud/aliyun/rds/突破阿里限制实现RDSForMySQL5.7到自建MySQL数据实时同步.html
-
-
-  CMS:
-    overview: /cloud/aliyun/cms/index.html
-    custom_event: /cloud/aliyun/cms/custom_event.html
-  dts:
-    'DTS传输速率': /cloud/aliyun/dts/DTS传输速率.html
-    'DTS同步级联测试': /cloud/aliyun/dts/DTS同步级联测试.html
-    'DTS同步实现异地三中心': /cloud/aliyun/dts/DTS同步实现异地三中心.html
-    'DTS迁移服务实现云上RDS与本地IDC自建mysql同步测试': /cloud/aliyun/dts/sync/test01.html
-    'DTS同步实现RDS公有云和金融云数据迁移测试': /cloud/aliyun/dts/migr/test02.html
-  hybridDB:
-    'HybirdDB_VS_RDS查询测试': /cloud/aliyun/hybridDB/HybirdDB_VS_RDS查询测试.html
-    'HybridDB测试使用': /cloud/aliyun/hybridDB/HybridDB测试使用.html
-    'HybridDB时间戳异常': /cloud/aliyun/hybridDB/HybridDB时间戳异常.html
-
   # 腾讯云
   tencent:
     overview: /cloud/tencent/index.html
-    cloud_lite_mysql: /cloud/tencent/cloud_lite_mysql.html
+  # 亚马逊云
+  aws:
+    overview: /cloud/aws/index.html
+  # 微软云
+  azure:
+    overview: /cloud/azure/index.html
 
 
 

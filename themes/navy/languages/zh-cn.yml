@@ -12,7 +12,6 @@ menu:
   about: About
   search: 搜索
   mse: MSE
-  aliyun: AliYun
   cloud: Cloud
   nosql: NoSQL
 
@@ -216,8 +215,9 @@ sidebar:
     # MyCat
     '基于MyCat的MySQL高可用架构规划建议': 分布式架构规划
     '基于MyCAT的分布式数据库架构': 分布式架构配置
-    # TiDB
-    'tidb': TiDB
+    # 云数据库RDS性能调优
+    rds_mysql: RDS 性能调优
+
 
     # MySQL 安全
     security: 安全篇
@@ -228,6 +228,7 @@ sidebar:
     percona_tookit: percona_tookit
     workbench: workbench
     otter: otter
+    tidb: TiDB
 
 
 
@@ -492,64 +493,13 @@ sidebar:
     E-00-current_affairs: 时政体系
 
   cloud:
-    # 阿里云
-    aliyun: 阿里云
     getting_started: 开始使用
     overview: 概览
-#    bigdata: 大数据概览
-    # Darabonba
-    dara: Darabonba
-    '01-intall-dara': 安装 Darabonba
-    '02-rds-demo': RDS Demo
-    # DRDS
-    drds: DRDS
-    'DRDS使用记录': DRDS 分库分表
-    'JDBC连接DRDS超时故障': JDBC连接DRDS超时故障
-    # DATAV
-    datav: DataV
-    01_基础平面地图: 基础平面地图
-    02_员工路线: 员工路线实战
-    # QBI
-    QBI: Quick BI
-    a00_introduce: 课程简介
-    a01_qbi_product: QBI产品
-    a02_quickstart: QBI入门
-    a03_quickdashboard: QBI可视化
-    # RDS
-    RDS: RDS
-    rds_introduce: RDS配置
-    rds_lab_01: RDS实验-CPU问题
-    RDS升级速率: RDS升级速率
-    rds_for_mysql_5.6_relay: RDS只读实例大表DDL导致主从延迟大
-    rds_for_mysql_5.6_修改字符编码: 修改字符编码
-    rds_for_mysql_5.6_清空大表数据: 清空大表数据
-    rds_for_mysql_5.7_主键为字符串性能低: 主键为字符串性能低
-    rds_for_mysql_5.7mysqldump备份恢复: mysqldump备份恢复
-    rds_for_mysql_5.7修改字符编码: 修改字符编码
-    rds_for_mysql_5.7物理备份恢复必备: 物理备份恢复必备
-    突破阿里限制实现RDSForMySQL5.7到自建MySQL数据实时同步: 突破阿里限制实现RDSForMySQL5.7到自建MySQL数据实时同步
-
-
-    # CMS
-    CMS: CMS
-    custom_event: 事件告警
-    # DTS
-    dts: DTS
-    'DTS传输速率': 'DTS传输速率'
-    'DTS同步级联测试': 'DTS同步级联测试'
-    'DTS同步实现异地三中心': 'DTS同步实现异地三中心'
-    'DTS迁移服务实现云上RDS与本地IDC自建mysql同步测试': DTS迁移实现云上RDS与本地IDC自建MySQL同步测试
-    'DTS同步实现RDS公有云和金融云数据迁移测试': DTS同步实现RDS公有云和金融云数据迁移测试
-
-    # HybirdDB
-    hybridDB: HybirdDB
-    'HybirdDB_VS_RDS查询测试': 'HybirdDB_VS_RDS查询测试'
-    'HybridDB测试使用': 'HybridDB测试使用'
-    'HybridDB时间戳异常': 'HybridDB时间戳异常'
-
-    # 腾讯云
+    aliyun: 阿里云
     tencent: 腾讯云
-    cloud_lite_mysql: 腾讯云CloudLite认证
+    aws: 亚马逊云
+    azure: 微软云
+
 
   amy:
     getting_started: 开始使用
