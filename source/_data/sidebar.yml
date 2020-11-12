@@ -543,6 +543,8 @@ cloud:
 amy:
   getting_started:
     overview: /amy/index.html
+  dancing:
+    overview: /amy/dancing/index.html
   english:
     overview: /amy/english/index.html
     k_star-2020-08-03-amy: /amy/english/k_star/2020-08-03-amy.html
