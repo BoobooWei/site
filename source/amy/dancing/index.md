@@ -27,7 +27,7 @@ oh my baby
 
 ## 说唱中国红
 
-[点击下载](http://play.baobao88.com/vbaobao88/vid-e3a1dc479460b885e9a43edeeff13f0f/bbfile/media/000004/%E4%BC%B4%E5%A5%8F/%E8%AF%B4%E5%94%B1%E4%B8%AD%E5%9B%BD%E7%BA%A2%20%EF%BC%88%E5%90%B4%E6%96%87%E7%85%9C%EF%BC%89/20340cd5.mp3）
+[点击下载](http://play.baobao88.com/vbaobao88/vid-e3a1dc479460b885e9a43edeeff13f0f/bbfile/media/000004/%E4%BC%B4%E5%A5%8F/%E8%AF%B4%E5%94%B1%E4%B8%AD%E5%9B%BD%E7%BA%A2%20%EF%BC%88%E5%90%B4%E6%96%87%E7%85%9C%EF%BC%89/20340cd5.mp3)
 
 {% note info 歌词%}
 太阳出来东方红
