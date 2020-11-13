@@ -2,9 +2,6 @@
 title: About
 ---
 
-[![github stars](https://img.shields.io/github/stars/hexojs/hexo?style=for-the-badge&color=0e83cd&logo=github)](https://github.com/BoobooWei?tab=repositories&q=&type=source&language=) [![github forks](https://img.shields.io/github/forks/hexojs/hexo?style=for-the-badge&color=0e83cd&logo=github)](https://github.com/BoobooWei?tab=repositories&q=&type=fork&language=)
-
-
 ## Why
 
 到了小王子离开的时刻，狐狸🦊送了小王子一个秘密，</br>只有用心，才能看清楚。</br>重要的东西是眼睛看不见的。
@@ -34,7 +31,7 @@ rgweiyaping@hotmail.com
 <i class="fa fa-arrow-right"></i></a>
 
 ## Recommend
- 
+
 <p><a href="https://mysqlserverteam.com/" class="carbon-text" target="_blank" rel="noopener sponsored">MySQL服务团队</a></p>
 <p><a href="https://blog.jcole.us/" class="carbon-text" target="_blank" rel="noopener sponsored">Geek Jeremy Cole</a></p>
 <p><a href="https://www.changhai.org/" class="carbon-text" target="_blank" rel="noopener sponsored">科普作家卢昌海</a></p>
@@ -42,3 +39,6 @@ rgweiyaping@hotmail.com
 <p><a href="https://sigmod.org/" class="carbon-text" target="_blank" rel="noopener sponsored">SIGMOD</a></p>
 <p><a href="https://www.usenix.org/" class="carbon-text" target="_blank" rel="noopener sponsored">USENIX</a></p>
 
+
+
+<img src="pic/O-CP-MySQL5.7-Db-Admin-rgb.bmp" weight="100" style="zoom:25%;" >
