@@ -348,7 +348,7 @@ SELECT
     t.data_length_B 数据空间,
     t.index_length_B 索引空间,
     t.table_rows 行数,
-    t.avg_row_length_B 平均行长KB
+    t.avg_row_length_B 平均行长
 FROM
     (
     SELECT
@@ -377,7 +377,7 @@ SELECT
     t.data_length_B 数据空间,
     t.index_length_B 索引空间,
     t.table_rows 行数,
-    t.avg_row_length_B 平均行长KB
+    t.avg_row_length_B 平均行长
 FROM
     (
     SELECT

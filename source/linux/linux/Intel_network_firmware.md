@@ -1,6 +1,6 @@
 ---
 title: 新笔记本安装rhel 7.2 后无线网卡无法检测到
---
+---
 
 > 机械革命rhel7.2网卡设置
 
@@ -21,7 +21,7 @@ title: 新笔记本安装rhel 7.2 后无线网卡无法检测到
 
 1. 查看pci，最后两行，第一个是有线网卡，第二个是无线网卡
 
-```shell
+```bash
 [root@foundation0 ~]# lspci
 00:00.0 Host bridge: Intel Corporation Device 5910 (rev 05)
 00:01.0 PCI bridge: Intel Corporation Sky Lake PCIe Controller (x16) (rev 05)
