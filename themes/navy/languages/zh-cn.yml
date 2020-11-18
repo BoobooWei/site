@@ -506,23 +506,46 @@ sidebar:
     overview: 概览
     dancing: 中国舞
     english: English
-    k_star-2020-08-03-amy: Kstar第二节
-    k_star-2020-08-09-amy: Kstar第三节
-    k_star-2020-08-15-amy: Kstar第四节
-    k_star-2020-08-23-amy: Kstar第五节
-    k_star-2020-08-30-amy: Kstar第六节
-    k_star-2020-09-06-amy: Kstar第七节
-    k_star-2020-09-13-amy: Kstar第八节
-    k_star-2020-09-20-amy: Kstar第九节
-    k_star-2020-10-11-amy: Kstar第十节
-    k_star-2020-10-18-amy: Kstar第十一节
-    k_star-2020-10-25-amy: Kstar第十二节
-    k_star-2020-11-01-amy: Kstar第十三节
-    k_star-2020-11-08-amy: Kstar第十四节
+    withme: 生活小事
     kindergarten: 幼儿园
-    m2-2020-08-15-amy: 中二班21天读绘本
-
-
+    # 生活小事
+    2020-02-07-amy: Amy经典语录-第四篇
+    2020-04-29-amy: Amy经典语录-第五篇
+    2020-05-08-amy: Amy经典语录-第六篇
+    2020-05-18-amy: 团队家庭聚餐日
+    # pre k
+    prek_star-2019-06-30-amy: PreK第一本书
+    prek_star-2020-04-01-amy: PreK疫情下的英语课1
+    prek_star-2020-04-12-amy: PreK疫情下的英语课2
+    prek_star-2020-05-10-amy: PreK疫情下的英语课3
+    prek_star-2020-05-13-amy: PreK疫情下的英语课4
+#    # k star
+#    k_star-2020-08-03-amy: Kstar第二节
+#    k_star-2020-08-09-amy: Kstar第三节
+#    k_star-2020-08-15-amy: Kstar第四节
+#    k_star-2020-08-23-amy: Kstar第五节
+#    k_star-2020-08-30-amy: Kstar第六节
+#    k_star-2020-09-06-amy: Kstar第七节
+#    k_star-2020-09-13-amy: Kstar第八节
+#    k_star-2020-09-20-amy: Kstar第九节
+#    k_star-2020-10-11-amy: Kstar第十节
+#    k_star-2020-10-18-amy: Kstar第十一节
+#    k_star-2020-10-25-amy: Kstar第十二节
+#    k_star-2020-11-01-amy: Kstar第十三节
+#    k_star-2020-11-08-amy: Kstar第十四节
+#    k_star-2020-11-15-amy: Kstar第十五节
+#    kindergarten: 幼儿园
+#    # 小二班
+#    little2-2018-09-10-amy: 小二班向月亮说晚安
+#    little2-2018-09-19-amy: 小二班家长会
+#    little2-2018-09-20-amy: 小二班宝宝们开始漱口了
+#    little2-2018-09-21-amy: 小二班月饼烘培和小小搬运工
+#    little2-2018-09-29-amy: 小二班宝宝们上班啦
+#    little2-2018-09-30-amy: 小二班国庆前学洗手
+#    # 中二班 由于疫情 中二班基本第二学期没有上学
+#    m2-2020-08-15-amy: 中二班21天读绘本
+#    # 大二班 转学去了 孩子有些不适用
+#    big2-2020-11-18-amy: 大二班南瓜种子
   devops:
     getting_started: 开始使用
     overview: 概览

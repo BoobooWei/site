@@ -505,26 +505,51 @@ cloud:
 amy:
   getting_started:
     overview: /amy/index.html
+  withme:
+    overview: /amy/withme/index.html
+#    2020-02-07-amy: /amy/withme/2020-02-07-amy.html
+#    2020-04-29-amy: /amy/withme/2020-04-29-amy.html
+#    2020-05-08-amy: /amy/withme/2020-05-08-amy.html
+#    2020-05-18-amy: /amy/withme/2020-05-18-amy.html
   dancing:
     overview: /amy/dancing/index.html
   english:
     overview: /amy/english/index.html
-    k_star-2020-08-03-amy: /amy/english/k_star/2020-08-03-amy.html
-    k_star-2020-08-09-amy: /amy/english/k_star/2020-08-09-amy.html
-    k_star-2020-08-15-amy: /amy/english/k_star/2020-08-15-amy.html
-    k_star-2020-08-23-amy: /amy/english/k_star/2020-08-23-amy.html
-    k_star-2020-08-30-amy: /amy/english/k_star/2020-08-30-amy.html
-    k_star-2020-09-06-amy: /amy/english/k_star/2020-09-06-amy.html
-    k_star-2020-09-13-amy: /amy/english/k_star/2020-09-13-amy.html
-    k_star-2020-09-20-amy: /amy/english/k_star/2020-09-20-amy.html
-    k_star-2020-10-11-amy: /amy/english/k_star/2020-10-11-amy.html
-    k_star-2020-10-18-amy: /amy/english/k_star/2020-10-18-amy.html
-    k_star-2020-10-25-amy: /amy/english/k_star/2020-10-25-amy.html
-    k_star-2020-11-01-amy: /amy/english/k_star/2020-11-01-amy.html
-    k_star-2020-11-08-amy: /amy/english/k_star/2020-11-08-amy.html
+#    # pre k
+#    prek_star-2019-06-30-amy: /amy/english/prek_star/2019-06-30-amy.html
+#    prek_star-2020-04-01-amy: /amy/english/prek_star/2020-04-01-amy.html
+#    prek_star-2020-04-12-amy: /amy/english/prek_star/2020-04-12-amy.html
+#    prek_star-2020-05-10-amy: /amy/english/prek_star/2020-05-10-amy.html
+#    prek_star-2020-05-13-amy: /amy/english/prek_star/2020-05-13-amy.html
+#    # k star
+#    k_star-2020-08-03-amy: /amy/english/k_star/2020-08-03-amy.html
+#    k_star-2020-08-09-amy: /amy/english/k_star/2020-08-09-amy.html
+#    k_star-2020-08-15-amy: /amy/english/k_star/2020-08-15-amy.html
+#    k_star-2020-08-23-amy: /amy/english/k_star/2020-08-23-amy.html
+#    k_star-2020-08-30-amy: /amy/english/k_star/2020-08-30-amy.html
+#    k_star-2020-09-06-amy: /amy/english/k_star/2020-09-06-amy.html
+#    k_star-2020-09-13-amy: /amy/english/k_star/2020-09-13-amy.html
+#    k_star-2020-09-20-amy: /amy/english/k_star/2020-09-20-amy.html
+#    k_star-2020-10-11-amy: /amy/english/k_star/2020-10-11-amy.html
+#    k_star-2020-10-18-amy: /amy/english/k_star/2020-10-18-amy.html
+#    k_star-2020-10-25-amy: /amy/english/k_star/2020-10-25-amy.html
+#    k_star-2020-11-01-amy: /amy/english/k_star/2020-11-01-amy.html
+#    k_star-2020-11-08-amy: /amy/english/k_star/2020-11-08-amy.html
+#    k_star-2020-11-15-amy: /amy/english/k_star/2020-11-15-amy.html
   kindergarten:
     overview: /amy/kindergarten/index.html
-    m2-2020-08-15-amy: /amy/kindergarten/m2/2020-08-15-amy.html
+#    # 小二班
+#    little2-2018-09-10-amy: /amy/kindergarten/little2/2018-09-10-amy.html
+#    little2-2018-09-19-amy: /amy/kindergarten/little2/2018-09-19-amy.html
+#    little2-2018-09-20-amy: /amy/kindergarten/little2/2018-09-20-amy.html
+#    little2-2018-09-21-amy: /amy/kindergarten/little2/2018-09-21-amy.html
+#    little2-2018-09-29-amy: /amy/kindergarten/little2/2018-09-29-amy.html
+#    little2-2018-09-30-amy: /amy/kindergarten/little2/2018-09-30-amy.html
+#    # 中二班
+#    m2-2020-08-15-amy: /amy/kindergarten/m2/2020-08-15-amy.html
+#    # 大二班
+#    big2-2020-11-18-amy: /amy/kindergarten/big2/2020-11-18-amy.html
+
 
 
 devops:
