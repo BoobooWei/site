@@ -368,6 +368,32 @@ FROM
         join (
         select sum((data_length + index_length)) as all_length_B from information_schema.tables
         ) t1;
+
+SELECT
+    t.table_name 表,
+    t.table_schema 库,
+    t.engine 引擎,
+    t.table_length_B 表空间,
+    t.data_length_B 数据空间,
+    t.index_length_B 索引空间,
+    t.table_rows 行数,
+    t.avg_row_length_B 平均行长KB
+FROM
+    (
+    SELECT
+        table_name,
+            table_schema,
+            ENGINE,
+            table_rows,
+            data_length +  index_length AS table_length_B,
+            data_length AS data_length_B,
+            index_length AS index_length_B,
+            AVG_ROW_LENGTH AS avg_row_length_B
+    FROM
+        information_schema.tables
+    WHERE
+        table_schema IN ('cloudodscn') and table_type != 'VIEW' and table_name in ("nbrplan","nbrcurcode","nladpa","ladpj")
+        ) t;
 ```
 
 # 常用故障排查
