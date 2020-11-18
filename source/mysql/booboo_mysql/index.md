@@ -2,9 +2,32 @@
 title: MySQL 基础管理
 ---
 
-MySQL 基础管理课程是2015年准备的一套基础讲义。主要讲解5.5、5.6、5.7三个版本。
+> MySQL 基础管理课程是2015年准备的一套基础讲义。主要讲解5.5、5.6、5.7三个版本。
+> 涉及代码部分可以访问以下地址获取：https://github.com/BoobooWei/booboo_mysql
 
-涉及代码部分可以访问以下地址获取：https://github.com/BoobooWei/booboo_mysql
+
+# 内容
+
+* [00-MySQL管理课程简介](/mysql/booboo_mysql/00-MySQL管理课程简介.html)
+* [01-MySQL和MariaDB数据库介绍](/mysql/booboo_mysql/01-MySQL和MariaDB数据库介绍.html)
+* [02-结构化查询语言SQL介绍和基本操作](/mysql/booboo_mysql/02-结构化查询语言SQL介绍和基本操作.html)
+* [02-结构化查询语言SQL介绍和基本操作2](/mysql/booboo_mysql/02-结构化查询语言SQL介绍和基本操作2.html)
+* [03-MySQL备份与恢复](/mysql/booboo_mysql/03-MySQL备份与恢复.html)
+* [03-MySQL逻辑架构和Innodb存储引擎](/mysql/booboo_mysql/03-MySQL逻辑架构和Innodb存储引擎.html)
+* [04-MySQL复制replication](/mysql/booboo_mysql/04-MySQL复制replication.html)
+* [05-MySQL高可用HA](/mysql/booboo_mysql/05-MySQL高可用HA.html)
+* [06-MySQL压力测试工具sysbench](/mysql/booboo_mysql/06-MySQL压力测试工具sysbench.html)
+* [07-MySQL5.6一主多从半同步复制](/mysql/booboo_mysql/07-MySQL5.6一主多从半同步复制.html)
+* [08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper](/mysql/booboo_mysql/08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper.html)
+* [09-SQL考试](/mysql/booboo_mysql/09-SQL考试.html)
+
+
+```bash
+ll *.md | awk '{print "* ["$9"](/mysql/booboo_mysql/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
+```
+
+
+# 刚要
 
 ```shell
 MYSQL
