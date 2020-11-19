@@ -67,601 +67,95 @@ api:
     'xml enhancements': /api/new/xml-enhancements.html
 
 linux:
-  getting_started:
-    overview: /linux/index.html
-  booboo_linux_base:
-    'overview': /linux/booboo_linux_base/index.html
-    '00-linux_history': /linux/booboo_linux_base/00-linux_history.html
-    '01-Linux基础命令': /linux/booboo_linux_base/01-Linux基础命令.html
-    '02-Linux用户和组': /linux/booboo_linux_base/02-Linux用户和组.html
-    '03-Linux文件和目录': /linux/booboo_linux_base/03-Linux文件和目录.html
-    '04-Linux压缩打包': /linux/booboo_linux_base/04-Linux压缩打包.html
-    '05-Linux软件安装': /linux/booboo_linux_base/05-Linux软件安装.html
-    '06-Vim': /linux/booboo_linux_base/06-Vim.html
-    '07-Bash简介': /linux/booboo_linux_base/07-Bash简介.html
-    '08-日志和计划任务': /linux/booboo_linux_base/08-日志和计划任务.html
-    '09-Linux文件系统和磁盘管理': /linux/booboo_linux_base/09-Linux文件系统和磁盘管理.html
-    '10-Linux开机启动流程': /linux/booboo_linux_base/10-Linux开机启动流程.html
-    '11-Linux内核': /linux/booboo_linux_base/11-Linux内核.html
-    '12-SELINUX': /linux/booboo_linux_base/12-SELINUX.html
-    '13-进程管理': /linux/booboo_linux_base/13-进程管理.html
-  booboo_easy_service:
-    'overview': /linux/booboo_easy_service/index.html
-    '00_linux_classroom_env': /linux/booboo_easy_service/00_linux_classroom_env.html
-    '01_dns': /linux/booboo_easy_service/01_dns.html
-    '02_ftp': /linux/booboo_easy_service/02_ftp.html
-    '03_nfs': /linux/booboo_easy_service/03_nfs.html
-    '04_samba': /linux/booboo_easy_service/04_samba.html
-    '05_apache': /linux/booboo_easy_service/05_apache.html
-    '06_ntp_chrony': /linux/booboo_easy_service/06_ntp_chrony.html
-    '07_iptables_firewalld': /linux/booboo_easy_service/07_iptables_firewalld.html
-  booboo_bash_shell_scripts:
-    'overview': /linux/booboo_bash_shell_scripts/index.html
-    '00_shell_variables': /linux/booboo_bash_shell_scripts/00_shell_variables.html
-    '01_shell_flow_control_statement': /linux/booboo_bash_shell_scripts/01_shell_flow_control_statement.html
-    '02_shell_regular_expression': /linux/booboo_bash_shell_scripts/02_shell_regular_expression.html
-    '03_shell_sed_awk': /linux/booboo_bash_shell_scripts/03_shell_sed_awk.html
-    '04_shell_brackets': /linux/booboo_bash_shell_scripts/04_shell_brackets.html
-    'shell上机': /linux/booboo_bash_shell_scripts/shell上机.html
-    'shell笔试': /linux/booboo_bash_shell_scripts/shell笔试.html
-  booboo_middle_service:
-    'overview': /linux/booboo_middle_service/index.html
-    '01-pxe': /linux/booboo_middle_service/01-pxe.html
-    '02-nginx': /linux/booboo_middle_service/02-nginx.html
-    '03-tomcat': /linux/booboo_middle_service/03-tomcat.html
-    '04-ldap': /linux/booboo_middle_service/04-ldap.html
-    '05-zabbix': /linux/booboo_middle_service/05-zabbix.html
-    '06-ansible': /linux/booboo_middle_service/06-ansible.html
-    '07-cdn': /linux/booboo_middle_service/07-cdn.html
-  docker:
-    install_docker: /linux/docker/install_docker.html
-    install_zipkin: /linux/docker/zipkin.html
-  excellent_tools:
-    overview: /linux/excellent_tools/index.html
-    systemd: /linux/excellent_tools/systemd.html
-    supervisor: /linux/excellent_tools/supervisor.html
-    prometheus: /linux/excellent_tools/prometheus.html
-    'fluentd': /linux/excellent_tools/fluentd/fluentd.html
-    'fluentd_config': /linux/excellent_tools/fluentd/fluentd_config.html
-    'fluentd_config_input_mongodblogtail_output_datahub': /linux/excellent_tools/fluentd/fluentd_config_input_mongodblogtail_output_datahub.html
-    'fluentd_config_output_mysql': /linux/excellent_tools/fluentd/fluentd_config_output_mysql.html
-    'kettle_install': /linux/excellent_tools/kettle/kettle_install.html
-  linux:
-    'Intel_network_firmware': /linux/linux/Intel_network_firmware.html
-    'U盘装机': /linux/linux/U盘装机.html
-    'curl断点续传': /linux/linux/curl断点续传.html
-    'edusoho-install': /linux/linux/edusoho-install.html
-    'fio压测磁盘': /linux/linux/fio压测磁盘.html
-    'git日常使用场景记录': /linux/linux/git日常使用场景记录.html
-    'kvm_桥接配置': /linux/linux/kvm_桥接配置.html
-    'linux_free': /linux/linux/linux_free.html
-    'rhel7.2_install_mplayer': /linux/linux/rhel7.2_install_mplayer.html
-    'rhel7.2最小安装到图形化界面': /linux/linux/rhel7.2最小安装到图形化界面.html
-    'rhel中文乱码问题': /linux/linux/rhel中文乱码问题.html
-    'screen': /linux/linux/screen.html
-    'strace故障排查': /linux/linux/strace故障排查.html
-    'tcp内存限制': /linux/linux/tcp内存限制.html
-    'ubuntu_dpkg': /linux/linux/ubuntu_dpkg.html
-    'zabbix_3': /linux/linux/zabbix_3.html
-    '常用操作系统命令': /linux/linux/常用操作系统命令.html
-    '常用脚本': /linux/linux/常用脚本.html
+  0_linux_base:
+    overview: /linux/0_linux_base/index.html
+    booboo_linux_base: /linux/0_linux_base/booboo_linux_base/index.html
+    booboo_easy_service: /linux/0_linux_base/booboo_easy_service/index.html
+    booboo_bash_shell_scripts: /linux/0_linux_base/booboo_bash_shell_scripts/index.html
+    booboo_middle_service: /linux/0_linux_base/booboo_middle_service/index.html
+  1_linux_dayday:
+    overview: /linux/1_linux_dayday/index.html
+  2_excellent_tools:
+    overview: /linux/2_excellent_tools/index.html
+  3_lamp:
+    overview: /linux/3_lamp/index.html
+  4_docker:
+    overview: /linux/4_docker/index.html
+  5_tick:
+    overview: /linux/5_tick/index.html
+    kapacitor: /linux/5_tick/kapacitor/index.html
 
-
-  lamp:
-    overview: /linux/lamp/index.html
-    phpems: /linux/lamp/phpems.html
-
-
-
-mysql:
-  getting_started:
-    overview: /mysql/index.html
-  booboo_mysql:
-    'overview': /mysql/booboo_mysql/index.html
-    '00-MySQL管理课程简介': /mysql/booboo_mysql/00-MySQL管理课程简介.html
-    '01-MySQL和MariaDB数据库介绍': /mysql/booboo_mysql/01-MySQL和MariaDB数据库介绍.html
-    '02-结构化查询语言SQL介绍和基本操作': /mysql/booboo_mysql/02-结构化查询语言SQL介绍和基本操作.html
-    '02-结构化查询语言SQL介绍和基本操作2': /mysql/booboo_mysql/02-结构化查询语言SQL介绍和基本操作2.html
-    '03-MySQL备份与恢复': /mysql/booboo_mysql/03-MySQL备份与恢复.html
-    '03-MySQL逻辑架构和Innodb存储引擎': /mysql/booboo_mysql/03-MySQL逻辑架构和Innodb存储引擎.html
-    '04-MySQL复制replication': /mysql/booboo_mysql/04-MySQL复制replication.html
-    '05-MySQL高可用HA': /mysql/booboo_mysql/05-MySQL高可用HA.html
-    '06-MySQL压力测试工具sysbench': /mysql/booboo_mysql/06-MySQL压力测试工具sysbench.html
-    '07-MySQL5.6一主多从半同步复制': /mysql/booboo_mysql/07-MySQL5.6一主多从半同步复制.html
-    '08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper': /mysql/booboo_mysql/08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper.html
-    '09-SQL考试': /mysql/booboo_mysql/09-SQL考试.html
-  dba_mysql:
-    'overview': /mysql/dba_mysql/index.html
-    '08-MySQL管理规范': /mysql/dba_mysql/08-MySQL管理规范.html
-    '00-数据库工作软件推荐': /mysql/dba_mysql/00-MySQL软件推荐.html
-    '01-MySQL常用SQL': /mysql/dba_mysql/01-MySQL常用SQL.html
-    '02-MySQL参数优化': /mysql/dba_mysql/02-MySQL参数优化.html
-    '03-MySQL认证OCP': /mysql/dba_mysql/03-MySQL认证OCP.html
-    '04-MySQL技术积累': /mysql/dba_mysql/04-MySQL技术积累.html
-    '05-MySQL自动化管理': /mysql/dba_mysql/05-MySQL自动化管理.html
-    '06-MySQL性能监控': /mysql/dba_mysql/06-MySQL性能监控.html
-    '07-MySQL系统库SYS': /mysql/dba_mysql/07-MySQL系统库SYS.html
-    # MyCat
-    '基于MyCat的MySQL高可用架构规划建议': /mysql/dba_mysql/mycat/基于MyCat的MySQL高可用架构规划建议.html
-    '基于MyCAT的分布式数据库架构': /mysql/dba_mysql/mycat/基于MyCAT的分布式数据库架构.html
-
-  rds_mysql:
-    'overview': /mysql/rds_mysql/index.html
-
-
-
-  security:
-    overview: /mysql/security/index.html
-    cis_mysql: /mysql/security/cis_mysql.html
-  awesome-tools:
-    overview: /mysql/awesome-tools/index.html
-    pt-archiver: /mysql/awesome-tools/pt-archiver.html
-    percona_tookit: /mysql/awesome-tools/percona_tookit.html
-    workbench: /mysql/awesome-tools/workbench.html
-    otter: /mysql/awesome-tools/otter/Otter实现上海美国异地机房双向同步.html
-    # TiDB
-    'tidb':  /mysql/dba_mysql/tidb/tidb.html
-
-
-
-oracle:
-  getting_started:
-    overview: /oracle/index.html
-  ocp:
-    overview: /oracle/ocp/index.html
-    1z0-071: /oracle/ocp/1z0-071.html
-    1z0-062: /oracle/ocp/1z0-062.html
-    1z0-063: /oracle/ocp/1z0-063.html
-    12c-ocm: /oracle/ocp/12c-ocm.html
-  oracle-12c:
-    overview: /oracle/oracle-12c/index.html
-  student:
-    overview: /oracle/oracle-12c/student/index.html
-    '01-配置使用Oracle企业管理工具em': '/oracle/oracle-12c/student/01-配置使用Oracle企业管理工具em.html'
-    '02-配置使用Oracle企业云管理工具ocm': '/oracle/oracle-12c/student/02-配置使用Oracle企业云管理工具ocm.html'
-    '03-导入DemoSchemaOE': '/oracle/oracle-12c/student/03-导入DemoSchemaOE.html'
-    '1Z0-062-Oracle数据库12c-管理': '/oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/index.html'
-    # Oracle数据库12c-管理
-#    '02-ExploringOracleDatabaseArchitecture-体系架构': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/02-ExploringOracleDatabaseArchitecture-体系架构.html
-#    '03-OracleDatabaseManagementTools-管理工具': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/03-OracleDatabaseManagementTools-管理工具.html
-#    '04-ManagingtheDatabaseInstance-管理实例': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/04-ManagingtheDatabaseInstance-管理实例.html
-#    '05-ConfiguringtheOracleNetworkEnvironment-管理网络': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/05-ConfiguringtheOracleNetworkEnvironment-管理网络.html
-#    '06-AdministeringUserSecurity-管理用户': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/06-AdministeringUserSecurity-管理用户.html
-#    '07-ManagingDatabaseStorageStructures-管理存储': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/07-ManagingDatabaseStorageStructures-管理存储.html
-#    '08-ManagingSpace-管理空间': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/08-ManagingSpace-管理空间.html
-#    '09-ManagingUndoData-管理回滚': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/09-ManagingUndoData-管理回滚.html
-#    '10-ManagingDataConcurrency-管理并发': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/10-ManagingDataConcurrency-管理并发.html
-#    '11-ImplementingOracleDatabaseAuditing-管理审计': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/11-ImplementingOracleDatabaseAuditing-管理审计.html
-#    '12-BackupandRecoveryConcepts-备份恢复概念': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/12-BackupandRecoveryConcepts-备份恢复概念.html
-#    '13-BackupandRecoveryConfiguration-备份恢复配置': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/13-BackupandRecoveryConfiguration-备份恢复配置.html
-#    '14-PerformingDatabaseBackups-执行备份': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/14-PerformingDatabaseBackups-执行备份.html
-#    '15-PerformingDatabaseRecovery-执行恢复': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/15-PerformingDatabaseRecovery-执行恢复.html
-#    '16-MovingData-移动数据': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/16-MovingData-移动数据.html
-#    '17-DatabaseMaintenance-数据库维护': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/17-DatabaseMaintenance-数据库维护.html
-#    '18-ManagingPerformance-管理性能': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/18-ManagingPerformance-管理性能.html
-#    '19-ManagingPerformanceSQLTuning-SQL调优': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/19-ManagingPerformanceSQLTuning-SQL调优.html
-#    '20-UsingDatabaseResourceManager-管理资源': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/20-UsingDatabaseResourceManager-管理资源.html
-#    '21-UsingOracleSchedulertoAutomateTasks-自动化任务': /oracle/oracle-12c/student/1Z0-062-Oracle数据库12c-管理/21-UsingOracleSchedulertoAutomateTasks-自动化任务.html
-
-
-    '1Z0-063-Oracle数据库12c-高级管理': '/oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/index.html'
-    # Oracle数据库12c-备份和恢复研讨
-#    'Oracle数据库12c-备份和恢复研讨': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/index.html
-#    '01-Introduction-入门练习': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/01-Introduction-入门练习.html
-#    '02-GettingStarted-入门准备': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/02-GettingStarted-入门准备.html
-#    '03-ConfiguringforRecoverability-配置可恢复性': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/03-ConfiguringforRecoverability-配置可恢复性.html
-#    '04-UsingtheRMANRecoveryCatalog-使用RMAN恢复目录的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/04-UsingtheRMANRecoveryCatalog-使用RMAN恢复目录的实践.html
-#    '05-BackupStrategiesandTerminology-备份策略和术语的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/05-BackupStrategiesandTerminology-备份策略和术语的实践.html
-#    '06-CreatingBackups-创建备份的练习': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/06-CreatingBackups-创建备份的练习.html
-#    '07-ImprovingYourBackups-改善备份的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/07-ImprovingYourBackups-改善备份的实践.html
-#    '08-UsingRMAN-EncryptedBackups-使用RMAN加密的备份': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/08-UsingRMAN-EncryptedBackups-使用RMAN加密的备份.html
-#    '09-DiagnosingDatabaseFailure-诊断数据库故障的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/09-DiagnosingDatabaseFailure-诊断数据库故障的实践.html
-#    '10-RestoreandRecoveryConcepts-还原和恢复概念的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/10-RestoreandRecoveryConcepts-还原和恢复概念的实践.html
-#    '11-PerformingRecovery-执行恢复的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/11-PerformingRecovery-执行恢复的实践.html
-#    '12-PerformingRecoveryII-执行恢复的实践II': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/12-PerformingRecoveryII-执行恢复的实践II.html
-#    '13-RMANandOracleSecureBackup-RMAN和OracleSecureBackup的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/13-RMANandOracleSecureBackup-RMAN和OracleSecureBackup的实践.html
-#    '14-UsingFlashbackTechnologies-使用闪回技术的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/14-UsingFlashbackTechnologies-使用闪回技术的实践.html
-#    '15-FlashbackDatabase-闪回数据库的练习': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/15-FlashbackDatabase-闪回数据库的练习.html
-#    '16-TransportingData-传输数据的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/16-TransportingData-传输数据的实践.html
-#    '17-PerformingPoint-in-TimeRecovery-执行时间点恢复的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/17-PerformingPoint-in-TimeRecovery-执行时间点恢复的实践.html
-#    '18-DuplicatingaDatabase-复制数据库': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/18-DuplicatingaDatabase-复制数据库.html
-#    '19-RMANTroubleshootingandTuning-RMAN故障排除和调整的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/19-RMANTroubleshootingandTuning-RMAN故障排除和调整的实践.html
-#    '20-Workshop-研讨会': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-备份和恢复研讨/20-Workshop-研讨会.html
-#
-
-    # Oracle数据库12c-管理多租户架构
-#    'Oracle数据库12c-管理多租户架构': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/index.html
-#    '01-EnterpriseManagerCloudControlandOtherTools-企业管理器云控制和其他工具': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/01-EnterpriseManagerCloudControlandOtherTools-企业管理器云控制和其他工具.html
-#    '02-BasicsofMultitenantContainerDatabaseandPluggableDatabases-多租户容器数据库和可插拔数据库的基础': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/02-BasicsofMultitenantContainerDatabaseandPluggableDatabases-多租户容器数据库和可插拔数据库的基础.html
-#    '03-CreatingaMultitenantContainerDatabaseandPluggableDatabases-创建多租户容器数据库和可插拔数据库': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/03-CreatingaMultitenantContainerDatabaseandPluggableDatabases-创建多租户容器数据库和可插拔数据库.html
-#    '04-ManagingaMultitenantContainerDatabaseandPluggableDatabase-管理多租户容器数据库和可插拔数据库的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/04-ManagingaMultitenantContainerDatabaseandPluggableDatabase-管理多租户践.html
-#    '05-ManagingTablespacesinCDBandPDBs-在CDB和PDB中管理表空间的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/05-ManagingTablespacesinCDBandPDBs-在CDB和PDB中管理表空间的实践.html
-#    '06-ManagingSecurityinCDBandPDBs-管理CDB和PDB中的安全性的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/06-ManagingSecurityinCDBandPDBs-管理CDB和PDB中的安全性的实践.html
-#    '07-BackupRecoveryFlashbackCDBandPDBs-备份恢复闪回CDB和PDB的实践': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/07-BackupRecoveryFlashbackCDBandPDBs-备份恢复闪回CDB和PDB的实践.html
-#    '08-Performance-性能': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/08-Performance-性能.html
-#    '09-Miscellaneous-其他': /oracle/oracle-12c/student/1Z0-063-Oracle数据库12c-高级管理/Oracle数据库12c-管理多租户架构/09-Miscellaneous-其他.html
-
-
-  teacher:
-    overview: /oracle/oracle-12c/teacher/index.html
-    '01-InstallOracle12c': /oracle/oracle-12c/teacher/01-InstallOracle12c.html
-    '02-CreateDatabase': /oracle/oracle-12c/teacher/02-CreateDatabase.html
-    '03-StartListener': /oracle/oracle-12c/teacher/03-StartListener.html
-    '04-ImportDemoHT': /oracle/oracle-12c/teacher/04-ImportDemoHT.html
-    '05-SQL-common': /oracle/oracle-12c/teacher/05-SQL-common.html
-    '06-SQL-advanced': /oracle/oracle-12c/teacher/06-SQL-advanced.html
-    '07-Manage': /oracle/oracle-12c/teacher/07-Manage.html
-
-  oracle-11g:
-    overview: /oracle/oracle-11g/index.html
-  'A-数据库安装-00-index':
-    'A-数据库安装-01-oinstall': '/oracle/oracle-11g/A-数据库安装-01-oinstall.html'
-    'A-数据库安装-02-数据库简单使用': '/oracle/oracle-11g/A-数据库安装-02-数据库简单使用.html'
-    'A-数据库安装-03-命令行安装Oracle11': '/oracle/oracle-11g/A-数据库安装-03-命令行安装Oracle11.html'
-    'A-数据库安装-04-命令行创建数据库': '/oracle/oracle-11g/A-数据库安装-04-命令行创建数据库.html'
-    'A-数据库安装-05-创建scott学习环境': '/oracle/oracle-11g/A-数据库安装-05-创建scott学习环境.html'
-  'B-SQL语句-00-index':
-    'B-SQL语句-01-单行函数': '/oracle/oracle-11g/B-SQL语句-01-单行函数.html'
-    'B-SQL语句-02-多表连接': '/oracle/oracle-11g/B-SQL语句-02-多表连接.html'
-    'B-SQL语句-03-组函数': '/oracle/oracle-11g/B-SQL语句-03-组函数.html'
-    'B-SQL语句-04-子查询': '/oracle/oracle-11g/B-SQL语句-04-子查询.html'
-    'B-SQL语句-05-SQLPlus和变量': '/oracle/oracle-11g/B-SQL语句-05-SQLPlus和变量.html'
-    'B-SQL语句-06-DML语句的使用': '/oracle/oracle-11g/B-SQL语句-06-DML语句的使用.html'
-    'B-SQL语句-07-事务和锁机制': '/oracle/oracle-11g/B-SQL语句-07-事务和锁机制.html'
-    'B-SQL语句-08-DDL管理5大对象': '/oracle/oracle-11g/B-SQL语句-08-DDL管理5大对象.html'
-    'B-SQL语句-09-DCL管理用户': '/oracle/oracle-11g/B-SQL语句-09-DCL管理用户.html'
-    'B-SQL语句-10-DQL语句的使用': '/oracle/oracle-11g/B-SQL语句-10-DQL语句的使用.html'
-    'B-SQL语句-11-表的管理总结': '/oracle/oracle-11g/B-SQL语句-11-表的管理总结.html'
-  'C-PLSQL-00-index':
-    'C-PLSQL-01-变量_流程控制_数据类型_复合变量': '/oracle/oracle-11g/C-PLSQL-01-变量_流程控制_数据类型_复合变量.html'
-    'C-PLSQL-02-异常处理': '/oracle/oracle-11g/C-PLSQL-02-异常处理.html'
-    'C-PLSQL-03-命名块-触发器': '/oracle/oracle-11g/C-PLSQL-03-命名块-触发器.html'
-    'C-PLSQL-04-命名块-函数': '/oracle/oracle-11g/C-PLSQL-04-命名块-函数.html'
-    'C-PLSQL-05-命名块-存储过程': '/oracle/oracle-11g/C-PLSQL-05-命名块-存储过程.html'
-    'C-PLSQL-06-命名块-包Package': '/oracle/oracle-11g/C-PLSQL-06-命名块-包Package.html'
-  'D-体系结构和存储引擎-00-index':
-    'D-体系结构和存储引擎-01-数据库实例_内存和进程': '/oracle/oracle-11g/D-体系结构和存储引擎-01-数据库实例_内存和进程.html'
-  'D-体系结构和存储引擎-01-index':
-    'D-体系结构和存储引擎-02-物理结构_口令文件password': '/oracle/oracle-11g/D-体系结构和存储引擎-02-物理结构_口令文件password.html'
-    'D-体系结构和存储引擎-03-物理结构_参数文件parameter_files': '/oracle/oracle-11g/D-体系结构和存储引擎-03-物理结构_参数文件parameter_files.html'
-    'D-体系结构和存储引擎-04-物理结构_跟踪文件trace_files': '/oracle/oracle-11g/D-体系结构和存储引擎-04-物理结构_跟踪文件trace_files.html'
-    'D-体系结构和存储引擎-05-启动数据库的三个阶段start_shut': '/oracle/oracle-11g/D-体系结构和存储引擎-05-启动数据库的三个阶段start_shut.html'
-    'D-体系结构和存储引擎-06-手工创建数据库create_db_manual': '/oracle/oracle-11g/D-体系结构和存储引擎-06-手工创建数据库create_db_manual.html'
-    'D-体系结构和存储引擎-07-物理结构_控制文件control_files': '/oracle/oracle-11g/D-体系结构和存储引擎-07-物理结构_控制文件control_files.html'
-    'D-体系结构和存储引擎-08-物理结构_日志文件redo_log_files': '/oracle/oracle-11g/D-体系结构和存储引擎-08-物理结构_日志文件redo_log_files.html'
-    'D-体系结构和存储引擎-09-物理结构_数据文件datafile': '/oracle/oracle-11g/D-体系结构和存储引擎-09-物理结构_数据文件datafile.html'
-  'D-体系结构和存储引擎-02-index':
-    'D-体系结构和存储引擎-10-逻辑结构_存储结构storage': '/oracle/oracle-11g/D-体系结构和存储引擎-10-逻辑结构_存储结构storage.html'
-    'D-体系结构和存储引擎-11-逻辑结构_undo段': '/oracle/oracle-11g/D-体系结构和存储引擎-11-逻辑结构_undo段.html'
-    'D-体系结构和存储引擎-12-逻辑结构_表': '/oracle/oracle-11g/D-体系结构和存储引擎-12-逻辑结构_表.html'
-    'D-体系结构和存储引擎-13-逻辑结构_索引': '/oracle/oracle-11g/D-体系结构和存储引擎-13-逻辑结构_索引.html'
-    'D-体系结构和存储引擎-14-逻辑结构_约束': '/oracle/oracle-11g/D-体系结构和存储引擎-14-逻辑结构_约束.html'
-    'D-体系结构和存储引擎-15-逻辑结构_Profile': '/oracle/oracle-11g/D-体系结构和存储引擎-15-逻辑结构_Profile.html'
-    'D-体系结构和存储引擎-16-逻辑结构_权限管理': '/oracle/oracle-11g/D-体系结构和存储引擎-16-逻辑结构_权限管理.html'
-    'D-体系结构和存储引擎-17-逻辑结构_数据库字符集': '/oracle/oracle-11g/D-体系结构和存储引擎-17-逻辑结构_数据库字符集.html'
-    'D-体系结构和存储引擎-18-逻辑结构_元数据': '/oracle/oracle-11g/D-体系结构和存储引擎-18-逻辑结构_元数据.html'
-    'D-体系结构和存储引擎-19-网络配置': '/oracle/oracle-11g/D-体系结构和存储引擎-19-网络配置.html'
-  'E-数据库备份与恢复-00-index':
-    'E-数据库备份与恢复-00-备份的概念': '/oracle/oracle-11g/E-数据库备份与恢复-00-备份的概念.html'
-  'E-数据库备份与恢复-01-index':
-    'E-数据库备份与恢复-01-冷备-逻辑备份恢复-exp和imp': '/oracle/oracle-11g/E-数据库备份与恢复-01-冷备-逻辑备份恢复-exp和imp.html'
-    'E-数据库备份与恢复-02-冷备-逻辑备份恢复-expdp和impdp': '/oracle/oracle-11g/E-数据库备份与恢复-02-冷备-逻辑备份恢复-expdp和impdp.html'
-  'E-数据库备份与恢复-02-index':
-    'E-数据库备份与恢复-03-冷备-物理备份恢复-离线冷备': '/oracle/oracle-11g/E-数据库备份与恢复-03-冷备-物理备份恢复-离线冷备.html'
-    'E-数据库备份与恢复-04-冷备-物理备份恢复-在线热备': '/oracle/oracle-11g/E-数据库备份与恢复-04-冷备-物理备份恢复-在线热备.html'
-    'E-数据库备份与恢复-04-冷备-物理备份恢复-在线热备-数据文件': '/oracle/oracle-11g/E-数据库备份与恢复-04-冷备-物理备份恢复-在线热备-数据文件.html'
-    'E-数据库备份与恢复-05-冷备-物理备份恢复-在线热备-控制文件': '/oracle/oracle-11g/E-数据库备份与恢复-05-冷备-物理备份恢复-在线热备-控制文件.html'
-    'E-数据库备份与恢复-06-冷备_物理备份恢复-表空间损坏_ORA-08103': '/oracle/oracle-11g/E-数据库备份与恢复-06-冷备_物理备份恢复-表空间损坏_ORA-08103.html'
-  'E-数据库备份与恢复-03-index':
-    'E-数据库备份与恢复-07-冷备_物理备份恢复-恢复管理器RMAN01': '/oracle/oracle-11g/E-数据库备份与恢复-07-冷备_物理备份恢复-恢复管理器RMAN01.html'
-    'E-数据库备份与恢复-08-冷备_物理备份恢复-恢复管理器RMAN02': '/oracle/oracle-11g/E-数据库备份与恢复-08-冷备_物理备份恢复-恢复管理器RMAN02.html'
-    'E-数据库备份与恢复-09-冷备_物理备份恢复-恢复管理器RMAN03': '/oracle/oracle-11g/E-数据库备份与恢复-09-冷备_物理备份恢复-恢复管理器RMAN03.html'
-    'E-数据库备份与恢复-10-冷备_物理备份恢复-冷备计划的制定和实施': '/oracle/oracle-11g/E-数据库备份与恢复-10-冷备_物理备份恢复-冷备计划的制定和实施.html'
-  'E-数据库备份与恢复-04-index':
-    'E-数据库备份与恢复-10-热备-DataGuard': '/oracle/oracle-11g/E-数据库备份与恢复-10-热备-DataGuard.html'
-    'E-数据库备份与恢复-10-热备-DataGuard2': '/oracle/oracle-11g/E-数据库备份与恢复-10-热备-DataGuard2.html'
-    'E-数据库备份与恢复-11-热备-DataGuard3': '/oracle/oracle-11g/E-数据库备份与恢复-11-热备-DataGuard3.html'
-    'E-数据库备份与恢复-12-热备-DataGuard_fast_start_failover': '/oracle/oracle-11g/E-数据库备份与恢复-12-热备-DataGuard_fast_start_failover.html'
-    'E-数据库备份与恢复-13-热备-DataGuard_logical_standby': '/oracle/oracle-11g/E-数据库备份与恢复-13-热备-DataGuard_logical_standby.html'
-    'E-数据库备份与恢复-20-控制文件的备份恢复总结': '/oracle/oracle-11g/E-数据库备份与恢复-20-控制文件的备份恢复总结.html'
-    'E-数据库备份与恢复-21-数据文件的备份恢复总结': '/oracle/oracle-11g/E-数据库备份与恢复-21-数据文件的备份恢复总结.html'
-  'F-dba的日常工作-00-index':
-    'F-dba的日常工作-01-tuning': '/oracle/oracle-11g/F-dba的日常工作-01-tuning.html'
-    'F-DBA的日常工作-02-tuning': '/oracle/oracle-11g/F-DBA的日常工作-02-tuning.html'
-    'F-DBA的日常工作-03-模拟pga无法分配造成ORA-04030异常': '/oracle/oracle-11g/F-DBA的日常工作-03-模拟pga无法分配造成ORA-04030异常.html'
-    'F-DBA的日常工作-04-模拟pga无法分配造成ORA-04030异常_awr': '/oracle/oracle-11g/F-DBA的日常工作-04-模拟pga无法分配造成ORA-04030异常_awr.html'
-    'F-DBA的日常工作-05-tuning': '/oracle/oracle-11g/F-DBA的日常工作-05-tuning.html'
-    'F-DBA的日常工作-06-tuning': '/oracle/oracle-11g/F-DBA的日常工作-06-tuning.html'
-    'F-DBA的日常工作-07-sql优化': '/oracle/oracle-11g/F-DBA的日常工作-07-sql优化.html'
-  'G-RAC-00-index':
-    'G-RAC-01-rac': '/oracle/oracle-11g/G-RAC-01-rac.html'
-    'G-RAC-02-CentOS67-oracle11g': '/oracle/oracle-11g/G-RAC-02-CentOS67-oracle11g.html'
-    'G-RAC-03-11g-ip': '/oracle/oracle-11g/G-RAC-03-11g-ip.html'
-    'G-RAC-04-11grac-addNode': '/oracle/oracle-11g/G-RAC-04-11grac-addNode.html'
-    'G-RAC-05-rac+dg': '/oracle/oracle-11g/G-RAC-05-rac+dg.html'
-    'G-RAC-06-crs_stat': '/oracle/oracle-11g/G-RAC-06-crs_stat.html'
-  'H-数据库迁移工具-00-index':
-    'H-数据库迁移工具-01-ogg': '/oracle/oracle-11g/H-数据库迁移工具-01-ogg.html'
-    'H-数据库迁移工具-02-ogg': '/oracle/oracle-11g/H-数据库迁移工具-02-ogg.html'
-    'H-数据库迁移工具-03-ogg': '/oracle/oracle-11g/H-数据库迁移工具-03-ogg.html'
-  'Z-总结-00-index':
-    'Z-总结-01-函数对比OracleVSMySQL': '/oracle/oracle-11g/Z-总结-01-函数对比OracleVSMySQL.html'
-    'Z-总结-02-体系结构练习题': '/oracle/oracle-11g/Z-总结-02-体系结构练习题.html'
-
-
-
-git:
-  getting_started:
-    overview: /git/index.html
-  Git基础:
-    '01_课程综述': /git/Chapter01/01_课程综述.html
-    '02_安装Git': /git/Chapter01/02_安装Git.html
-    '03_使用Git之前需要做的最小配置': /git/Chapter01/03_使用Git之前需要做的最小配置.html
-    '04_创建第一个仓库并配置local用户信息': /git/Chapter01/04_创建第一个仓库并配置local用户信息.html
-    '05_通过几次commit来认识工作区和暂存区': /git/Chapter01/05_通过几次commit来认识工作区和暂存区.html
-    '06_给文件重命名的简便方法': /git/Chapter01/06_给文件重命名的简便方法.html
-    '07_通过git_log查看版本演变历史': /git/Chapter01/07_通过git_log查看版本演变历史.html
-    '08_gitk_通过图形界面工具来查看版本历史': /git/Chapter01/08_gitk_通过图形界面工具来查看版本历史.html
-    '09_探密': /git/Chapter01/09_探密.html
-    '10_commit、tree和blob三个对象之间的关系': /git/Chapter01/10_commit、tree和blob三个对象之间的关系.html
-    '11_小练习_数一数tree的个数': /git/Chapter01/11_小练习_数一数tree的个数.html
-    '12_分离头指针情况下的注意事项': /git/Chapter01/12_分离头指针情况下的注意事项.html
-    '13_进一步理解HEAD和branch': /git/Chapter01/13_进一步理解HEAD和branch.html
-  Git常见场景:
-    '14_怎么删除不需要的分支': /git/Chapter02/14_怎么删除不需要的分支.html
-    '15_怎么修改最新commit和message': /git/Chapter02/15_怎么修改最新commit和message.html
-    '16_怎么修改老旧commit和message': /git/Chapter02/16_怎么修改老旧commit和message.html
-    '17_怎么把连续的多个commit整理成1个': /git/Chapter02/17_怎么把连续的多个commit整理成1个.html
-    '18_怎么把间隔的几个commit整理成1个': /git/Chapter02/18_怎么把间隔的几个commit整理成1个.html
-    '19_怎么比较暂存区和HEAD所含文件的差异': /git/Chapter02/19_怎么比较暂存区和HEAD所含文件的差异.html
-    '20_怎么比较工作区和暂存区所含文件的差异': /git/Chapter02/20_怎么比较工作区和暂存区所含文件的差异.html
-    '21_如何让暂存区恢复和HEAD的一样': /git/Chapter02/21_如何让暂存区恢复和HEAD的一样.html
-    '22_如何让工作区的文件恢复为和暂存区一样': /git/Chapter02/22_如何让工作区的文件恢复为和暂存区一样.html
-    '23_怎么消除暂存区部分文件的修改': /git/Chapter02/23_怎么消除暂存区部分文件的修改.html
-    '24_消除最近的几次提交': /git/Chapter02/24_消除最近的几次提交.html
-    '25_看看不同提交的指定文件的差异': /git/Chapter02/25_看看不同提交的指定文件的差异.html
-    '26_正确删除文件的方法': /git/Chapter02/26_正确删除文件的方法.html
-    '27_开发中临时加塞了紧急任务怎么处理': /git/Chapter02/27_开发中临时加塞了紧急任务怎么处理.html
-    '28_如何指定不需要Git管理的文件': /git/Chapter02/28_如何指定不需要Git管理的文件.html
-    '29_如何将Git仓库备份到本地': /git/Chapter02/29_如何将Git仓库备份到本地.html
-  Github同步:
-    'overview': /git/Chapter03/index.html
-  多人协作:
-    'overview': /git/Chapter04/index.html
-  Git集成使用禁忌:
-    'overview': /git/Chapter05/index.html
-  初识GitHub:
-    'overview': /git/Chapter06/index.html
-    '41_GitHub为什么会火': /git/Chapter06/41_GitHub为什么会火.html
-    '42_GitHub都有哪些核心功能': /git/Chapter06/42_GitHub都有哪些核心功能.html
-    '43_怎么快速淘到感兴趣的开源项目': /git/Chapter06/43_怎么快速淘到感兴趣的开源项目.html
-    '44_怎样在GitHub上搭建个人博客': /git/Chapter06/44_怎样在GitHub上搭建个人博客.html
-    '45_开源项目怎么保证代码质量': /git/Chapter06/45_开源项目怎么保证代码质量.html
-    '46_为何需要组织类型的仓库': /git/Chapter06/46_为何需要组织类型的仓库.html
-  使用GitHub:
-    'overview': /git/Chapter07/index.html
-  GitLab实践:
-    'overview': /git/Chapter08/index.html
-
-tick:
-  getting_started:
-    overview: index.html
-
-mse:
-  getting_started:
-    overview: /mse/index.html
-  calculus:
-    overview: /mse/calculus/index.html
-    function_limit_and_continuity: /mse/calculus/function_limit_and_continuity.html
-  computer:
-    overview: /mse/computer/index.html
-    computer_performance_evaluation: /mse/computer/computer_performance_evaluation.html
-    introduction_to_instruction_set: /mse/computer/introduction_to_instruction_set.html
-  c++:
-    overview: /mse/c++/index.html
-    introduction: /mse/c++/introduction.html
-    set_enviroment: /mse/c++/set_enviroment.html
-    basic_grammar: /mse/c++/basic_grammar.html
-    variables_and_basic_types: /mse/c++/variables_and_basic_types.html
-    flow_control_statement: /mse/c++/flow_control_statement.html
-    array: /mse/c++/array.html
-    pointer_peference: /mse/c++/pointer_peference.html
-    dynamic_memory: /mse/c++/dynamic_memory.html
-    cplus_project: /mse/c++/cplus_project.html
-    function: /mse/c++/function.html
-    exploring_variables: /mse/c++/exploring_variables.html
-    class_and_objec: /mes/c++/class_and_object.html
-  algorithm:
-    overview: /mse/algorithm/index.html
-  software:
-    overview: /mse/software/index.html
-  politics:
-    overview: /mse/politics/index.html
-    A-00-basic_principles_of_marxism: /mse/politics/A-00-basic_principles_of_marxism.html
-    B-00-mzt: /mse/politics/B-00-mzt.md
-    C-00-history:  /mse/politics/C-00-history.md
-    D-00-ideology_and_morality: /mse/politics/D-00-ideology_and_morality.md
-    E-00-current_affairs: /mse/politic/E-00-current_affairs.md
-
-
-cloud:
-  getting_started:
-    overview: /cloud/index.html
-  # 阿里云
-  aliyun:
-    overview: /cloud/aliyun/index.html
-  # 腾讯云
-  tencent:
-    overview: /cloud/tencent/index.html
-  # 亚马逊云
-  aws:
-    overview: /cloud/aws/index.html
-  # 微软云
-  azure:
-    overview: /cloud/azure/index.html
-
-
-
-amy:
-  getting_started:
-    overview: /amy/index.html
-  withme:
-    overview: /amy/withme/index.html
-#    2020-02-07-amy: /amy/withme/2020-02-07-amy.html
-#    2020-04-29-amy: /amy/withme/2020-04-29-amy.html
-#    2020-05-08-amy: /amy/withme/2020-05-08-amy.html
-#    2020-05-18-amy: /amy/withme/2020-05-18-amy.html
-  dancing:
-    overview: /amy/dancing/index.html
-  english:
-    overview: /amy/english/index.html
-#    # pre k
-#    prek_star-2019-06-30-amy: /amy/english/prek_star/2019-06-30-amy.html
-#    prek_star-2020-04-01-amy: /amy/english/prek_star/2020-04-01-amy.html
-#    prek_star-2020-04-12-amy: /amy/english/prek_star/2020-04-12-amy.html
-#    prek_star-2020-05-10-amy: /amy/english/prek_star/2020-05-10-amy.html
-#    prek_star-2020-05-13-amy: /amy/english/prek_star/2020-05-13-amy.html
-#    # k star
-#    k_star-2020-08-03-amy: /amy/english/k_star/2020-08-03-amy.html
-#    k_star-2020-08-09-amy: /amy/english/k_star/2020-08-09-amy.html
-#    k_star-2020-08-15-amy: /amy/english/k_star/2020-08-15-amy.html
-#    k_star-2020-08-23-amy: /amy/english/k_star/2020-08-23-amy.html
-#    k_star-2020-08-30-amy: /amy/english/k_star/2020-08-30-amy.html
-#    k_star-2020-09-06-amy: /amy/english/k_star/2020-09-06-amy.html
-#    k_star-2020-09-13-amy: /amy/english/k_star/2020-09-13-amy.html
-#    k_star-2020-09-20-amy: /amy/english/k_star/2020-09-20-amy.html
-#    k_star-2020-10-11-amy: /amy/english/k_star/2020-10-11-amy.html
-#    k_star-2020-10-18-amy: /amy/english/k_star/2020-10-18-amy.html
-#    k_star-2020-10-25-amy: /amy/english/k_star/2020-10-25-amy.html
-#    k_star-2020-11-01-amy: /amy/english/k_star/2020-11-01-amy.html
-#    k_star-2020-11-08-amy: /amy/english/k_star/2020-11-08-amy.html
-#    k_star-2020-11-15-amy: /amy/english/k_star/2020-11-15-amy.html
-  kindergarten:
-    overview: /amy/kindergarten/index.html
-#    # 小二班
-#    little2-2018-09-10-amy: /amy/kindergarten/little2/2018-09-10-amy.html
-#    little2-2018-09-19-amy: /amy/kindergarten/little2/2018-09-19-amy.html
-#    little2-2018-09-20-amy: /amy/kindergarten/little2/2018-09-20-amy.html
-#    little2-2018-09-21-amy: /amy/kindergarten/little2/2018-09-21-amy.html
-#    little2-2018-09-29-amy: /amy/kindergarten/little2/2018-09-29-amy.html
-#    little2-2018-09-30-amy: /amy/kindergarten/little2/2018-09-30-amy.html
-#    # 中二班
-#    m2-2020-08-15-amy: /amy/kindergarten/m2/2020-08-15-amy.html
-#    # 大二班
-#    big2-2020-11-18-amy: /amy/kindergarten/big2/2020-11-18-amy.html
-
+database:
+  mysql:
+    overview: /database/mysql/index.html
+    booboo_mysql: /database/mysql/booboo_mysql/index.html
+    dba_mysql: /database/mysql/dba_mysql/index.html
+    rds_mysql: /database/mysql/rds_mysql/index.html
+    security: /database/mysql/security/index.html
+    awesome-tools: /database/mysql/awesome-tools/index.html
+  oracle:
+    overview: /database/oracle/index.html
+    ocp: /database/oracle/ocp/index.html
+    oracle-12c: /database/oracle/oracle-12c/index.html
+    oracle-11g: /database/oracle/oracle-11g/index.html
+  nosql:
+    overview: /database/nosql/index.html
+    booboo_redis: /database/nosql/booboo_redis/index.html
+    dba_redis: /database/nosql/dba_redis/index.html
+    booboo_mongodb: /database/nosql/booboo_mongodb/index.html
+    hadoop: /database/nosql/hadoop/index.html
 
 
 devops:
   getting_started:
     overview: /devops/index.html
-  bootstrap:
-    report-report-html: /devops/bootstrap/report-html.html
-  booboo_python:
-    'overview': /devops/booboo_python/index.html
-    '01-python': /devops/booboo_python/01-python.html
-    '02-python': /devops/booboo_python/02-python.html
-    '03-python': /devops/booboo_python/03-python.html
-    '04-python': /devops/booboo_python/04-python.html
-    '05-python': /devops/booboo_python/05-python.html
-    '06-python': /devops/booboo_python/06-python.html
-    '07-python': /devops/booboo_python/07-python.html
-    '08-checkio': /devops/booboo_python/08-checkio.html
-    '09-python考核': /devops/booboo_python/09-python考核.html
-  00_python_base:
-    'overview': /devops/00_python_base/index.html
-    '01_Python的历史和展望': /devops/00_python_base/01_Python的历史和展望.html
-    '02_Python的基本数据类型': /devops/00_python_base/02_Python的基本数据类型.html
-    '03_Python的基本运算': /devops/00_python_base/03_Python的基本运算.html
-    '04_Python的控制和函数': /devops/00_python_base/04_Python的控制和函数.html
-    '05_Python的文件操作': /devops/00_python_base/05_Python的文件操作.html
-    '06_Python迭代器和生成器': /devops/00_python_base/06_Python迭代器和生成器.html
-    '07_Python深浅拷贝': /devops/00_python_base/07_Python深浅拷贝.html
-    '08_Python装饰器': /devops/00_python_base/08_Python装饰器.html
-    '09_Python模块和包': /devops/00_python_base/09_Python模块和包.html
-    '10_Python面向对象设计和类': /devops/00_python_base/10_Python面向对象设计和类.html
-    '11_Python面向对象进阶_内置函数': /devops/00_python_base/11_Python面向对象进阶_内置函数.html
-    '12_Python异常处理': /devops/00_python_base/12_Python异常处理.html
-    '13-Python工作中常用接口': /devops/00_python_base/13-Python工作中常用接口.html
-  01_python_net:
-    'overview': /devops/01_python_net/index.html
-    '01_Python网络开发之客户端服务器架构': /devops/01_python_net/01_Python网络开发之客户端服务器架构.html
-    '02_Python网络开发之OSI七层模型': /devops/01_python_net/02_Python网络开发之OSI七层模型.html
-    '03_Python网络开发之详解socket层': /devops/01_python_net/03_Python网络开发之详解socket层.html
-    '04_Python网络开发之基于TCP的套接字': /devops/01_python_net/04_Python网络开发之基于TCP的套接字.html
-    '05_Python网络开发之基于UDP的套接字': /devops/01_python_net/05_Python网络开发之基于UDP的套接字.html
-    '06_Python网络开发之粘包现象': /devops/01_python_net/06_Python网络开发之粘包现象.html
-    '07_Python网络开发之认证客户端的链接合法性': /devops/01_python_net/07_Python网络开发之认证客户端的链接合法性.html
-    '08_Python网络开发之socketserver实现并发': /devops/01_python_net/08_Python网络开发之socketserver实现并发.html
-  02_python_threads:
-    'overview': /devops/02_python_threads/index.html
-    '01_Python并发编程之背景知识': /devops/02_python_threads/01_Python并发编程之背景知识.html
-    '02_Python并发编程之多进程': /devops/02_python_threads/02_Python并发编程之多进程.html
-    '03_Python并发编程之多线程': /devops/02_python_threads/03_Python并发编程之多线程.html
-    '04_Python并发编程之协程': /devops/02_python_threads/04_Python并发编程之协程.html
-    '05_Python并发编程之IO模型': /devops/02_python_threads/05_Python并发编程之IO模型.html
-    '06_Python并发编程之paramiko模块': /devops/02_python_threads/06_Python并发编程之paramiko模块.html
-  11_flask_admin:
-    'overview': /devops/11_flask_admin/index.html
-    '01_搭建工作记录管理系统的准备工作': /devops/11_flask_admin/01_搭建工作记录管理系统的准备工作.html
-    '02_调整网站色调为蓝色': /devops/11_flask_admin/02_调整网站色调为蓝色.html
-    '03_添加一个静态页面': /devops/11_flask_admin/03_添加一个静态页面.html
-    '04_网站从英文改为中文': /devops/11_flask_admin/04_网站从英文改为中文.html
-    '05_使用MySQL数据库存放数据': /devops/11_flask_admin/05_使用MySQL数据库存放数据.html
-    '06_展示数据库表单': /devops/11_flask_admin/06_展示数据库表单.html
-    '07_新增登陆界面': /devops/11_flask_admin/07_新增登陆界面.html
-    '08_展示数据库指定的列': /devops/11_flask_admin/08_展示数据库指定的列.html
-    '09_开启导出表格功能': /devops/11_flask_admin/09_开启导出表格功能.html
-    '10-使用模板': /devops/11_flask_admin/10-使用模板.html
-    '11-修改Flask_admin前端页面表格一行显示文字不换行': /devops/11_flask_admin/11-修改Flask_admin前端页面表格一行显示文字不换行.html
-    '12-修改Flask_admin前端页面添加表格名称': /devops/11_flask_admin/12-修改Flask_admin前端页面添加表格名称.html
-    '13-修改Flask_admin前端表格通过js计算生成合计行': /devops/11_flask_admin/13-修改Flask_admin前端表格通过js计算生成合计行.html
-  12_mini_project:
-    'overview': /devops/12_mini_project/index.html
+    bootstrap: /devops/bootstrap/index.html
+    booboo_python: /devops/booboo_python/index.html
+    00_python_base: /devops/00_python_base/index.html
+    01_python_net: /devops/01_python_net/index.html
+    02_python_threads: /devops/02_python_threads/index.html
+    11_flask_admin: /devops/11_flask_admin/index.html
+    12_mini_project: /devops/12_mini_project/index.html
+  git:
+    overview: /devops/git/index.html
+    Git基础: /devops/git/Chapter01/index.html
+    Git常见场景: /devops/git/Chapter02/index.html
+    Github同步: /devops/git/Chapter03/index.html
+    多人协作: /devops/git/Chapter04/index.html
+    Git集成使用禁忌: /devops/git/Chapter05/index.html
+    初识GitHub: /devops/git/Chapter06/index.html
+    使用GitHub: /devops/git/Chapter07/index.html
+    GitLab实践: /devops/git/Chapter08/index.html
 
-nosql:
+cloud:
   getting_started:
-    overview: /nosql/index.html
-  booboo_redis:
-    'overview': /nosql/booboo_redis/index.html
-    '01-Redis入门': /nosql/booboo_redis/01-Redis入门.html
-    '02-Redis持久化': /nosql/booboo_redis/02-Redis持久化.html
-    '03-Redis主从': /nosql/booboo_redis/03-Redis主从.html
-    '04-Redis集群': /nosql/booboo_redis/04-Redis集群.html
-    '05-Redis排错指南': /nosql/booboo_redis/05-Redis排错指南.html
-  dba_redis:
-    'overview': /nosql/dba_redis/index.html
-    '0_hash_tables': /nosql/dba_redis/0_hash_tables.html
-    '1_redis_server': /nosql/dba_redis/1_redis_server.html
-    '2_redis_rdb_aof': /nosql/dba_redis/2_redis_rdb_aof.html
-    '3_redis_expire': /nosql/dba_redis/3_redis_expire.html
-    '4_redis_client': /nosql/dba_redis/4_redis_client.html
-    '5_redis_client_server': /nosql/dba_redis/5_redis_client_server.html
-    '6_redis_server_cmd': /nosql/dba_redis/6_redis_server_cmd.html
-    '7_redis_server_serverCron': /nosql/dba_redis/7_redis_server_serverCron.html
-    '8_redis_server_initialize': /nosql/dba_redis/8_redis_server_initialize.html
-    '9_redis_replication': /nosql/dba_redis/9_redis_replication.html
-    '10_redis_demo': /nosql/dba_redis/10_redis_demo.html
-    '11_redis_ops': /nosql/dba_redis/11_redis_ops.html
-  booboo_mongodb:
-    'overview': /nosql/booboo_mongodb/index.html
-    '00-mongodb课程': /nosql/booboo_mongodb/00-mongodb课程.html
-    '01-MongoDB简介': /nosql/booboo_mongodb/01-MongoDB简介.html
-    '02-MongoDB单实例安装': /nosql/booboo_mongodb/02-MongoDB单实例安装.html
-    '03-MongoDB认证权限管理': /nosql/booboo_mongodb/03-MongoDB认证权限管理.html
-    '04-MongoDBLanguage': /nosql/booboo_mongodb/04-MongoDBLanguage.html
-    '05-MongoDB备份恢复': /nosql/booboo_mongodb/05-MongoDB备份恢复.html
-    '06-MongoDB复制': /nosql/booboo_mongodb/06-MongoDB复制.html
-    '07-MongoDB副本集': /nosql/booboo_mongodb/07-MongoDB副本集.html
-    '10-MongoDB配置文件详解': /nosql/booboo_mongodb/10-MongoDB配置文件详解.html
+    overview: /cloud/index.html
+    aliyun: /cloud/aliyun/index.html
+    tencent: /cloud/tencent/index.html
+    aws: /cloud/aws/index.html
+    azure: /cloud/azure/index.html
 
-hadoop:
+mse:
+  文化课:
+    politics: /mse/politics/index.html
+    english: /mse/english/index.html
+    calculus: /mse/calculus/index.html
+  专业课:
+    computer: /mse/computer/index.html
+    algorithm: /mse/algorithm/index.html
+    c++: /mse/c++/index.html
+    software: /mse/software/index.html
+
+amy:
   getting_started:
-    overview: /hadoop/index.html
-  Hadoop基础:
-    '01-Hadoop的起源与体系介绍': /hadoop/01-Hadoop理论/01-Hadoop的起源与体系介绍.html
-    '02-Hadoop-pagerank': /hadoop/01-Hadoop理论/02-Hadoop-pagerank.html
-    'hadoopInstall': /hadoop/02_operation/hadoopInstall.html
-    'hbaseInstall': /hadoop/02_operation/hbaseInstall.html
-    'hiveInstall': /hadoop/02_operation/hiveInstall.html
-    'hivesql': /hadoop/02_operation/hivesql.html
+    overview: /amy/index.html
+    withme: /amy/withme/index.html
+    dancing: /amy/dancing/index.html
+    english: /amy/english/index.html
+    kindergarten: /amy/kindergarten/index.html
+
+
+
+
+
+

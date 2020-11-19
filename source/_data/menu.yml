@@ -1,16 +1,16 @@
 #docs: /docs/
 #themes: /themes/
 MySQL8.0: /api/
-mse: /mse/
-linux: /linux/
-mysql: /mysql/
-oracle: /oracle/
-nosql: /nosql/
+database: /database/
 devops: /devops/
-git: /git/
+linux: /linux/
 cloud: /cloud/
-#plugins: /plugins/
+mse: /mse/
+projects: /projects/
 news: /news/
+
 #about: /about/
-#tick: /tick/
+
+
+
 

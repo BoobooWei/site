@@ -1,7 +1,6 @@
 menu:
   linux: Linux
-  mysql: MySQL
-  oracle: Oracle
+  database: Database
   devops: DevOps
   git: Git
   tick: TICK
@@ -14,6 +13,7 @@ menu:
   mse: MSE
   cloud: Cloud
   nosql: NoSQL
+  projects: Projects
 
 
 index:
@@ -101,396 +101,52 @@ sidebar:
   linux:
     getting_started: 开始使用
     overview: 概览
-    # Linux 基础
+    0_linux_base: Linux 中级
     booboo_linux_base: Linux 基础
-    '00-linux_history': Linux历史
-    '01-Linux基础命令': 基础命令
-    '02-Linux用户和组': 用户和组
-    '03-Linux文件和目录': 文件和目录
-    '04-Linux压缩打包': 压缩打包
-    '05-Linux软件安装': 软件安装
-    '06-Vim': Vim
-    '07-Bash简介': Bash简介
-    '08-日志和计划任务': 日志和计划任务
-    '09-Linux文件系统和磁盘管理': 文件系统
-    '10-Linux开机启动流程': 开机启动流程
-    '11-Linux内核': Linux内核
-    '12-SELINUX': SELINUX
-    '13-进程管理': 进程管理
-    # Linux 简易服务
     booboo_easy_service: Linux 简易服务
-    '00_linux_classroom_env': 课程环境
-    '01_dns': DNS
-    '02_ftp': FTP
-    '03_nfs': NFS
-    '04_samba': SAMBA
-    '05_apache': APACHE
-    '06_ntp_chrony': 时间同步服务
-    '07_iptables_firewalld': 防火墙
-    # Shell Scripts
-    booboo_bash_shell_scripts: Shell Scripts
-    '00_shell_variables': 变量简介
-    '01_shell_flow_control_statement': 流程控制
-    '02_shell_regular_expression': 正则表达式
-    '03_shell_sed_awk': Sed_AWK
-    '04_shell_brackets': 各种括号的作用
-    'shell上机': 上机考试
-    'shell笔试': 笔试题目
-    # Linux 进阶
+    booboo_bash_shell_scripts: Linux 脚本编程
     booboo_middle_service: Linux 进阶
-    '01-pxe': PXE
-    '02-nginx': Nginx
-    '03-tomcat': Tomcat
-    '04-ldap': LDAP
-    '05-zabbix': Zabbix
-    '06-ansible': Ansible
-    '07-cdn': CDN
-    # Docker
-    docker: Docker
-    install_docker: 安装Docker
-    install_zipkin: 安装Zipkin
-    # 工具
-    excellent_tools: Ex-Tools
-    supervisor: supervisor
-    prometheus: prometheus
-    systemd: systemd
-    'fluentd': fluented
-    'fluentd_config': 'fluented配置'
-    'fluentd_config_input_mongodblogtail_output_datahub': 'fluented_mongodblogtail'
-    'fluentd_config_output_mysql': 'fluentd_output_mysql'
-    'kettle_install': kettle
-    # Linux 日常记录
-    linux: Linux 日常
-    'Intel_network_firmware': '无线网卡'
-    'U盘装机': 'U盘装机'
-    'curl断点续传': 'curl断点续传'
-    'edusoho-install': 'edusoho'
-    'fio压测磁盘': 'fio压测磁盘'
-    'git日常使用场景记录': 'git日常使用场景记录'
-    'kvm_桥接配置': 'kvm_桥接配置'
-    'linux_free': 'linux_free'
-    'rhel7.2_install_mplayer': 'mplayer'
-    'rhel7.2最小安装到图形化界面': '最小安装到图形化界面'
-    'rhel中文乱码问题': 'rhel中文乱码问题'
-    'screen': 'screen'
-    'strace故障排查': 'strace故障排查'
-    'tcp内存限制': 'tcp内存限制'
-    'ubuntu_dpkg': 'ubuntu_dpkg'
-    'zabbix_3': 'zabbix_3'
-    '常用操作系统命令': '常用操作系统命令'
-    '常用脚本': '常用脚本'
+    1_linux_dayday: Linux 日常
+    2_excellent_tools: Ex-Tools
+    3_lamp: LAMP
+    4_docker: Docker
+    5_tick: TICK
+    kapacitor: Kapacitor
 
-    # 网站
-    lamp: LAMP
-    phpems:  考试系统PHPEMS
-
-  mysql:
-    getting_started: 开始使用
+  database:
+    mysql: MySQL
     overview: 概览
-    # MySQL 基础
     booboo_mysql: MySQL 基础
-    '00-MySQL管理课程简介': '课程简介'
-    '01-MySQL和MariaDB数据库介绍': 'MySQL简介'
-    '02-结构化查询语言SQL介绍和基本操作': 'SQL基础上'
-    '02-结构化查询语言SQL介绍和基本操作2': 'SQL基础下'
-    '03-MySQL备份与恢复': '备份与恢复'
-    '03-MySQL逻辑架构和Innodb存储引擎': '存储引擎'
-    '04-MySQL复制replication': '主从复制'
-    '05-MySQL高可用HA': '高可用HA'
-    '06-MySQL压力测试工具sysbench': '压力测试'
-    '07-MySQL5.6一主多从半同步复制': '半同步复制'
-    '08-MySQL逻辑备份工具mysqldump&mysqlpump&mydumper': '逻辑备份工具对比'
-    '09-SQL考试': '基础考试'
-    # MySQL 运维实践
     dba_mysql: MySQL 运维实践
-    '00-数据库工作软件推荐': 'MySQL软件推荐'
-    '01-MySQL常用SQL': 'MySQL常用SQL'
-    '02-MySQL参数优化': 'MySQL参数优化'
-    '03-MySQL认证OCP': 'MySQL认证OCP'
-    '04-MySQL技术积累': 'MySQL技术积累'
-    '05-MySQL自动化管理': 'MySQL自动化管理'
-    '06-MySQL性能监控': 'MySQL性能监控'
-    '07-MySQL系统库SYS': 'MySQL系统库SYS'
-    '08-MySQL管理规范': 'MySQL管理规范'
-    # MyCat
-    '基于MyCat的MySQL高可用架构规划建议': 分布式架构规划
-    '基于MyCAT的分布式数据库架构': 分布式架构配置
-    # 云数据库RDS性能调优
     rds_mysql: RDS 性能调优
-
-
-    # MySQL 安全
     security: 安全篇
-    cis_mysql: MySQL安全基线
-    # MySQL 工具
     awesome-tools: 工具篇
-    pt-archiver: pt-archiver
-    percona_tookit: percona_tookit
-    workbench: workbench
-    otter: otter
-    tidb: TiDB
 
+    oracle: Oracle
+    ocp: Oracle12C OCP
+    oracle-12c: Oracle 12c 学习笔记
+    oracle-11g: Oracle 11g 学习笔记
 
+    nosql: NoSQL
+    booboo_redis: Redis 基础
+    dba_redis: Redis 进阶
+    booboo_mongodb: MongoDB 基础
+    hadoop: Hadoop 基础
 
-  oracle:
-    getting_started: 开始使用
-    overview: 概览
-    oracle-11g: Oracle 11g
-    'A-数据库安装-00-index': 1 数据库安装
-    'A-数据库安装-01-oinstall': 图形化安装
-    'A-数据库安装-02-数据库简单使用': 简单使用
-    'A-数据库安装-03-命令行安装Oracle11': 命令行安装
-    'A-数据库安装-04-命令行创建数据库': 命令行建库
-    'A-数据库安装-05-创建scott学习环境': scott学习环境
-    'B-SQL语句-00-index': 2 SQL语句
-    'B-SQL语句-01-单行函数': 单行函数
-    'B-SQL语句-02-多表连接': 多表连接
-    'B-SQL语句-03-组函数': 组函数
-    'B-SQL语句-04-子查询': 子查询
-    'B-SQL语句-05-SQLPlus和变量': SQLPlus和变量
-    'B-SQL语句-06-DML语句的使用': DML语句的使用
-    'B-SQL语句-07-事务和锁机制': 事务和锁机制
-    'B-SQL语句-08-DDL管理5大对象': DDL管理5大对象
-    'B-SQL语句-09-DCL管理用户': DCL管理用户
-    'B-SQL语句-10-DQL语句的使用': DQL语句的使用
-    'B-SQL语句-11-表的管理总结': 表的管理总结
-    'C-PLSQL-00-index': 3 PLSQL
-    'C-PLSQL-01-变量_流程控制_数据类型_复合变量': 变量和流程控制
-    'C-PLSQL-02-异常处理': 异常处理
-    'C-PLSQL-03-命名块-触发器': 触发器
-    'C-PLSQL-04-命名块-函数': 函数
-    'C-PLSQL-05-命名块-存储过程': 存储过程
-    'C-PLSQL-06-命名块-包Package': Package
-    'D-体系结构和存储引擎-00-index': 4 体系结构
-    'D-体系结构和存储引擎-01-数据库实例_内存和进程': 内存和进程
-    'D-体系结构和存储引擎-19-网络配置': 网络配置
-    'D-体系结构和存储引擎-01-index': 4.1 物理结构
-    'D-体系结构和存储引擎-02-物理结构_口令文件password': 口令文件password
-    'D-体系结构和存储引擎-03-物理结构_参数文件parameter_files': 参数文件
-    'D-体系结构和存储引擎-04-物理结构_跟踪文件trace_files': 跟踪文件
-    'D-体系结构和存储引擎-05-启动数据库的三个阶段start_shut': 启动数据库
-    'D-体系结构和存储引擎-06-手工创建数据库create_db_manual': 手工建库
-    'D-体系结构和存储引擎-07-物理结构_控制文件control_files': 控制文件
-    'D-体系结构和存储引擎-08-物理结构_日志文件redo_log_files': 日志文件
-    'D-体系结构和存储引擎-09-物理结构_数据文件datafile': 数据文件
-    'D-体系结构和存储引擎-02-index': 4.2 逻辑结构
-    'D-体系结构和存储引擎-10-逻辑结构_存储结构storage': 存储结构
-    'D-体系结构和存储引擎-11-逻辑结构_undo段': undo段
-    'D-体系结构和存储引擎-12-逻辑结构_表': 表
-    'D-体系结构和存储引擎-13-逻辑结构_索引': 索引
-    'D-体系结构和存储引擎-14-逻辑结构_约束': 约束
-    'D-体系结构和存储引擎-15-逻辑结构_Profile': Profile
-    'D-体系结构和存储引擎-16-逻辑结构_权限管理': 权限管理
-    'D-体系结构和存储引擎-17-逻辑结构_数据库字符集': 数据库字符集
-    'D-体系结构和存储引擎-18-逻辑结构_元数据': 元数据
-    'E-数据库备份与恢复-00-index': 5 备份与恢复
-    'E-数据库备份与恢复-00-备份的概念': 备份的概念
-    'E-数据库备份与恢复-01-index': 5.1 冷备
-    'E-数据库备份与恢复-02-index': 5.1.1 逻辑备份恢复
-    'E-数据库备份与恢复-01-冷备-逻辑备份恢复-exp和imp': exp和imp
-    'E-数据库备份与恢复-02-冷备-逻辑备份恢复-expdp和impdp': expdp和impdp
-    'E-数据库备份与恢复-03-index': 5.1.2 物理备份恢复
-    'E-数据库备份与恢复-03-冷备-物理备份恢复-离线冷备': 离线冷备
-    'E-数据库备份与恢复-04-冷备-物理备份恢复-在线热备': 在线热备
-    'E-数据库备份与恢复-04-冷备-物理备份恢复-在线热备-数据文件': 在线热备-数据文件
-    'E-数据库备份与恢复-05-冷备-物理备份恢复-在线热备-控制文件': 在线热备-控制文件
-    'E-数据库备份与恢复-06-冷备_物理备份恢复-表空间损坏_ORA-08103': 表空间损坏_ORA-08103
-    'E-数据库备份与恢复-07-冷备_物理备份恢复-恢复管理器RMAN01': 恢复管理器RMAN01
-    'E-数据库备份与恢复-08-冷备_物理备份恢复-恢复管理器RMAN02': 恢复管理器RMAN02
-    'E-数据库备份与恢复-09-冷备_物理备份恢复-恢复管理器RMAN03': 恢复管理器RMAN03
-    'E-数据库备份与恢复-10-冷备_物理备份恢复-冷备计划的制定和实施': 冷备计划的制定和实施
-    'E-数据库备份与恢复-20-控制文件的备份恢复总结': 控制文件的备份恢复总结
-    'E-数据库备份与恢复-21-数据文件的备份恢复总结': 数据文件的备份恢复总结
-    'E-数据库备份与恢复-04-index': 5.2 热备
-    'E-数据库备份与恢复-10-热备-DataGuard': DataGuard
-    'E-数据库备份与恢复-10-热备-DataGuard2': DataGuard2
-    'E-数据库备份与恢复-11-热备-DataGuard3': DataGuard3
-    'E-数据库备份与恢复-12-热备-DataGuard_fast_start_failover': DataGuard_fast_start_failover
-    'E-数据库备份与恢复-13-热备-DataGuard_logical_standby': DataGuard_logical_standby
-    'F-dba的日常工作-00-index': 6 数据库优化
-    'F-dba的日常工作-01-tuning': 01-tuning
-    'F-DBA的日常工作-02-tuning': 02-tuning
-    'F-DBA的日常工作-03-模拟pga无法分配造成ORA-04030异常': ORA-04030异常
-    'F-DBA的日常工作-04-模拟pga无法分配造成ORA-04030异常_awr': ORA-04030异常
-    'F-DBA的日常工作-05-tuning': 05-tuning
-    'F-DBA的日常工作-06-tuning': 06-tuning
-    'F-DBA的日常工作-07-sql优化': SQL优化
-    'G-RAC-00-index': 7 RAC
-    'G-RAC-01-rac': RAC简介
-    'G-RAC-02-CentOS67-oracle11g': 安装RAC
-    'G-RAC-03-11g-ip': 配置网络
-    'G-RAC-04-11grac-addNode': 增加节点
-    'G-RAC-05-rac+dg': RAC+DG
-    'G-RAC-06-crs_stat': 集群管理
-    'H-数据库迁移工具-00-index': 8 OGG
-    'H-数据库迁移工具-01-ogg': 01-ogg
-    'H-数据库迁移工具-02-ogg': 02-ogg
-    'H-数据库迁移工具-03-ogg': 03-ogg
-    'Z-总结-00-index': 9 总结
-    'Z-总结-01-函数对比OracleVSMySQL': 函数总结
-    'Z-总结-02-体系结构练习题': 体系结构
-    oracle-12c: Oracle 12c
-    student: Oracle12c学生手册
-    '01-配置使用Oracle企业管理工具em': '企业管理工具 EM'
-    '02-配置使用Oracle企业云管理工具ocm': '企业云管理工具 OEM'
-    '03-导入DemoSchemaOE': '导入DemoSchemaOE'
-    # 1Z0-062-Oracle数据库12c-管理
-    '1Z0-062-Oracle数据库12c-管理': 062-Oracle12c-中级管理
-    '02-ExploringOracleDatabaseArchitecture-体系架构': '02-ExploringOracleDatabaseArchitecture-体系架构'
-    '03-OracleDatabaseManagementTools-管理工具': '03-OracleDatabaseManagementTools-管理工具'
-    '04-ManagingtheDatabaseInstance-管理实例': '04-ManagingtheDatabaseInstance-管理实例'
-    '05-ConfiguringtheOracleNetworkEnvironment-管理网络': '05-ConfiguringtheOracleNetworkEnvironment-管理网络'
-    '06-AdministeringUserSecurity-管理用户': '06-AdministeringUserSecurity-管理用户'
-    '07-ManagingDatabaseStorageStructures-管理存储': '07-ManagingDatabaseStorageStructures-管理存储'
-    '08-ManagingSpace-管理空间': '08-ManagingSpace-管理空间'
-    '09-ManagingUndoData-管理回滚': '09-ManagingUndoData-管理回滚'
-    '10-ManagingDataConcurrency-管理并发': '10-ManagingDataConcurrency-管理并发'
-    '11-ImplementingOracleDatabaseAuditing-管理审计': '11-ImplementingOracleDatabaseAuditing-管理审计'
-    '12-BackupandRecoveryConcepts-备份恢复概念': '12-BackupandRecoveryConcepts-备份恢复概念'
-    '13-BackupandRecoveryConfiguration-备份恢复配置': '13-BackupandRecoveryConfiguration-备份恢复配置'
-    '14-PerformingDatabaseBackups-执行备份': '14-PerformingDatabaseBackups-执行备份'
-    '15-PerformingDatabaseRecovery-执行恢复': '15-PerformingDatabaseRecovery-执行恢复'
-    '16-MovingData-移动数据': '16-MovingData-移动数据'
-    '17-DatabaseMaintenance-数据库维护': '17-DatabaseMaintenance-数据库维护'
-    '18-ManagingPerformance-管理性能': '18-ManagingPerformance-管理性能'
-    '19-ManagingPerformanceSQLTuning-SQL调优': '19-ManagingPerformanceSQLTuning-SQL调优'
-    '20-UsingDatabaseResourceManager-管理资源': '20-UsingDatabaseResourceManager-管理资源'
-    '21-UsingOracleSchedulertoAutomateTasks-自动化任务': '21-UsingOracleSchedulertoAutomateTasks-自动化任务'
-    # 1Z0-063-Oracle数据库12c-高级管理
-    1Z0-063-Oracle数据库12c-高级管理: 063-Oracle12c-高级管理
-    Oracle数据库12c-备份和恢复研讨: Oracle数据库12c-备份和恢复研讨
-    '01-Introduction-入门练习': '01-Introduction-入门练习'
-    '02-GettingStarted-入门准备': '02-GettingStarted-入门准备'
-    '03-ConfiguringforRecoverability-配置可恢复性': '03-ConfiguringforRecoverability-配置可恢复性'
-    '04-UsingtheRMANRecoveryCatalog-使用RMAN恢复目录的实践': '04-UsingtheRMANRecoveryCatalog-使用RMAN恢复目录的实践'
-    '05-BackupStrategiesandTerminology-备份策略和术语的实践': '05-BackupStrategiesandTerminology-备份策略和术语的实践'
-    '06-CreatingBackups-创建备份的练习': '06-CreatingBackups-创建备份的练习'
-    '07-ImprovingYourBackups-改善备份的实践': '07-ImprovingYourBackups-改善备份的实践'
-    '08-UsingRMAN-EncryptedBackups-使用RMAN加密的备份': '08-UsingRMAN-EncryptedBackups-使用RMAN加密的备份'
-    '09-DiagnosingDatabaseFailure-诊断数据库故障的实践': '09-DiagnosingDatabaseFailure-诊断数据库故障的实践'
-    '10-RestoreandRecoveryConcepts-还原和恢复概念的实践': '10-RestoreandRecoveryConcepts-还原和恢复概念的实践'
-    '11-PerformingRecovery-执行恢复的实践': '11-PerformingRecovery-执行恢复的实践'
-    '12-PerformingRecoveryII-执行恢复的实践II': '12-PerformingRecoveryII-执行恢复的实践II'
-    '13-RMANandOracleSecureBackup-RMAN和OracleSecureBackup的实践': '13-RMANandOracleSecureBackup-RMAN和OracleSecureBackup的实践'
-    '14-UsingFlashbackTechnologies-使用闪回技术的实践': '14-UsingFlashbackTechnologies-使用闪回技术的实践'
-    '15-FlashbackDatabase-闪回数据库的练习': '15-FlashbackDatabase-闪回数据库的练习'
-    '16-TransportingData-传输数据的实践': '16-TransportingData-传输数据的实践'
-    '17-PerformingPoint-in-TimeRecovery-执行时间点恢复的实践': '17-PerformingPoint-in-TimeRecovery-执行时间点恢复的实践'
-    '18-DuplicatingaDatabase-复制数据库': '18-DuplicatingaDatabase-复制数据库'
-    '19-RMANTroubleshootingandTuning-RMAN故障排除和调整的实践': '19-RMANTroubleshootingandTuning-RMAN故障排除和调整的实践'
-    '20-Workshop-研讨会': '20-Workshop-研讨会'
-
-    Oracle数据库12c-管理多租户架构: Oracle数据库12c-管理多租户架构
-    '01-EnterpriseManagerCloudControlandOtherTools-企业管理器云控制和其他工具': '01-EnterpriseManagerCloudControlandOtherTools-企业管理器云控制和其他工具'
-    '02-BasicsofMultitenantContainerDatabaseandPluggableDatabases-多租户容器数据库和可插拔数据库的基础': '02-BasicsofMultitenantContainerDatabaseandPluggableDatabases-多租户容器数据库和可插拔数据库的基础'
-    '03-CreatingaMultitenantContainerDatabaseandPluggableDatabases-创建多租户容器数据库和可插拔数据库': '03-CreatingaMultitenantContainerDatabaseandPluggableDatabases-创建多租户容器数据库和可插拔数据库'
-    '04-ManagingaMultitenantContainerDatabaseandPluggableDatabase-管理多租户容器数据库和可插拔数据库的实践': '04-ManagingaMultitenantContainerDatabaseandPluggableDatabase-管理多租户容器数据库和可插拔数据库的实践'
-    '05-ManagingTablespacesinCDBandPDBs-在CDB和PDB中管理表空间的实践': '05-ManagingTablespacesinCDBandPDBs-在CDB和PDB中管理表空间的实践'
-    '06-ManagingSecurityinCDBandPDBs-管理CDB和PDB中的安全性的实践': '06-ManagingSecurityinCDBandPDBs-管理CDB和PDB中的安全性的实践'
-    '07-BackupRecoveryFlashbackCDBandPDBs-备份恢复闪回CDB和PDB的实践': '07-BackupRecoveryFlashbackCDBandPDBs-备份恢复闪回CDB和PDB的实践'
-    '08-Performance-性能': '08-Performance-性能'
-    '09-Miscellaneous-其他': '09-Miscellaneous-其他'
-    teacher: Oracle12c 课堂笔记
-    '01-InstallOracle12c': '01-InstallOracle12c'
-    '02-CreateDatabase': '02-CreateDatabase'
-    '03-StartListener': '03-StartListener'
-    '04-ImportDemoHT': '04-ImportDemoHT'
-    '05-SQL-common': '05-SQL-common'
-    '06-SQL-advanced': '06-SQL-advanced'
-    '07-Manage': '07-Manage'
-
-    ocp: OCP认证
-    1z0-071: 1z0-071
-    1z0-062: 1z0-062
-    1z0-063: 1z0-063
-    12c-ocm: 12c-ocm
-
-  git:
-    getting_started: '开始使用'
-    overview: '概览'
-    Git基础: Git基础
-    '01_课程综述': '课程综述'
-    '02_安装Git': '安装Git'
-    '03_使用Git之前需要做的最小配置': '最小配置'
-    '04_创建第一个仓库并配置local用户信息': '配置local用户'
-    '05_通过几次commit来认识工作区和暂存区': '工作区和暂存区'
-    '06_给文件重命名的简便方法': '给文件重命名'
-    '07_通过git_log查看版本演变历史': '版本演变历史'
-    '08_gitk_通过图形界面工具来查看版本历史': '图形化gitk'
-    '09_探密': '探密'
-    '10_commit、tree和blob三个对象之间的关系': 'commit、tree和blob'
-    '11_小练习_数一数tree的个数': '小练习'
-    '12_分离头指针情况下的注意事项': '分离头指针'
-    Git常见场景: Git常见场景
-    '13_进一步理解HEAD和branch': 'HEAD和branch'
-    '14_怎么删除不需要的分支': '删除不需要的分支'
-    '15_怎么修改最新commit和message': '修改最新commit和message'
-    '16_怎么修改老旧commit和message': '修改老旧commit和message'
-    '17_怎么把连续的多个commit整理成1个': '多个commit整理成1个'
-    '18_怎么把间隔的几个commit整理成1个': '间隔的几个commit整理成1个'
-    '19_怎么比较暂存区和HEAD所含文件的差异': '暂存区和HEAD所含文件的差异'
-    '20_怎么比较工作区和暂存区所含文件的差异': '工作区和暂存区所含文件的差异'
-    '21_如何让暂存区恢复和HEAD的一样': '暂存区恢复和HEAD的一样'
-    '22_如何让工作区的文件恢复为和暂存区一样': '工作区的文件恢复为和暂存区一样'
-    '23_怎么消除暂存区部分文件的修改': '消除暂存区部分文件的修改'
-    '24_消除最近的几次提交': '消除最近的几次提交'
-    '25_看看不同提交的指定文件的差异': '不同提交的指定文件的差异'
-    '26_正确删除文件的方法': '正确删除文件的方法'
-    '27_开发中临时加塞了紧急任务怎么处理': '开发中临时加塞了紧急任务'
-    '28_如何指定不需要Git管理的文件': '指定不需要Git管理的文件'
-    '29_如何将Git仓库备份到本地': '将Git仓库备份到本地'
-    Github同步: Github同步
-    多人协作: 多人协作
-    Git集成使用禁忌: Git集成使用禁忌
-    初识GitHub: 初识GitHub
-    '41_GitHub为什么会火': 'GitHub为什么会火'
-    '42_GitHub都有哪些核心功能': 'GitHub都有哪些核心功能'
-    '43_怎么快速淘到感兴趣的开源项目': '快速淘到感兴趣的开源项目'
-    '44_怎样在GitHub上搭建个人博客': 'GitHub上搭建个人博客'
-    '45_开源项目怎么保证代码质量': '开源项目保证代码质量'
-    '46_为何需要组织类型的仓库': '组织类型的仓库'
-    使用GitHub: 使用GitHub
-    GitLab实践: GitLab实践
-
-
-  tick:
-    getting_started: 开始使用
-    overview: 概览
 
   mse:
     getting_started: 开始使用
+    专业课: 专业课
+    文化课: 文化课
     overview: 概览
-    # calculus
     calculus: 微积分
-    function_limit_and_continuity: 函数极限与连续
-    # 计算机原理
-    computer: 计算机系统
-    computer_performance_evaluation: 计算机系统概述
-    introduction_to_instruction_set: 计算机语言
-    # C++
-    c++: C++
-    introduction: C++ 简介
-    set_enviroment: 环境配置
-    basic_grammar: 基础语法
-    variables_and_basic_types: 初识变量
-    flow_control_statement: 流程控制
-    array: 初识数组
-    pointer_peference: 指针引用
-    dynamic_memory: 动态内存
-    cplus_project: 项目实战
-    function: 函数
-    exploring_variables: 探索变量
-    class_and_objec: 类与对象
+    computer: 计算机组成原理
+    c++: C++ 语言程序
     algorithm: 数据结构与算法
     software: 软件工程
-
-#    政治
     politics: 政治
-    A-00-basic_principles_of_marxism: 马原体系
-    B-00-mzt: 毛中特体系
-    C-00-history: 史纲体系
-    D-00-ideology_and_morality: 思修体系
-    E-00-current_affairs: 时政体系
+    english: 英语
+
 
   cloud:
     getting_started: 开始使用
@@ -508,157 +164,29 @@ sidebar:
     english: English
     withme: 生活小事
     kindergarten: 幼儿园
-    # 生活小事
-    2020-02-07-amy: Amy经典语录-第四篇
-    2020-04-29-amy: Amy经典语录-第五篇
-    2020-05-08-amy: Amy经典语录-第六篇
-    2020-05-18-amy: 团队家庭聚餐日
-    # pre k
-    prek_star-2019-06-30-amy: PreK第一本书
-    prek_star-2020-04-01-amy: PreK疫情下的英语课1
-    prek_star-2020-04-12-amy: PreK疫情下的英语课2
-    prek_star-2020-05-10-amy: PreK疫情下的英语课3
-    prek_star-2020-05-13-amy: PreK疫情下的英语课4
-#    # k star
-#    k_star-2020-08-03-amy: Kstar第二节
-#    k_star-2020-08-09-amy: Kstar第三节
-#    k_star-2020-08-15-amy: Kstar第四节
-#    k_star-2020-08-23-amy: Kstar第五节
-#    k_star-2020-08-30-amy: Kstar第六节
-#    k_star-2020-09-06-amy: Kstar第七节
-#    k_star-2020-09-13-amy: Kstar第八节
-#    k_star-2020-09-20-amy: Kstar第九节
-#    k_star-2020-10-11-amy: Kstar第十节
-#    k_star-2020-10-18-amy: Kstar第十一节
-#    k_star-2020-10-25-amy: Kstar第十二节
-#    k_star-2020-11-01-amy: Kstar第十三节
-#    k_star-2020-11-08-amy: Kstar第十四节
-#    k_star-2020-11-15-amy: Kstar第十五节
-#    kindergarten: 幼儿园
-#    # 小二班
-#    little2-2018-09-10-amy: 小二班向月亮说晚安
-#    little2-2018-09-19-amy: 小二班家长会
-#    little2-2018-09-20-amy: 小二班宝宝们开始漱口了
-#    little2-2018-09-21-amy: 小二班月饼烘培和小小搬运工
-#    little2-2018-09-29-amy: 小二班宝宝们上班啦
-#    little2-2018-09-30-amy: 小二班国庆前学洗手
-#    # 中二班 由于疫情 中二班基本第二学期没有上学
-#    m2-2020-08-15-amy: 中二班21天读绘本
-#    # 大二班 转学去了 孩子有些不适用
-#    big2-2020-11-18-amy: 大二班南瓜种子
+
   devops:
-    getting_started: 开始使用
+    getting_started: 开发
     overview: 概览
-    # bootstrap
     bootstrap: Bootstrap
     report-report-html: 表格Dmo
-    # python_base
     booboo_python: Python 基础
-    '01-python': 'Python 简介'
-    '02-python': 'Python 数据类型'
-    '03-python': 'Python 语句和语法'
-    '04-python': 'Python 模块'
-    '05-python': 'Python 面向对象编程'
-    '06-python': 'Python 配置 Apache'
-    '07-python': 'Python 操作 MySQL'
-    '08-checkio': 'Python 练习'
-    '09-python考核': 'Python 考核'
-    # 00_python_base
     00_python_base: Python 进阶
-    '01_Python的历史和展望': '历史和展望'
-    '02_Python的基本数据类型': '基本数据类型'
-    '03_Python的基本运算': '基本运算'
-    '04_Python的控制和函数': '控制和函数'
-    '05_Python的文件操作': '文件操作'
-    '06_Python迭代器和生成器': '迭代器和生成器'
-    '07_Python深浅拷贝': '深浅拷贝'
-    '08_Python装饰器': '装饰器'
-    '09_Python模块和包': '模块和包'
-    '10_Python面向对象设计和类': '面向对象设计和类'
-    '11_Python面向对象进阶_内置函数': '面向对象进阶_内置函数'
-    '12_Python异常处理': '异常处理'
-    '13-Python工作中常用接口': '工作中常用接口'
-    # 01_python_net
     01_python_net: Python 网络开发
-    '01_Python网络开发之客户端服务器架构': '客户端服务器架构'
-    '02_Python网络开发之OSI七层模型': 'OSI七层模型'
-    '03_Python网络开发之详解socket层': '详解socket层'
-    '04_Python网络开发之基于TCP的套接字': '基于TCP的套接字'
-    '05_Python网络开发之基于UDP的套接字': '基于UDP的套接字'
-    '06_Python网络开发之粘包现象': '粘包现象'
-    '07_Python网络开发之认证客户端的链接合法性': '认证客户端的链接合法性'
-    '08_Python网络开发之socketserver实现并发': 'socketserver实现并发'
-    # 02_python_threads
     02_python_threads: Python 并发编程
-    '01_Python并发编程之背景知识': '背景知识'
-    '02_Python并发编程之多进程': '多进程'
-    '03_Python并发编程之多线程': '多线程'
-    '04_Python并发编程之协程': '协程'
-    '05_Python并发编程之IO模型': 'IO模型'
-    '06_Python并发编程之paramiko模块': 'paramiko模块'
-    # 11_flask_admin
     11_flask_admin: Flask_admin
-    '01_搭建工作记录管理系统的准备工作': '准备工作'
-    '02_调整网站色调为蓝色': '调整网站色调'
-    '03_添加一个静态页面': '添加静态页面'
-    '04_网站从英文改为中文': '英文改为中文'
-    '05_使用MySQL数据库存放数据': '使用MySQL'
-    '06_展示数据库表单': '展示表单'
-    '07_新增登陆界面': '新增登陆界面'
-    '08_展示数据库指定的列': '展示数据库指定的列'
-    '09_开启导出表格功能': '开启导出表格功能'
-    '10-使用模板': '使用模板'
-    '11-修改Flask_admin前端页面表格一行显示文字不换行': '修改前端页面表格'
-    '12-修改Flask_admin前端页面添加表格名称': '添加表格名称'
-    '13-修改Flask_admin前端表格通过js计算生成合计行': 'js计算生成合计行'
-    # 12_mini_project
     12_mini_project: 迷你小项目
+    git: Git
+    Git基础: Git基础
+    Git常见场景: Git常见场景
+    Github同步: Github同步
+    多人协作: 多人协作
+    Git集成使用禁忌: Git集成使用禁忌
+    初识GitHub: 初识GitHub
+    使用GitHub: 使用GitHub
+    GitLab实践: GitLab实践
 
 
-  nosql:
-    getting_started: 开始使用
-    overview: 概览
-    # redis 基础
-    booboo_redis: Redis 基础
-    '01-Redis入门': 'Redis 入门'
-    '02-Redis持久化': 'Redis 持久化'
-    '03-Redis主从': 'Redis 主从'
-    '04-Redis集群': 'Redis 集群'
-    '05-Redis排错指南': 'Redis 排错指南'
-    # redis 进阶
-    dba_redis: Redis 进阶
-    '0_hash_tables': '哈希表'
-    '1_redis_server': '数据库键值空间'
-    '2_redis_rdb_aof': '持久化'
-    '3_redis_expire': '过期键值清理'
-    '4_redis_client': '客户端'
-    '5_redis_client_server': '客户端与服务器'
-    '6_redis_server_cmd': '命令请求'
-    '7_redis_server_serverCron': 'serverCron函数'
-    '8_redis_server_initialize': '服务初始化'
-    '9_redis_replication': '主从复制'
-    '10_redis_demo': '开发小案例'
-    '11_redis_ops': '运维实践'
-    # mongodb 基础
-    booboo_mongodb: MongoDB 基础
-    '00-mongodb课程': 'MongoDB课程'
-    '01-MongoDB简介': 'MongoDB 简介'
-    '02-MongoDB单实例安装': 'MongoDB 单实例安装'
-    '03-MongoDB认证权限管理': 'MongoDB 认证权限管理'
-    '04-MongoDBLanguage': 'MongoDB 语言'
-    '05-MongoDB备份恢复': 'MongoDB 备份恢复'
-    '06-MongoDB复制': 'MongoDB 复制'
-    '07-MongoDB副本集': 'MongoDB 副本集'
-    '10-MongoDB配置文件详解': 'MongoDB配置文件详解'
 
-  hadoop:
-    getting_started: 开始使用
-    overview: 概览
-    # Hadoop基础
-    Hadoop基础: Hadoop 基础
-    '01-Hadoop的起源与体系介绍': Hadoop的起源与体系
-    '02-Hadoop-pagerank': Python实现pagerank算法
-    'hadoopInstall': 安装 Hadoop
-    'hbaseInstall': 安装 Hbase
-    'hiveInstall': 安装 Hive
-    'hivesql': Hive SQL
+
+

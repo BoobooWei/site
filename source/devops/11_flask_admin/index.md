@@ -2,12 +2,26 @@
 title: Python Flask_admin
 ---
 
-> python2.6
+> 本文是关于Flask-Admin库的快速入门，手把手带你一起学习。
 > 手把手搭建Web网站
 
 Flask-Admin是一个功能齐全、简单易用的Flask扩展，让你可以为Flask应用程序增加管理界面。它受django-admin包的影响，但用这样一种方式实现，开发者拥有最终应用程序的外观、感觉和功能的全部控制权。
 
-**本文是关于Flask-Admin库的快速入门，手把手带你一起学习。**
+## 内容
+
+* [01_搭建工作记录管理系统的准备工作](/devops/11_flask_admin/01_搭建工作记录管理系统的准备工作.html)
+* [02_调整网站色调为蓝色](/devops/11_flask_admin/02_调整网站色调为蓝色.html)
+* [03_添加一个静态页面](/devops/11_flask_admin/03_添加一个静态页面.html)
+* [04_网站从英文改为中文](/devops/11_flask_admin/04_网站从英文改为中文.html)
+* [05_使用MySQL数据库存放数据](/devops/11_flask_admin/05_使用MySQL数据库存放数据.html)
+* [06_展示数据库表单](/devops/11_flask_admin/06_展示数据库表单.html)
+* [07_新增登陆界面](/devops/11_flask_admin/07_新增登陆界面.html)
+* [08_展示数据库指定的列](/devops/11_flask_admin/08_展示数据库指定的列.html)
+* [09_开启导出表格功能](/devops/11_flask_admin/09_开启导出表格功能.html)
+* [10-使用模板](/devops/11_flask_admin/10-使用模板.html)
+* [11-修改Flask_admin前端页面表格一行显示文字不换行](/devops/11_flask_admin/11-修改Flask_admin前端页面表格一行显示文字不换行.html)
+* [12-修改Flask_admin前端页面添加表格名称](/devops/11_flask_admin/12-修改Flask_admin前端页面添加表格名称.html)
+* [13-修改Flask_admin前端表格通过js计算生成合计行](/devops/11_flask_admin/13-修改Flask_admin前端表格通过js计算生成合计行.html)
 
 ## 重点模块
 

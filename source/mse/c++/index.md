@@ -2,14 +2,30 @@
 title: C++ 学习笔记
 ---
 
-C++ 是一种中级语言，它是由 Bjarne Stroustrup 于 1979 年在贝尔实验室开始设计开发的。C++ 进一步扩充和完善了 C 语言，是一种面向对象的程序设计语言。C++ 可运行于多种平台上，如 Windows、MAC 操作系统以及 UNIX 的各种版本。
-
 {% note info 学习C++的实际目的%}
 要成为优秀的数据库工程师，阅读源代码、有能力进行内核的开发是必备能力，
 而MySQL数据库的开发语言为C++，
 因此学习C++迫在眉睫。
 {% endnote %}
 
+# 内容
+
+* [C++ 简介](/mse/c++/introduction.html)
+* [环境配置](/mse/c++/set_enviroment.html)
+* [基础语法](/mse/c++/basic_grammar.html)
+* [初识变量](/mse/c++/variables_and_basic_types.html)
+* [流程控制](/mse/c++/flow_control_statement.html)
+* [初识数组](/mse/c++/array.html)
+* [指针引用](/mse/c++/pointer_peference.html)
+* [动态内存](/mse/c++/dynamic_memory.html)
+* [项目实战](/mse/c++/cplus_project.html)
+* [函数](/mse/c++/function.html)
+* [探索变量](/mse/c++/exploring_variables.html)
+* [类与对象](/mes/c++/class_and_object.html)
+
+
+
+# 帮助
 
 * [C++ 菜鸟教程](https://www.runoob.com/cplusplus/cpp-tutorial.html)
 * [C++ Primer 第五版 （英文）](http://bestcbooks.com/cpp-primer-5th/)

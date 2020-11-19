@@ -35,3 +35,9 @@ title: English 学习笔记
 * [2020-11-01 Kstar第十三节](/amy/english/k_star/2020-11-01-amy.html)
 * [2020-11-08 Kstar第十四节](/amy/english/k_star/2020-11-08-amy.html)
 * [2020-11-15 Kstar第十四节](/amy/english/k_star/2020-11-15-amy.html)
+
+
+```bash
+ll *.md | awk '{print "* ["$9"](/amy/english/k_star/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
+ll *.md | awk '{print "* ["$9"](/amy/english/prek_star/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
+```

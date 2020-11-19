@@ -7,13 +7,61 @@ tags:
 - MySQL新特性
 ---
 
-自从2005年Oracle收购InnoDB存储引擎开发商Innobase伊始，MySQL的命运已然注定。
 
-随着MySQL 5.6开始的源码重构，MySQL已经驶上了快车道，MGR给了PXC致命一击，而Clone Plugin的推出宣判了MariaDB的死刑。MariaDB，或许只能拿来缅怀曾经的青春吧。
+> 自从2005年Oracle收购InnoDB存储引擎开发商Innobase伊始，MySQL的命运已然注定。
+> 随着MySQL 5.6开始的源码重构，MySQL已经驶上了快车道，MGR给了PXC致命一击，而Clone Plugin的推出宣判了MariaDB的死刑。MariaDB，或许只能拿来缅怀曾经的青春吧。
 
 ## 新增功能探索
 
-官网链接
+* [additional-target-types-for-casts](/api/new/additional-target-types-for-casts.html)
+* [aliases-in-single-table-delete-statements](/api/new/aliases-in-single-table-delete-statements.html)
+* [atomic-ddl](/api/new/atomic-ddl.html)
+* [backup-lock](/api/new/backup-lock.html)
+* [c-api](/api/new/c-api.html)
+* [character-set-support](/api/new/character-set-support.html)
+* [common-table-expressions](/api/new/common-table-expressions.html)
+* [configuration](/api/new/configuration.html)
+* [connection-management](/api/new/connection-management.html)
+* [data-dictionary](/api/new/data-dictionary.html)
+* [data-type-support](/api/new/data-type-support.html)
+* [explain-analyze-statement](/api/new/explain-analyze-statement.html)
+* [hash-join-optimization](/api/new/hash-join-optimization.html)
+* [hintable-time-zone](/api/new/hintable-time-zone.html)
+* [index](/api/new/index.html)
+* [innodb-enhancements](/api/new/innodb-enhancements.html)
+* [internal-tempoary-tables](/api/new/internal-tempoary-tables.html)
+* [json-enhancements](/api/new/json-enhancements.html)
+* [json-schema-validation](/api/new/json-schema-validation.html)
+* [json-value-function](/api/new/json-value-function.html)
+* [lateral-derived-tables](/api/new/lateral-derived-tables.html)
+* [multi-valued-indexes](/api/new/multi-valued-indexes.html)
+* [mysql-upgrade](/api/new/mysql-upgrade.html)
+* [new-optimizer-switch-flags](/api/new/new-optimizer-switch-flags.html)
+* [optimizer-hints-for-force-index-ignore-index](/api/new/optimizer-hints-for-force-index-ignore-index.html)
+* [optimizer](/api/new/optimizer.html)
+* [plugins](/api/new/plugins.html)
+* [precise-information-for-json-schema-check-constraint](/api/new/precise-information-for-json-schema-check-constraint.html)
+* [query-cast-injection](/api/new/query-cast-injection.html)
+* [redo-log-archiving](/api/new/redo-log-archiving.html)
+* [regular-expression-support](/api/new/regular-expression-support.html)
+* [replication](/api/new/replication.html)
+* [resource-management](/api/new/resource-management.html)
+* [row-and-columns-aliases-with-on-duplicate-key-update](/api/new/row-and-columns-aliases-with-on-duplicate-key-update.html)
+* [security-and-account-management](/api/new/security-and-account-management.html)
+* [sql-standard-explicit-table-clause-and-table-value-constructor](/api/new/sql-standard-explicit-table-clause-and-table-value-constructor.html)
+* [table-encryption-management](/api/new/table-encryption-management.html)
+* [the-clone-plugin](/api/new/the-clone-plugin.html)
+* [time-zone-support-for-timestamp-and-datatime](/api/new/time-zone-support-for-timestamp-and-datatime.html)
+* [user-comments-and-user-attributes](/api/new/user-comments-and-user-attributes.html)
+* [window-functions](/api/new/window-functions.html)
+* [xml-enhancements](/api/new/xml-enhancements.html)
+
+
+```bash
+ll *.md | awk '{print "* ["$9"](/api/new/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
+```
+
+## 官网链接
 
 - [MySQL 8.0中添加的功能](https://dev.mysql.com/doc/refman/8.0/en/mysql-nutshell.html#mysql-nutshell-additions)
 - [MySQL 8.0中不推荐使用的功能](https://dev.mysql.com/doc/refman/8.0/en/mysql-nutshell.html#mysql-nutshell-deprecations)

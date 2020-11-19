@@ -25,3 +25,10 @@ title: Amy 的幼儿园
 > 转学 孩子有些不适应
           
 * [大二班南瓜种子](/amy/kindergarten/big2/2020-11-18-amy.html)
+
+
+```bash
+ll *.md | awk '{print "* ["$9"](/amy/kindergarten/little2/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
+ll *.md | awk '{print "* ["$9"](/amy/kindergarten/m2/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
+ll *.md | awk '{print "* ["$9"](/amy/kindergarten/big2/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
+```
