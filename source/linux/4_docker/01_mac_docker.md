@@ -2,7 +2,27 @@
 title: Mac版Docker桌面
 ---
 
-# 是什么
+<!-- MDTOC maxdepth:6 firsth1:1 numbering:0 flatten:0 bullets:1 updateOnSave:1 -->
+
+   - [title: Mac版Docker桌面](#title-mac版docker桌面)   
+- [是什么](#是什么)   
+   - [Mac版Docker桌面](#mac版docker桌面)   
+   - [特点和优点](#特点和优点)   
+- [怎么用](#怎么用)   
+   - [主要系统要求](#主要系统要求)   
+   - [获取Docker](#获取docker)   
+   - [安装它](#安装它)   
+   - [运行](#运行)   
+   - [好好享受](#好好享受)   
+- [使用记录](#使用记录)   
+   - [Tutorial 指导](#tutorial-指导)   
+   - [容器 docker101tutorial](#容器-docker101tutorial)   
+   - [容器 mysql:8.0.22](#容器-mysql8022)   
+- [文献资料](#文献资料)   
+
+<!-- /MDTOC -->
+
+ # 是什么
 
 ## Mac版Docker桌面
 
@@ -90,12 +110,12 @@ Docker Desktop-Mac在桌面和命令行上都能很好地运行。您将获得�
 
 1. 登陆 docker hub ，搜索mysql <https://hub.docker.com/_/mysql?tab=tags>
 2. 拉到本地
-3. 阅读帮助文档 https://hub.docker.com/_/mysql?tab=description
+3. 阅读帮助文档 <https://hub.docker.com/_/mysql?tab=description>
 4. 初始化一个新实例
-5. 阅读其他文档 https://www.runoob.com/docker/docker-install-mysql.html
+5. 阅读其他文档 <https://www.runoob.com/docker/docker-install-mysql.html>
 
 ```bash
-docker pull mysql:8.0.22
+# docker pull mysql:8.0.22
 docker images
 
 # mysql_node1
@@ -188,7 +208,7 @@ Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skippin
 
 05:38 下午 :~ booboowei$ docker exec -it 76478cf18dd8 sh
 # ls
-bin  boot  dev	docker-entrypoint-initdb.d  entrypoint.sh  etc	home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+bin  boot  dev    docker-entrypoint-initdb.d  entrypoint.sh  etc    home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
 # which mysql
 /usr/bin/mysql
 # mysql
@@ -247,8 +267,8 @@ mysql: [Warning] Using a password on the command line interface can be insecure.
 
 05:47 下午 :~ booboowei$ docker exec mysql_node2 sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD" -e "select * from booboo.t1"'
 mysql: [Warning] Using a password on the command line interface can be insecure.
-id	num
-1	100
+id    num
+1    100
 ```
 
 # 文献资料
