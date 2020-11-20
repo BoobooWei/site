@@ -1,10 +1,8 @@
 ---
-title: 安装 Docker
+title: 安装 Linux 版 Docker-ce
 ---
 
-> CentOS安装docker-ce
-
-[官方帮助][http://docs.docker-cn.com/engine/installation/linux/docker-ce/centos/]
+> CentOS 安装docker-ce
 
 ## 卸载旧版本
 
