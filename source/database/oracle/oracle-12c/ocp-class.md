@@ -49,6 +49,7 @@ title: Oracle 12c OCP 课程学习
 
 * [数据库性能调优指南12 *c*版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/tgdba/index.html)
 * [SQL优化指南12 c版本2（12.2）](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/tgsql/index.html)
+* [Oracle数据库测试指南12 c第2版（12.2)](https://docs.oracle.com/en/database/oracle/oracle-database/12.2/ratug/index.html)
 
 
 

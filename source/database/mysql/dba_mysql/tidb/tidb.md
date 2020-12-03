@@ -6,7 +6,7 @@ title: TiDB 简介
 
 最好的介绍就是官方介绍
 
-* [TiDB 官网](https://pingcap.com/docs-cn/overview/)
+* [TiDB 官网](https://docs.pingcap.com/tidb/stable)
 
 * [TiDB Git](https://github.com/pingcap)
 

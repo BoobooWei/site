@@ -226,3 +226,11 @@ service mysqld restart
 MySQL对标准SQL的扩展允许在`HAVING`子句中引用 选择列表中的别名表达式。在MySQL 5.7.5之前，启用 [`ONLY_FULL_GROUP_BY`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_only_full_group_by) 会禁用此扩展，因此要求 `HAVING`使用无别名表达式编写子句。从MySQL 5.7.5开始，取消了此限制，以便`HAVING`无论是否[`ONLY_FULL_GROUP_BY`](https://dev.mysql.com/doc/refman/5.7/en/sql-mode.html#sqlmode_only_full_group_by)启用该子句都可以引用别名 。
 
 有关其他讨论和示例，请参见 [第12.20.3节" GROUP BY的MySQL处理"](https://dev.mysql.com/doc/refman/5.7/en/group-by-handling.html)。 {% endnote %}
+
+# 批量管理考试题目
+
+```sql
+select count(*),max(questionid),min(questionid) from x2_questions where questionknowsid regexp '11月TB修正-291Q|TB-291Q+';
+
+delete  from x2_questions where questionknowsid regexp '11月TB修正-291Q|TB-291Q+';
+```
