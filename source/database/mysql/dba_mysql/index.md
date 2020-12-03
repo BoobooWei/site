@@ -13,7 +13,7 @@ title: MySQL 运维实践
 * [06-MySQL性能监控](/database/mysql/dba_mysql/06-MySQL性能监控.html)
 * [07-MySQL系统库SYS](/database/mysql/dba_mysql/07-MySQL系统库SYS.html)
 * [08-MySQL管理规范](/database/mysql/dba_mysql/08-MySQL管理规范.html)
-
+* [TiDB](/database/mysql/dba_mysql/tidb/)
 
 
 ```bash
