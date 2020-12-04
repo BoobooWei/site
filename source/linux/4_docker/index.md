@@ -20,7 +20,8 @@ title: Docker 学习笔记
 * [Docker 部署 Zipkin](/linux/4_docker/u01_docker_zipkin.html)
 * [Docker 部署 MySQL 8.0.22](/linux/4_docker/u02_docker_mysql.html)
 * [Docker 部署 2048游戏网站](/linux/4_docker/u03_docker_2048.html)
+* [Docker 部署 Archery](/linux/4_docker/u04_docker_archery.html)
 
 ```bash
-ll *.md | awk '{print "(/linux/4_docker/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
+ll *.md | awk '{print "(/linux/4_docker/"$9")"}' |sed 's/.md/.html/g'
 ```
