@@ -17,7 +17,7 @@ title: Docker 学习笔记
 
 ## 应用
 
-* [Docker 部署 Zipkin](/linux/4_docker/u02_docker_zipkin.html)
+* [Docker 部署 Zipkin](/linux/4_docker/u01_docker_zipkin.html)
 * [Docker 部署 MySQL 8.0.22](/linux/4_docker/u02_docker_mysql.html)
 * [Docker 部署 2048游戏网站](/linux/4_docker/u03_docker_2048.html)
 
