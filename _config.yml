@@ -23,7 +23,8 @@ highlight:
   enable: true
   line_number: false
 
-disqus_shortname: toberoot
+
+disqus_shortname: www-toberoot-com
 google_analytics: UA-48498357-3
 fb_admins: 100000247608790
 algolia:

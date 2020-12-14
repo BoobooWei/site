@@ -1,8 +1,10 @@
 ---
-title: TiDB Courses for Beginners: based on version 4.0（TiDB 4.0 新手指南）
+title: TiDB Courses for Beginners 
 ---
 
-# TiDB Courses for Beginners: based on version 4.0（TiDB 4.0 新手指南）
+> based on version 4.0
+
+# Beginners 新手指南
 
 * [1.1 A Brief History of Distributed Database（分布式数据库发展简史）](/database/mysql/dba_mysql/tidb/tidb_courses/110.html)
 * [1.2 What's an HTAP Database? （HTAP 数据库简介）](/database/mysql/dba_mysql/tidb/tidb_courses/120.html)
@@ -12,7 +14,7 @@ title: TiDB Courses for Beginners: based on version 4.0（TiDB 4.0 新手指南�
 * [1.6 Read and Write data in the TiDB database platform（TiDB 中的读写流程）](/database/mysql/dba_mysql/tidb/tidb_courses/160.html)
 * [1.7 Use cases and success stories with the TiDB database platform（TiDB 典型应用场景及用户案例）](/database/mysql/dba_mysql/tidb/tidb_courses/170.html)
 
-# TiDB Courses for Application Developers: based on version 4.0（TiDB 4.0 应用开发指南）								
+# Application Developers 应用开发指南						
 
 ## TiDB 的适用场景
 
@@ -45,7 +47,7 @@ title: TiDB Courses for Beginners: based on version 4.0（TiDB 4.0 新手指南�
 * [2.5.6 TiKV Tuning Guide（ TIDB 的 TiKV 性能优化指南）](/database/mysql/dba_mysql/tidb/tidb_courses/256.html)
 
 
-# TiDB Courses for Database Administrators: based on version 4.0（TiDB 4.0 运维指南）
+# Database Administrators 运维指南
 
 ## TiDB 部署与集群操作（TiUP）
 
