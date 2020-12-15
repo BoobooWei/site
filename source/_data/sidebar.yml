@@ -104,6 +104,11 @@ database:
     dba_redis: /database/nosql/dba_redis/index.html
     booboo_mongodb: /database/nosql/booboo_mongodb/index.html
     hadoop: /database/nosql/hadoop/index.html
+  tidb:
+    overview: /database/tidb/index.html
+    00_tidb入门指南: /database/tidb/00_tidb入门指南.html
+    01_raft协议理解: /database/tidb/01_raft协议理解.html
+    02_tidb21天课程: /database/tidb/tidb_courses/index.html
 
 
 devops:

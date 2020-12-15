@@ -133,6 +133,10 @@ sidebar:
     booboo_mongodb: MongoDB 基础
     hadoop: Hadoop 基础
 
+    tidb: TiDB
+    00_tidb入门指南: TiDB 入门指南
+    01_raft协议理解: Raft协议理解
+    02_tidb21天课程: TiDB 21天课程
 
   mse:
     getting_started: 开始使用

@@ -7,3 +7,4 @@ title: 数据库
 * [MySQL](/database/mysql/)
 * [Oracle](/database/oracle/)
 * [NoSQL](/database/nosql/)
+* [TiDB](/database/tidb/)
