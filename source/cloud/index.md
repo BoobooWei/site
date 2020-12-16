@@ -8,3 +8,4 @@ title: Cloud 云实践
 - [AWS Cloud 亚马逊云](/cloud/aws/index.html)
 - [Tencent Cloud 腾讯云](/cloud/tencent/index.html)
 - [Azure Cloud 微软云](/cloud/azure/index.html)
+- [MongoDB Cloud](/cloud/mongodb_cloud/index.html)
