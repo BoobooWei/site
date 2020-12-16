@@ -11,8 +11,8 @@ Move faster with a true multi-cloud database service for MongoDB built for agile
 Available on AWS, Google Cloud, and Azure.
 
 * [01_get_started_with_atlas](/cloud/mongodb_cloud/01_get_started_with_atlas.html)
-* [02_熟悉MongoDB Altars 云平台集群管理界面](/cloud/mongodb_cloud/02_熟悉MongoDB Altars 云平台集群管理界面.html)
-* [03_熟悉MongoDB Altars 云平台监控Alter功能](/cloud/mongodb_cloud/03_熟悉MongoDB Altars 云平台监控Alter功能.html)
+* [02_熟悉MongoDB Altars 云平台集群管理界面](/cloud/mongodb_cloud/02_熟悉MongoDBAltars云平台集群管理界面.html)
+* [03_熟悉MongoDB Altars 云平台监控Alter功能](/cloud/mongodb_cloud/03_熟悉MongoDBAltars云平台监控Alter功能.html)
 
 ```bash
 ll *.md | awk '{print "* ["$9"](/cloud/mongodb_cloud/"$9")"}' | sed 's/.md//'|sed 's/.md/.html/g'
