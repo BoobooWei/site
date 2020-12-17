@@ -2,14 +2,14 @@
 title: 如何删除 Aurora MySQL 集群？
 ---
 
-![](pic/01.png)
-
 1. 查看帮助文档[删除数据库实例或 Aurora 数据库集群](https://docs.aws.amazon.com/zh_cn/AmazonRDS/latest/AuroraUserGuide/USER_DeleteInstance.html)
 2. 选择cli命令行 
 
 ```bash
 aws rds delete-db-instance --db-instance-identifier database-2-instance-1
 ```
+![](pic/01.png)
+![](pic/02.png)
 
 执行返回结果：
 
