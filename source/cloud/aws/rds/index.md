@@ -10,10 +10,13 @@ title: Amazon Aurora
 **提前准备**
 
 1. 阅读 [Amazon Aurora 深度探索](https://zhuanlan.zhihu.com/p/33603518) 学习并了解底层原理；
-2. 阅读 [Aurora MySQL 复制功能]() 目前支持 [单主复制](https://docs.aws.amazon.com/zh_cn/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.html) 和 [多主集群](https://docs.aws.amazon.com/zh_cn/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html) 两种架构。
+2. 阅读 Aurora MySQL 复制功能，目前支持 [单主复制](https://docs.aws.amazon.com/zh_cn/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.html) 和 [多主集群](https://docs.aws.amazon.com/zh_cn/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html) 两种架构。
 3. 开通 **Aurora** 实例1台学习和测试使用，也为监控指标梳理做准备。
 
 | 标准实例 – 最新一代 | 每小时价格 |
 | :-----------------: | :--------: |
 |     db.t3.small     | 0.045 USD  |
 
+**学习笔记**
+
+* [如何删除AuroraMySQL集群](/cloud/aws/rds/如何删除AuroraMySQL集群.html)
