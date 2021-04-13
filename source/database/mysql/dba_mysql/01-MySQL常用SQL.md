@@ -1116,7 +1116,9 @@ vmstat 1 5
 iostat -dkx 1 5												
 netstat -nat | awk '{print $6}'| sort | uniq -c				
 netstat -na | grep ESTABLISHED|awk '{print $5}' | awk -F: '{print $1}' | sort|uniq -c
-ps -aux 2> /dev/null | sort -k3nr | head -n 5 | awk 'BEGIN{print "%CPU\tPID\tCOMMAD"}{print $4,'\t',$2,'\t',$11}'
+# CPU Top 5
+ps -aux 2> /dev/null | sort -k3nr | head -n 5 | awk 'BEGIN{print "%CPU\tPID\tCOMMAD"}{print $3,'\t',$2,'\t',$11}'
+# MEM Top 5
 ps -aux 2> /dev/null | sort -k4nr | head -n 5 | awk 'BEGIN{print "%MEM\tPID\tCOMMAD"}{print $4,'\t',$2,'\t',$11}'
 
 
