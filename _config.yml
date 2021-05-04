@@ -37,3 +37,11 @@ deploy:
   - type: git
     repository: git@github.com:BoobooWei/booboowei.github.io.git
     branch: master
+
+
+
+# MathJax Support
+mathjax:
+  enable: true
+  per_page: true
+  cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
