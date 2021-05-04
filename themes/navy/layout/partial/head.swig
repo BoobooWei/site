@@ -3,6 +3,12 @@
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ config.title }}</title>
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
   <!-- Canonical links -->
   <link rel="canonical" href="{{ url }}">
   <!-- Alternative links -->
