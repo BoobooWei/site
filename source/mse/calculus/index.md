@@ -6,7 +6,7 @@ title: Calculus 微积分
 
 # 内容
 
-* [00-高等数学预备知识](/mse/calculus/00-高等数学预备知识.html)
+* [00-预备知识](/mse/calculus/00-预备知识.html)
 * [01-微积分历史](/mse/calculus/01-微积分历史.html)
 * [02-数列的极限](/mse/calculus/02-数列的极限.html)
 
