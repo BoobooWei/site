@@ -47,6 +47,8 @@ title: MySQL 技术积累
 * [mysql_5.7_记一次特殊空格c2a0的数据清洗](/database/mysql/dba_mysql/tec/mysql_5.7_记一次特殊空格c2a0的数据清洗.html)
 * [mysql_5.7_通过frm和ibd强制恢复结构和数据](/database/mysql/dba_mysql/tec/mysql_5.7_通过frm和ibd强制恢复结构和数据.html)
 * [mysql_5.7_分区表物理删除报错解决](/database/mysql/dba_mysql/tec/mysql_5.7_分区表物理删除报错解决.html)
+* [mysql_5.7_分区表改造](/database/mysql/dba_mysql/tec/mysql_5.7_分区表改造.html)
+
 
 # MySQL DBA
 
